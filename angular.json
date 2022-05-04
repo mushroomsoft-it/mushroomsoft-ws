@@ -1,0 +1,159 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "eb960e67-b6b1-400e-bee2-65fb2772b8de"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "mian-app": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/mian-app",
+      "sourceRoot": "projects/mian-app/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/mian-app",
+            "index": "projects/mian-app/src/index.html",
+            "main": "projects/mian-app/src/main.ts",
+            "polyfills": "projects/mian-app/src/polyfills.ts",
+            "tsConfig": "projects/mian-app/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/mian-app/src/favicon.ico",
+              "projects/mian-app/src/assets"
+            ],
+            "styles": ["projects/mian-app/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "projects/mian-app/src/environments/environment.ts",
+                  "with": "projects/mian-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "mian-app:build:production"
+            },
+            "development": {
+              "browserTarget": "mian-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "mian-app:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mian-app/src/test.ts",
+            "polyfills": "projects/mian-app/src/polyfills.ts",
+            "tsConfig": "projects/mian-app/tsconfig.spec.json",
+            "karmaConfig": "projects/mian-app/karma.conf.js",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/mian-app/src/favicon.ico",
+              "projects/mian-app/src/assets"
+            ],
+            "styles": ["projects/mian-app/src/styles.scss"],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/mian-app/src/**/*.ts",
+              "projects/mian-app/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "mian-lib": {
+      "projectType": "library",
+      "root": "projects/mian-lib",
+      "sourceRoot": "projects/mian-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mian-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mian-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mian-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mian-lib/src/test.ts",
+            "tsConfig": "projects/mian-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/mian-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/mian-lib/src/**/*.ts",
+              "projects/mian-lib/src/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "mian-app"
+}
