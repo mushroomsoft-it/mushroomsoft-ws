@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MianLibComponent } from './mian-lib.component';
+import {MianLibComponent} from './mian-lib.component';
 
 describe('MianLibComponent', () => {
   let component: MianLibComponent;
@@ -9,9 +9,8 @@ describe('MianLibComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MianLibComponent ]
-    })
-    .compileComponents();
+      declarations: [MianLibComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {
