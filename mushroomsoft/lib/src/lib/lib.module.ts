@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {MianLibComponent} from './mian-lib.component';
+import {MianLibComponent} from './lib.component';
 
 @NgModule({
   declarations: [MianLibComponent],

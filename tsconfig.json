@@ -12,9 +12,9 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "mian-lib": [
-        "dist/mian-lib/mian-lib",
-        "dist/mian-lib"
+      "lib": [
+        "dist/lib/lib",
+        "dist/lib"
       ]
     },
     "noFallthroughCasesInSwitch": true,

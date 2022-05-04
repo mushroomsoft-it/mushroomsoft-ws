@@ -4,9 +4,9 @@
     "analytics": "eb960e67-b6b1-400e-bee2-65fb2772b8de"
   },
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "mushroomsoft",
   "projects": {
-    "mian-app": {
+    "app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -16,24 +16,24 @@
           "strict": true
         }
       },
-      "root": "projects/mian-app",
-      "sourceRoot": "projects/mian-app/src",
+      "root": "mushroomsoft/app",
+      "sourceRoot": "mushroomsoft/app/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mian-app",
-            "index": "projects/mian-app/src/index.html",
-            "main": "projects/mian-app/src/main.ts",
-            "polyfills": "projects/mian-app/src/polyfills.ts",
-            "tsConfig": "projects/mian-app/tsconfig.app.json",
+            "outputPath": "dist/app",
+            "index": "mushroomsoft/app/src/index.html",
+            "main": "mushroomsoft/app/src/main.ts",
+            "polyfills": "mushroomsoft/app/src/polyfills.ts",
+            "tsConfig": "mushroomsoft/app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/mian-app/src/favicon.ico",
-              "projects/mian-app/src/assets"
+              "mushroomsoft/app/src/favicon.ico",
+              "mushroomsoft/app/src/assets"
             ],
-            "styles": ["projects/mian-app/src/styles.scss"],
+            "styles": ["mushroomsoft/app/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -52,8 +52,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/mian-app/src/environments/environment.ts",
-                  "with": "projects/mian-app/src/environments/environment.prod.ts"
+                  "replace": "mushroomsoft/app/src/environments/environment.ts",
+                  "with": "mushroomsoft/app/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mian-app:build:production"
+              "browserTarget": "app:build:production"
             },
             "development": {
-              "browserTarget": "mian-app:build:development"
+              "browserTarget": "app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,22 +84,22 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mian-app:build"
+            "browserTarget": "app:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/mian-app/src/test.ts",
-            "polyfills": "projects/mian-app/src/polyfills.ts",
-            "tsConfig": "projects/mian-app/tsconfig.spec.json",
-            "karmaConfig": "projects/mian-app/karma.conf.js",
+            "main": "mushroomsoft/app/src/test.ts",
+            "polyfills": "mushroomsoft/app/src/polyfills.ts",
+            "tsConfig": "mushroomsoft/app/tsconfig.spec.json",
+            "karmaConfig": "mushroomsoft/app/karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/mian-app/src/favicon.ico",
-              "projects/mian-app/src/assets"
+              "mushroomsoft/app/src/favicon.ico",
+              "mushroomsoft/app/src/assets"
             ],
-            "styles": ["projects/mian-app/src/styles.scss"],
+            "styles": ["mushroomsoft/app/src/styles.scss"],
             "scripts": []
           }
         },
@@ -107,30 +107,30 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/mian-app/src/**/*.ts",
-              "projects/mian-app/src/**/*.html"
+              "mushroomsoft/app/src/**/*.ts",
+              "mushroomsoft/app/src/**/*.html"
             ]
           }
         }
       }
     },
-    "mian-lib": {
+    "lib": {
       "projectType": "library",
-      "root": "projects/mian-lib",
-      "sourceRoot": "projects/mian-lib/src",
+      "root": "mushroomsoft/lib",
+      "sourceRoot": "mushroomsoft/lib/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/mian-lib/ng-package.json"
+            "project": "mushroomsoft/lib/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/mian-lib/tsconfig.lib.prod.json"
+              "tsConfig": "mushroomsoft/lib/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/mian-lib/tsconfig.lib.json"
+              "tsConfig": "mushroomsoft/lib/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -138,22 +138,22 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/mian-lib/src/test.ts",
-            "tsConfig": "projects/mian-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/mian-lib/karma.conf.js"
+            "main": "mushroomsoft/lib/src/test.ts",
+            "tsConfig": "mushroomsoft/lib/tsconfig.spec.json",
+            "karmaConfig": "mushroomsoft/lib/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/mian-lib/src/**/*.ts",
-              "projects/mian-lib/src/**/*.html"
+              "mushroomsoft/lib/src/**/*.ts",
+              "mushroomsoft/lib/src/**/*.html"
             ]
           }
         }
       }
     }
   },
-  "defaultProject": "mian-app"
+  "defaultProject": "app"
 }
