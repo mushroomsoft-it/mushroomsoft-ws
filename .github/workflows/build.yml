@@ -1,0 +1,37 @@
+name: Mushroomsoft CI Tests
+
+on:
+  push:
+    branches:
+      - '!master'
+  pull_request:
+    branches:
+      - 'master'
+
+jobs:
+  build:
+    name: GitHub Actions - Tests
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          always-auth: true
+          registry-url: https://registry.npmjs.org
+
+      - name: Install dependencies
+        run: npm i
+        
+      - name: Lint code
+        run: npm run lint
+
+      - name: Run UI tests
+        run: npm run test

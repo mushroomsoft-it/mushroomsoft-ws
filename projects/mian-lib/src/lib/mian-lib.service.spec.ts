@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { MianLibService } from './mian-lib.service';
+import {MianLibService} from './mian-lib.service';
 
 describe('MianLibService', () => {
   let service: MianLibService;
