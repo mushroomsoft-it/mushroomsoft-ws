@@ -1,28 +1,21 @@
 <div class="ms-navigation ms-nav">
     <nav class="ms-navigation-wrap">
-        <a href="#hero-overlay" class="ms-logo-link ms-nav-brand ms--current">
-            <img src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd170582278c3b612_logo-footer.png" width="150" alt="" class="ms-logo-image">
-        </a>
+        <div *ngFor="let data of dataMenu.logo">
+            <a href="{{data.url}}" class="{{data.classA}}">
+                <img src="{{data.image}}" width="{{data.width}}" class="{{data.classImage}}">
+            </a>
+        </div>
          <nav class="ms-menu">
                 <nav class="ms-navigation-items ms-nav-menu">
-                    <a href="#Whoweare" class="ms-navigation-item ms-nav-link">
-                        <strong>WHO We are</strong>
-                    </a>
-                    <a href="#services" class="ms-navigation-item ms-nav-link">
-                        <strong>SERVICES</strong>
-                    </a>
-                    <a href="#focus" class="ms-navigation-item ms-nav-link">
-                        <strong>commitment</strong>
-                    </a>
-                    <a href="#tecnology" class="ms-navigation-item ms-nav-link">
-                        <strong>TEChNOLOGY</strong>
-                    </a>
-                    <a href="#location" class="ms-navigation-item ms-nav-link">
-                        <strong>LOCATION</strong>
-                    </a>
+                    <div *ngFor="let data of dataMenu.menu">
+                        <a href="{{data.url}}" class="{{data.class}}">
+                            <strong>{{data.title}}</strong>
+                        </a>
+                    </div>
+                    <div></div>
                     <a  href="#" class="ms-button ms-contact-us ms-inline-block">
                         <div class="text-block-3">
-                            <strong>Contact US</strong>
+                            <strong>CONTACT US</strong>
                         </div>
                     </a>
                 </nav>
