@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333
+}
+
+.ms-button {
+    padding: 12px 25px;
+    border-radius: 0px;
+    background-color: #1a1b1f;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ms-button:hover {
+    background-color: #32343a;
+    color: #fff;
+}
+
+.ms-button:active {
+    background-color: #43464d;
+}
+
+.ms-button.ms-contact-us {
+    position: relative;
+    z-index: 5;
+    background-color: #256891;
+    font-weight: 400;
+}

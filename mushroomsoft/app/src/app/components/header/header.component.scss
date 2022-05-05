@@ -1,0 +1,318 @@
+.ms-inline-block {
+    max-width: 100%;
+    display: inline-block
+}
+
+@media screen and (max-width:767px) {
+    .ms-nav-brand {
+        padding-left: 10px
+    }
+}
+
+@media (min-width:768px) {
+    .ms-nav {
+        position: relative;
+        background: #dddddd;
+        z-index: 1000
+    }
+
+    .ms-nav:before,
+    .ms-nav:after {
+        content: " ";
+        display: table;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column-end: 2;
+        grid-row-end: 2
+    }
+
+    .ms-nav:after {
+        clear: both
+    }
+
+    .ms-nav-brand {
+        position: relative;
+        float: left;
+        text-decoration: none;
+        color: #333333
+    }
+
+    .ms-nav-link {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+        color: #222222;
+        padding: 20px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .ms-nav-link.ms--current {
+        color: #0082f3
+    }
+
+    .ms-nav-menu {
+        position: relative;
+        float: right
+    }
+
+    .ms-nav-button {
+        position: relative;
+        float: right;
+        padding: 18px;
+        font-size: 24px;
+        display: none;
+        cursor: pointer;
+    }
+
+    .ms-nav-button:focus {
+        outline: 0
+    }
+
+    .ms-nav[data-collapse="all"] .ms-nav-menu {
+        display: none
+    }
+
+    .ms-nav[data-collapse="all"] .ms-nav-button {
+        display: block
+    }
+}
+
+@media screen and (max-width:991px) {
+    .ms-nav[data-collapse="medium"] .ms-nav-menu {
+        display: none
+    }
+
+    .ms-nav[data-collapse="medium"] .ms-nav-button {
+        display: block
+    }
+}
+
+@media screen and (max-width:767px) {
+    .ms-nav[data-collapse="small"] .ms-nav-menu {
+        display: none
+    }
+
+    .ms-nav[data-collapse="small"] .ms-nav-button {
+        display: block
+    }
+
+    .ms-nav-brand {
+        padding-left: 10px
+    }
+}
+
+@media screen and (max-width:479px) {
+    .ms-nav[data-collapse="tiny"] .ms-nav-menu {
+        display: none
+    }
+
+    .ms-nav[data-collapse="tiny"] .ms-nav-button {
+        display: block
+    }
+}
+
+.ms-logo-link {
+    z-index: 1;
+}
+
+.ms-logo-link:hover {
+    opacity: 0.8;
+}
+
+.ms-logo-link:active {
+    opacity: 0.7;
+}
+
+.ms-ms-menu {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ms-navigation-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.ms-navigation {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px 50px;
+    clear: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: flex-start;
+    background-color: #fff;
+    object-fit: fill;
+}
+
+.ms-navigation-item {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    opacity: 0.6;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.ms-navigation-item:hover {
+    opacity: 0.9;
+}
+
+.ms-navigation-item:active {
+    opacity: 0.8;
+}
+
+.ms-navigation-item.ms--current {
+    opacity: 1;
+    color: #1a1b1f;
+    font-weight: 600;
+}
+
+.ms-navigation-item.ms--current:hover {
+    opacity: 0.8;
+    color: #32343a;
+}
+
+.ms-navigation-item.ms--current:active {
+    opacity: 0.7;
+    color: #32343a;
+}
+
+.ms-logo-image {
+    display: block;
+    margin-left: auto;
+}
+
+.ms-navigation-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.ms-image {
+    margin-left: 200px;
+    padding-left: 0px;
+}
+
+@media screen and (max-width: 991px) {
+    .ms-button {
+        justify-content: center;
+    }
+
+    .ms-button.ms-contact-us {
+        display: block;
+        align-self: auto;
+        order: 0;
+        flex: 0 auto;
+    }
+
+    .ms-logo-link.ms--current {
+        flex: 0 auto;
+    }
+
+    .ms-menu-icon {
+        display: block;
+    }
+
+    .ms-menu {
+        position: static;
+        margin-left: 30px;
+    }
+
+    .ms-navigation-wrap {
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .ms-navigation {
+        display: flex;
+        padding: 25px 30px;
+        align-items: flex-start;
+    }
+
+    .ms-navigation-item {
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .ms-navigation-item:hover {
+        background-color: #f7f8f9;
+    }
+
+    .ms-navigation-item:active {
+        background-color: #eef0f3;
+    }
+
+    .ms-menu-button {
+        position: relative;
+        left: auto;
+        top: 0%;
+        right: 0%;
+        display: block;
+        padding: 0px;
+        order: 0;
+        flex: 0 auto;
+        white-space: normal;
+        object-fit: fill;
+    }
+
+    .ms-menu-button.mian--open {
+        position: relative;
+        z-index: auto;
+        background-color: transparent;
+    }
+
+    .ms-navigation-items {
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .ms-logo-link {
+        padding-left: 0px;
+    }
+
+    .ms-navigation {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    .ms-menu {
+        margin-left: 15px;
+    }
+
+    .ms-navigation {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .ms-menu-button {
+        flex: 0 0 auto;
+    }
+}
