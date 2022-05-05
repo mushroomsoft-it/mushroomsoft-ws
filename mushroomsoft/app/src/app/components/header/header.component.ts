@@ -7,5 +7,5 @@ import {Menu} from '../../constants';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  dataMenu = Menu;
+  menuItems = Menu;
 }

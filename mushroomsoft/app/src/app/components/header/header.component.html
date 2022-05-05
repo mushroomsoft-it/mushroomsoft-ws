@@ -1,13 +1,13 @@
 <div class="ms-navigation ms-nav">
     <nav class="ms-navigation-wrap">
-        <div *ngFor="let data of dataMenu.logo">
-            <a href="{{data.url}}" class="{{data.classA}}">
-                <img src="{{data.image}}" width="{{data.width}}" class="{{data.classImage}}">
+        <div *ngFor="let data of menuItems.logo">
+            <a href="{{data.url}}" class="ms-logo-link ms-nav-brand ms--current">
+                <img src="{{data.image}}" width="{{data.width}}" class="ms-logo-image">
             </a>
         </div>
          <nav class="ms-menu">
                 <nav class="ms-navigation-items ms-nav-menu">
-                    <div *ngFor="let data of dataMenu.menu">
+                    <div *ngFor="let data of menuItems.menu">
                         <a href="{{data.url}}" class="{{data.class}}">
                             <strong>{{data.title}}</strong>
                         </a>
@@ -20,7 +20,7 @@
                     </a>
                 </nav>
                 <nav class="ms-menu-button ms-nav-button">
-                    <img src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd170585554c3b605_menu-icon.png" alt="" class="ms-menu-icon">
+                    <img src="assets/menu-icon.png" alt="" class="ms-menu-icon">
                 </nav>
         </nav>
     </nav>
