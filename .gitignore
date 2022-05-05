@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 #coverage
-coverage
+/mushroomsoft/app/coverage
