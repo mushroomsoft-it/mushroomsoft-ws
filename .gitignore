@@ -33,6 +33,7 @@ yarn-error.log
 .sass-cache/
 /connect.lock
 /coverage
+/mushroomsoft/app/coverage
 /libpeerconnection.log
 testem.log
 /typings
@@ -42,4 +43,3 @@ testem.log
 Thumbs.db
 
 #coverage
-/mushroomsoft/app/coverage
