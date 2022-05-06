@@ -3,22 +3,11 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {HeaderComponent} from './header.component';
 
 describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [HeaderComponent]
-    }).compileComponents();
-  });
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should initialization of the component', () => {
+    const component = new HeaderComponent();
+    expect(component).toBeDefined();
+    expect(component).toBeInstanceOf(HeaderComponent);
+    expect(component.menuItems.logo.length).toBe(1);
+    expect(component.menuItems.menu.length).toBe(5);
   });
 });
