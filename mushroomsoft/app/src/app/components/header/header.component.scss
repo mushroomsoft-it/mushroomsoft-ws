@@ -9,75 +9,111 @@
     }
 }
 
-@media (min-width:768px) {
-    .ms-nav {
-        position: relative;
-        background: #dddddd;
-        z-index: 1000
-    }
+.ms-nav {
+    position: relative;
+    background: #dddddd;
+    z-index: 1000
+}
 
-    .ms-nav:before,
-    .ms-nav:after {
-        content: " ";
-        display: table;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        grid-column-end: 2;
-        grid-row-end: 2
-    }
+.ms-nav:before,
+.ms-nav:after {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2
+}
 
-    .ms-nav:after {
-        clear: both
-    }
+.ms-nav:after {
+    clear: both
+}
 
-    .ms-nav-brand {
-        position: relative;
-        float: left;
-        text-decoration: none;
-        color: #333333
-    }
+.ms-nav-brand {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: #333333
+}
 
-    .ms-nav-link {
-        position: relative;
-        display: inline-block;
-        vertical-align: top;
-        text-decoration: none;
-        color: #222222;
-        padding: 20px;
-        text-align: left;
-        margin-left: auto;
-        margin-right: auto
-    }
+.ms-nav-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #222222;
+    padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto
+}
 
-    .ms-nav-link.ms--current {
-        color: #0082f3
-    }
+.ms-nav-link.ms--current {
+    color: #0082f3
+}
 
-    .ms-nav-menu {
-        position: relative;
-        float: right
-    }
+.ms-nav-menu {
+    position: relative;
+    float: right
+}
 
-    .ms-nav-button {
-        position: relative;
-        float: right;
-        padding: 18px;
-        font-size: 24px;
-        display: none;
-        cursor: pointer;
-    }
+[data-nav-menu-open] {
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #C8C8C8;
+    text-align: center;
+    overflow: visible;
+    min-width: 200px
+}
 
-    .ms-nav-button:focus {
-        outline: 0
-    }
 
-    .ms-nav[data-collapse="all"] .ms-nav-menu {
-        display: none
-    }
+.ms-nav-overlay {
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%
+}
 
-    .ms-nav[data-collapse="all"] .ms-nav-button {
-        display: block
-    }
+.ms-nav-overlay [data-nav-menu-open] {
+    top: 0
+}
+
+.ms-nav[data-animation="over-left"] .ms-nav-overlay {
+    width: auto
+}
+
+.ms-nav[data-animation="over-left"] .ms-nav-overlay,
+.ms-nav[data-animation="over-left"] [data-nav-menu-open] {
+    right: auto;
+    z-index: 1;
+    top: 0
+}
+
+.ms-nav[data-animation="over-right"] .ms-nav-overlay {
+    width: auto
+}
+
+.ms-nav[data-animation="over-right"] .ms-nav-overlay,
+.ms-nav[data-animation="over-right"] [data-nav-menu-open] {
+    left: auto;
+    z-index: 1;
+    top: 0
+}
+
+.ms-nav-button {
+    position: relative;
+    float: right;
+    padding: 18px;
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+    user-select: none
 }
 
 @media screen and (max-width:991px) {
@@ -126,7 +162,7 @@
     opacity: 0.7;
 }
 
-.ms-ms-menu {
+.ms-menu {
     position: absolute;
     left: 0%;
     top: 0%;
@@ -212,9 +248,8 @@
     flex: 0 0 auto;
 }
 
-.ms-image {
-    margin-left: 200px;
-    padding-left: 0px;
+.text-block-3 {
+    font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
@@ -255,6 +290,7 @@
 
     .ms-navigation-item {
         padding: 15px 30px;
+        transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
         text-align: center;
     }
 
@@ -279,7 +315,7 @@
         object-fit: fill;
     }
 
-    .ms-menu-button.mian--open {
+    .ms-menu-button.ms--open {
         position: relative;
         z-index: auto;
         background-color: transparent;
@@ -291,7 +327,6 @@
 }
 
 @media screen and (max-width: 767px) {
-
     .ms-logo-link {
         padding-left: 0px;
     }
@@ -302,7 +337,6 @@
 }
 
 @media screen and (max-width: 479px) {
-
     .ms-menu {
         margin-left: 15px;
     }
@@ -315,4 +349,9 @@
     .ms-menu-button {
         flex: 0 0 auto;
     }
+
+    .ms-menu-button.ms--open {
+        flex: 0 0 auto;
+    }
+
 }
