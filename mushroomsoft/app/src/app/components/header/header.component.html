@@ -1,0 +1,30 @@
+<div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="ms-navigation ms-nav">
+    <nav class="ms-navigation-wrap">
+            <a href="{{logo.url}}" class="ms-logo-link ms-nav-brand ms--current">
+                <img src="{{logo.image}}" width="{{logo.width}}" class="ms-logo-image">
+            </a>
+         <nav class="ms-menu">
+                <nav role="ms-navigation" class="ms-navigation-items ms-nav-menu">
+                    <div *ngFor="let data of menuItems">
+                        <a href="{{data}}" class="{{data.class}}">
+                            <strong>{{data.title}}</strong>
+                        </a>
+                    </div>
+                    <a href="" class="ms-button ms-contact-us ms-inline-block">
+                        <div class="text-block-3">
+                            <strong>CONTACT US</strong>
+                        </div>
+                    </a>
+                    <a href="" class="ms-button ms-contact-us ms-inline-block">
+                        <div class="text-block-3">
+                            <strong>WORK WITH US</strong>
+                        </div>
+                    </a>
+                </nav>
+                <nav  class="ms-menu-button ms-nav-button" style="-webkit-user-select: text" aria-label="ms-menu" role="ms-button" tabindex="0" aria-controls="ms-nav-overlay-0" aria-haspopup="ms-menu" aria-expanded="false">
+                    <img src="assets/menu-icon.png" alt="" class="ms-menu-icon">
+                </nav>
+        </nav>
+    </nav>
+    <div class="ms-nav-overlay" data-wf-ignore="" id="ms-nav-overlay-0"></div>
+</div>
