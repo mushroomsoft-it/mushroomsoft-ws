@@ -27,8 +27,8 @@
                     </div>
                   </div>
                   <img
-                    id="ms-image-section-two"
                     src="{{dataTwo.image}}"
+                    id="ms-image-section-two"
                     class="{{dataTwo.class}}"
                   />
               </div>
@@ -47,13 +47,223 @@
                   </div>
                 </div>
                 <img
-                  id="ms-image-section-three"
                   src="{{dataThree.image}}"
+                  id="ms-image-section-three"
                   class="{{dataThree.class}}"
                 />
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="ms-services" *ngFor="let dataTitle of commitmentTitle" >
+    <div *ngFor="let dataDescription of commitmentDescription">
+      <div *ngFor="let dataImage of commitmentImage">
+        <div *ngFor="let dataClass of commitmentClass">
+      <div class="ms-container-2 ms-w-container">
+        <div class="ms-layout-grid ms-grid-3">
+          <img
+            src="{{dataImage.imageOne}}"
+            id="ms-image-commitment"
+            class="{{dataClass.classOne}}"
+          />
+          <img
+            src="{{dataImage.imageTwo}}"
+            class="{{dataClass.classTwo}}"
+          /><img
+            src="{{dataImage.imageThree}}"
+            class="{{dataClass.classThree}}"
+          />
+          <h1 class="ms-heading-8">{{dataTitle.titleOne}}</h1>
+          <h1
+            id="ms-title-Two"
+            class="ms-heading-9"
+          >
+          {{dataTitle.titleTwo}}
+          </h1>
+          <h1 class="ms-heading-10">{{dataTitle.titleThree}}</h1>
+          <p
+            id="ms-description-one"
+            class="ms-paragraph-9"
+          >
+            {{dataDescription.descriptionOne}}
+          </p>
+          <p class="ms-paragraph-8">
+            <span>
+                 {{dataDescription.descriptionTwo}}
+            </span>
+            <br />
+          </p>
+          <p class="ms-paragraph-6">
+            {{dataDescription.descriptionThree}}
+          </p>
+        </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div class="separator">
+    <div class="ms-w-container">
+      <div class="divider">   
+      </div>
+    </div>
+  </div>
+  <div class="technologies">
+    <div class="container-3 ms-w-container">
+      <div class="ms-layout-grid grid-7">
+        <h1
+          id="tecnology"
+          class="heading-25 w-node-f9bd2fdb-8aab-cbea-c20e-c2c75fe79582-62c3b5f1"
+        >
+          Technology
+        </h1>
+        <p
+          id="w-node-_9180ec1d-2fb4-36e1-2a06-800b496cf7d8-62c3b5f1"
+          class="paragraph-18"
+        >
+          <br />We implement software development projects in a wide range of
+          cutting-edge technologies. Our team of specialists are qualified in
+          various technologies. We would love to discuss and recommend the
+          best solution for your business' needs. <br />
+        </p>
+      </div>
+      <div class="ms-layout-grid grid-6">
+        <h1
+          id="w-node-_7883a33d-6163-9702-8046-53ca801ac31d-62c3b5f1"
+          class="heading-26"
+        >
+          Operating Systems
+        </h1>
+        <img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058d485c3b629_linux-logo.png"
+          loading="lazy"
+          sizes="(max-width: 600px) 100vw, 600px"
+          srcset="
+            https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058d485c3b629_linux-logo-p-500.png 500w,
+            https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058d485c3b629_linux-logo.png       600w
+          "
+          alt=""
+          class="image-18"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058c298c3b62a_window-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-19"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058a6c3c3b62b_android-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-20"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058c4ebc3b62c_iOS-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-21"
+        />
+      </div>
+      <div class="ms-layout-grid grid-10">
+        <h1
+          id="w-node-c863c672-faec-113d-fbf6-ac8bad0bcc6d-62c3b5f1"
+          class="heading-27"
+        >
+          Databases
+        </h1>
+        <img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd170581996c3b62d_powered-by-mysql-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-22"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd1705838efc3b62e_mongo-logo.png"
+          loading="lazy"
+          id="w-node-d39ece27-cf8d-2462-f22c-1130fd823f9f-62c3b5f1"
+          alt=""
+          class="image-23"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058009fc3b630_msqlserver-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-24"
+        />
+      </div>
+      <div class="ms-layout-grid grid-12">
+        <h1
+          id="w-node-_10c8e565-936b-84fe-41e6-765162bb97d4-62c3b5f1"
+          class="heading-29"
+        >
+          Frameworks
+        </h1>
+        <img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058cf68c3b631_angular-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-25"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd170580e43c3b632_nodejs-logo.png"
+          loading="lazy"
+          sizes="(max-width: 600px) 100vw, 600px"
+          srcset="
+            https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd170580e43c3b632_nodejs-logo-p-500.png 500w,
+            https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd170580e43c3b632_nodejs-logo.png       600w
+          "
+          alt=""
+          class="image-26"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058128bc3b633_Typescript-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-27"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058154ec3b634_javascript-logo.png"
+          loading="lazy"
+          sizes="(max-width: 600px) 100vw, 600px"
+          srcset="
+            https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058154ec3b634_javascript-logo-p-500.png 500w,
+            https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058154ec3b634_javascript-logo.png       600w
+          "
+          alt=""
+          class="image-28"
+        />
+      </div>
+      <div class="ms-layout-grid grid-13">
+        <img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd17058c9cfc3b635_HTML5-Logo.png"
+          loading="lazy"
+          alt=""
+          class="image-29"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd1705816b6c3b636_css3-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-30"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd170580251c3b637_GitHub-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-31"
+        />
+      </div>
+      <div class="ms-layout-grid grid-14">
+        <h1
+          id="w-node-_99affbfa-6745-6394-bd8f-2d3e5e8e74cf-62c3b5f1"
+          class="heading-30"
+        >
+          Services and Platforms
+        </h1>
+        <img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd1705860fcc3b63c_aws-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-34"
+        /><img
+          src="https://uploads-ssl.webflow.com/6062651bd170589a75c3b5f0/6062651bd170580251c3b637_GitHub-logo.png"
+          loading="lazy"
+          alt=""
+          class="image-35"
+        />
       </div>
     </div>
   </div>
