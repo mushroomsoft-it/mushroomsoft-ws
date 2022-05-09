@@ -240,11 +240,17 @@ img {
 
 .image-7 {
     margin-left: auto;
+    background-image: url('../../../assets/img-7.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .image-8 {
     margin-right: 190px;
     padding-right: 0px;
+    background-image: url('../../../assets/img-8.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media screen and (max-width: 991px) {
@@ -255,6 +261,20 @@ img {
         grid-row-end: 3;
     }
 
+    #ms-section-three {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column-end: 2;
+        grid-row-end: 3;
+    }
+
+    #ms-image-section-two {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column-end: 2;
+        grid-row-end: 2;
+    }
+    
     #ms-image-section-three {
         grid-column-start: 1;
         grid-row-start: 1;
