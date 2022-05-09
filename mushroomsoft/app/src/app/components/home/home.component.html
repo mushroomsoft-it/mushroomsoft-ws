@@ -1,61 +1,59 @@
-  <app-header></app-header>
+<app-header></app-header>
   <div *ngFor="let dataOne of sectionOne">
-    <header id="hero-overlay" class="banner">
-        <div class="centered-container w-container">
+    <header id="hero-overlay" class="ms-banner">
+        <div class="ms-centered-container ms-w-container">
           <h1>
            {{ dataOne.title }}
           </h1>
         </div>
-      </header>
-      <div class="section cc-store-home-wrap">
-        <div class="container">
-          <div class="motto-wrap">
-            <div class="heading-jumbo-small">
-                {{ dataOne.label }}<br />
-            </div>
+    </header>
+    <div class="ms-section ms-store-home-wrap">
+      <div class="ms-container">
+        <div class="ms-motto-wrap">
+          <div class="ms-heading-jumbo-small">
+              {{ dataOne.label }}<br />
           </div>
-        
-          <div class="divider"></div>
-  
-          <div class="home-content-wrap">
-              <div *ngFor="let dataTwo of sectionTwo">
-                <div class="w-layout-grid about-grid">
-                    <div id="w-node-_86e64837-0616-515b-4568-76c147234d34-62c3b5f1">
-                      <div class="home-section-wrap">
-                        <h2 id="Whoweare" class="section-heading">{{dataTwo.title}}</h2>
-                        <p class="paragraph-light">
-                            {{dataTwo.label}}
-                        </p>
-                      </div>
+        </div>
+        <div class="ms-divider"></div>
+        <div class="ms-home-content-wrap">
+            <div *ngFor="let dataTwo of sectionTwo">
+              <div class="ms-layout-grid ms-about-grid">
+                  <div id="ms-section-two">
+                    <div class="ms-home-section-wrap">
+                      <h2 id="Whoweare" class="ms-section-heading">{{dataTwo.title}}</h2>
+                      <p class="ms-paragraph-light">
+                          {{dataTwo.label}}
+                      </p>
                     </div>
-                    <img
-                      src="{{dataTwo.image}}"
-                      id="w-node-_86e64837-0616-515b-4568-76c147234d3f-62c3b5f1"
-                      class="{{dataTwo.class}}"
-                    />
                   </div>
+                  <img
+                    src="{{dataTwo.image}}"
+                    id="ms-image-section-two"
+                    class="{{dataTwo.class}}"
+                  />
               </div>
-         <div *ngFor="let dataThree of sectionThree">
-            <div class="w-layout-grid about-grid cc-about-2">
+            </div>
+          <div *ngFor="let dataThree of sectionThree">
+            <div class="ms-layout-grid ms-about-grid ms-about-2">
                 <div
-                  id="w-node-_86e64837-0616-515b-4568-76c147234d41-62c3b5f1"
-                  class="div-block"
+                  id="ms-section-three"
+                  class="ms-div-block"
                 >
-                  <div class="home-section-wrap">
-                    <h2 id="whatwedo" class="section-heading">{{dataThree.title}}</h2>
-                    <p class="paragraph-light">
+                  <div class="ms-home-section-wrap">
+                    <h2 id="whatwedo" class="ms-section-heading">{{dataThree.title}}</h2>
+                    <p class="ms-paragraph-light">
                         {{dataThree.label}}
                     </p>
                   </div>
                 </div>
                 <img
                   src="{{dataThree.image}}"
-                  id="w-node-_86e64837-0616-515b-4568-76c147234d4c-62c3b5f1"
+                  id="ms-image-section-three"
                   class="{{dataThree.class}}"
                 />
-              </div>
-         </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
