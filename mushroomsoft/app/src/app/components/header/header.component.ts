@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import menuItems from '../../../config/config.json';
+import menuItems from '../../../config/menu.json';
 import {logoMushroomSoft} from '../../constants';
 
 @Component({

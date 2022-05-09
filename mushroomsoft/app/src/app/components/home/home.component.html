@@ -1,0 +1,59 @@
+<app-header></app-header>
+  <div *ngFor="let dataOne of sectionOne">
+    <header id="hero-overlay" class="ms-banner">
+        <div class="ms-centered-container ms-w-container">
+          <h1>
+           {{ dataOne.title }}
+          </h1>
+        </div>
+    </header>
+    <div class="ms-section ms-store-home-wrap">
+      <div class="ms-container">
+        <div class="ms-motto-wrap">
+          <div class="ms-heading-jumbo-small">
+              {{ dataOne.label }}<br />
+          </div>
+        </div>
+        <div class="ms-divider"></div>
+        <div class="ms-home-content-wrap">
+            <div *ngFor="let dataTwo of sectionTwo">
+              <div class="ms-layout-grid ms-about-grid">
+                  <div id="ms-section-two">
+                    <div class="ms-home-section-wrap">
+                      <h2 id="Whoweare" class="ms-section-heading">{{dataTwo.title}}</h2>
+                      <p class="ms-paragraph-light">
+                          {{dataTwo.label}}
+                      </p>
+                    </div>
+                  </div>
+                  <img
+                    id="ms-image-section-two"
+                    src="{{dataTwo.image}}"
+                    class="{{dataTwo.class}}"
+                  />
+              </div>
+            </div>
+          <div *ngFor="let dataThree of sectionThree">
+            <div class="ms-layout-grid ms-about-grid ms-about-2">
+                <div
+                  id="ms-section-three"
+                  class="ms-div-block"
+                >
+                  <div class="ms-home-section-wrap">
+                    <h2 id="whatwedo" class="ms-section-heading">{{dataThree.title}}</h2>
+                    <p class="ms-paragraph-light">
+                        {{dataThree.label}}
+                    </p>
+                  </div>
+                </div>
+                <img
+                  id="ms-image-section-three"
+                  src="{{dataThree.image}}"
+                  class="{{dataThree.class}}"
+                />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
