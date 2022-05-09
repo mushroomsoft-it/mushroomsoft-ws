@@ -16,6 +16,14 @@
                 "imageThree":"/assets/img-10.png"
             }   
         ],
+        "class": 
+        [
+            {
+                "classOne":"image-6",
+                "classTwo":"image-9",
+                "classThree":"image-10"
+            }   
+        ],
         "description": 
         [
             {

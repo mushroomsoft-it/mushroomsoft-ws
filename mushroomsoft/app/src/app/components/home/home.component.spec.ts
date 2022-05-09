@@ -10,7 +10,7 @@ describe('HomeComponent', () => {
     expect(component.sectionThree.length).toBe(1);
     expect(component.commitmentTitle.length).toBe(1);
     expect(component.commitmentImage.length).toBe(1);
+    expect(component.commitmentClass.length).toBe(1);
     expect(component.commitmentDescription.length).toBe(1);
-
   });
 });

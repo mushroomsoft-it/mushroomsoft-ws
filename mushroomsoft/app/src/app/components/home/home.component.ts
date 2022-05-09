@@ -12,5 +12,6 @@ export class HomeComponent {
   public sectionThree = sectionItems.section.three;
   public commitmentTitle = commitmentItems.commitment.title;
   public commitmentImage = commitmentItems.commitment.image;
+  public commitmentClass = commitmentItems.commitment.class;
   public commitmentDescription = commitmentItems.commitment.description;
 }
