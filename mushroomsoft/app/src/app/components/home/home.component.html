@@ -27,8 +27,8 @@
                     </div>
                   </div>
                   <img
-                    id="ms-image-section-two"
                     src="{{dataTwo.image}}"
+                    id="ms-image-section-two"
                     class="{{dataTwo.class}}"
                   />
               </div>
@@ -47,8 +47,8 @@
                   </div>
                 </div>
                 <img
-                  id="ms-image-section-three"
                   src="{{dataThree.image}}"
+                  id="ms-image-section-three"
                   class="{{dataThree.class}}"
                 />
             </div>
@@ -56,4 +56,16 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="ms-services">      
+      <div class="ms-services-grid" *ngFor="let item of commitmentItems">
+          <img
+          src="{{item.image}}"
+          class="imagen-commitment"
+        />
+          <h1 class="ms-heading-8">{{item.title}}</h1>
+          <p class="ms-paragraph-9" >
+            {{item.description}}
+          </p>
+        </div>
   </div>

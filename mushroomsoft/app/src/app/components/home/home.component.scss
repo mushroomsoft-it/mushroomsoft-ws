@@ -238,13 +238,67 @@ img {
     align-self: stretch;
 }
 
-.image-7 {
+.imagen-commitment {
+    margin-bottom: auto;
+    margin-left: auto;
+    height: 40%;
+}
+
+.ms-section-image-7 {
     margin-left: auto;
 }
 
-.image-8 {
+.ms-section-image-8 {
     margin-right: 190px;
     padding-right: 0px;
+}
+
+.ms-services {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.ms-container-2 {
+    padding-bottom: 60px;
+}
+
+.ms-grid-3 {
+    margin-top: 89px;
+    margin-right: 0px;
+    margin-left: 0px;
+    grid-column-gap: 25px;
+    grid-template-columns: 0.75fr 0.75fr 0.75fr;
+    grid-template-rows: auto auto auto;
+    background-color: transparent;
+}
+
+.ms-heading-8 {
+    color: #f15d2a;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#ms-title-Two {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+}
+
+.ms-paragraph-9 {
+    margin-bottom: auto;
+    opacity: 0.6;
+    color: #256891;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.ms-services-grid{
+    margin-right: 2rem;
+    margin-top: 3rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -302,6 +356,31 @@ img {
 
     .ms-div-block {
         margin-bottom: -29px;
+    }
+ 
+    .ms-container-2 {
+        margin-bottom: 60px;
+        padding-bottom: 0px;
+    }
+
+    .ms-grid-3 {
+        margin: 40px 0px 60px;
+        justify-content: stretch;
+        justify-items: stretch;
+        align-items: stretch;
+        align-content: stretch;
+        grid-auto-flow: row;
+        grid-column-gap: 17px;
+        grid-template-columns: minmax(0px, 0.75fr) minmax(0px, 0.75fr) minmax(0px, 0.75fr);
+    }
+
+    #ms-description-one {
+        align-self: auto;
+    }
+
+    .ms-paragraph-9 {
+        transition: opacity 200ms ease;
+        object-fit: fill;
     }
 }
 
