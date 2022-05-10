@@ -10,8 +10,5 @@ export class HomeComponent {
   public sectionOne = sectionItems.section.one;
   public sectionTwo = sectionItems.section.two;
   public sectionThree = sectionItems.section.three;
-  public commitmentTitle = commitmentItems.commitment.title;
-  public commitmentImage = commitmentItems.commitment.image;
-  public commitmentClass = commitmentItems.commitment.class;
-  public commitmentDescription = commitmentItems.commitment.description;
+  public commitmentItems = commitmentItems.items;
 }

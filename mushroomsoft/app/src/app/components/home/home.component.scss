@@ -238,32 +238,26 @@ img {
     align-self: stretch;
 }
 
-.image-6 {
+.imagen-commitment {
     margin-bottom: auto;
     margin-left: auto;
+    height: 40%;
 }
 
-.image-7 {
+.ms-section-image-7 {
     margin-left: auto;
 }
 
-.image-8 {
+.ms-section-image-8 {
     margin-right: 190px;
     padding-right: 0px;
 }
 
-.image-9 {
-    margin-left: 0px;
-}
-
-.image-10 {
-    margin-left: auto;
-}
-
 .ms-services {
-    margin-top: 30px;
-    margin-bottom: auto;
-    padding-bottom: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 20rem;
+    margin-right: 20rem;
 }
 
 .ms-container-2 {
@@ -280,14 +274,6 @@ img {
     background-color: transparent;
 }
 
-#ms-image-commitment {
-    align-self: auto;
-    grid-row-start: span 1;
-    grid-row-end: span 1;
-    grid-column-start: span 1;
-    grid-column-end: span 1;
-}
-
 .ms-heading-8 {
     color: #f15d2a;
     font-size: 40px;
@@ -302,43 +288,17 @@ img {
     grid-column-end: span 1;
 }
 
-.ms-heading-9 {
-    color: #f15d2a;
-    font-size: 40px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.ms-heading-10 {
-    color: #f15d2a;
-    font-size: 40px;
-    line-height: 62px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.ms-paragraph-6 {
-    margin-bottom: auto;
-    opacity: 0.6;
-    color: #256891;
-    font-size: 18px;
-    text-align: justify;
-}
-
-.ms-paragraph-8 {
-    margin-bottom: auto;
-    opacity: 0.6;
-    color: #256891;
-    font-size: 18px;
-    text-align: justify;
-}
-
 .ms-paragraph-9 {
     margin-bottom: auto;
     opacity: 0.6;
     color: #256891;
     font-size: 18px;
     text-align: justify;
+}
+
+.ms-services-grid{
+    margin-right: 2rem;
+    margin-top: 3rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -413,10 +373,6 @@ img {
         grid-auto-flow: row;
         grid-column-gap: 17px;
         grid-template-columns: minmax(0px, 0.75fr) minmax(0px, 0.75fr) minmax(0px, 0.75fr);
-    }
-
-    .image-6 {
-        margin-bottom: 0px;
     }
 
     #ms-description-one {

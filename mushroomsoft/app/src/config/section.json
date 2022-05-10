@@ -11,7 +11,7 @@
               "title":"Who we are",
               "label":"We are MushroomSoft IT, an Ecuadorian software company that leverages new technologies and high-performance developer teams to deliver exceptional quality products.We create solutions that address tomorrow's challenges through innovation and technology.",
               "image":"/assets/img-8.png",
-              "class":"image-8"
+              "class":"ms-section-image-8"
              }
           ],
           "three":[
@@ -19,7 +19,7 @@
               "title":"What we do",
               "label":"We build teams of developers that are qualified to fulfill customer requirements and bring their ideas to life. Our developers are proactive; they are always looking for the best solution, prioritizing quality and performance. We have experience with different software platforms and solutions, specializing in NodeJS, Javascript and UI Technologies.",
               "image":"/assets/img-7.png",
-              "class":"image-7"
+              "class":"ms-section-image-7"
             }
           ]
       }

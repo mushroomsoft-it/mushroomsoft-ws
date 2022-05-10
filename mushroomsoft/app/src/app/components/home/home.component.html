@@ -57,50 +57,15 @@
       </div>
     </div>
   </div>
-  <div class="ms-services" *ngFor="let dataTitle of commitmentTitle" >
-    <div *ngFor="let dataDescription of commitmentDescription">
-      <div *ngFor="let dataImage of commitmentImage">
-        <div *ngFor="let dataClass of commitmentClass">
-      <div class="ms-container-2 ms-w-container">
-        <div class="ms-layout-grid ms-grid-3">
+  <div class="ms-services">      
+      <div class="ms-services-grid" *ngFor="let item of commitmentItems">
           <img
-            src="{{dataImage.imageOne}}"
-            id="ms-image-commitment"
-            class="{{dataClass.classOne}}"
-          />
-          <img
-            src="{{dataImage.imageTwo}}"
-            class="{{dataClass.classTwo}}"
-          /><img
-            src="{{dataImage.imageThree}}"
-            class="{{dataClass.classThree}}"
-          />
-          <h1 class="ms-heading-8">{{dataTitle.titleOne}}</h1>
-          <h1
-            id="ms-title-Two"
-            class="ms-heading-9"
-          >
-          {{dataTitle.titleTwo}}
-          </h1>
-          <h1 class="ms-heading-10">{{dataTitle.titleThree}}</h1>
-          <p
-            id="ms-description-one"
-            class="ms-paragraph-9"
-          >
-            {{dataDescription.descriptionOne}}
-          </p>
-          <p class="ms-paragraph-8">
-            <span>
-                 {{dataDescription.descriptionTwo}}
-            </span>
-            <br />
-          </p>
-          <p class="ms-paragraph-6">
-            {{dataDescription.descriptionThree}}
+          src="{{item.image}}"
+          class="imagen-commitment"
+        />
+          <h1 class="ms-heading-8">{{item.title}}</h1>
+          <p class="ms-paragraph-9" >
+            {{item.description}}
           </p>
         </div>
-      </div>
-     </div>
-    </div>
-   </div>
   </div>
