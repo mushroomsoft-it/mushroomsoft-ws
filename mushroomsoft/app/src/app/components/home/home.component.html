@@ -27,7 +27,7 @@
                     </div>
                   </div>
                   <img
-                    src="{{dataTwo.image}}"
+                    src="{{dataTwo.img}}"
                     id="ms-image-section-two"
                     class="{{dataTwo.class}}"
                   />
@@ -47,7 +47,7 @@
                   </div>
                 </div>
                 <img
-                  src="{{dataThree.image}}"
+                  src="{{dataThree.img}}"
                   id="ms-image-section-three"
                   class="{{dataThree.class}}"
                 />
@@ -76,18 +76,18 @@
   </div>
   <div class="ms-technologies">
     <div class="ms-container-3 ms-w-container">
-      <div class="ms-layout-grid ms-grid-7" *ngFor="let item of technologyItems">
+      <div class="ms-layout-grid ms-grid-7">
         <h1
           id="tecnology"
           class="ms-heading-25 ms-tecnology-title"
         >
-          {{item.title}}
+          {{titleTechnology}}
         </h1>
         <p
           id="ms-tecnology-description"
           class="ms-paragraph-18"
         >
-          <br />{{item.description}} <br />
+          <br />{{descriptionTechnology}} <br />
         </p>
       </div>
       <div *ngFor="let item of technologyItemsService" >
@@ -100,8 +100,11 @@
           </h1>
           <div *ngFor="let items of technologyItemsImage ; let index = index">
           <img 
-            [src]="item.image[index].img"          
-            class="ms-technologu-image"
+            [id]="item.images[index].id"
+            [name]="item.images[index].id"
+            [src]="item.images[index].url"          
+            class="ms-technology-image"
+            [alt]="item.images[index].id"
           />      
        </div>
       </div>

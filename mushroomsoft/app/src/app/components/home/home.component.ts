@@ -13,12 +13,13 @@ export class HomeComponent implements OnInit {
   public sectionTwo = sectionItems.section.two;
   public sectionThree = sectionItems.section.three;
   public commitmentItems = commitmentItems.items;
-  public technologyItems = technologyItems.title;
+  public titleTechnology = technologyItems.title.title;
+  public descriptionTechnology = technologyItems.title.description;
   public technologyItemsService = technologyItems.service;
-  public technologyItemsImage: any = [];
+  public technologyItemsImage = [];
   ngOnInit() {
     this.technologyItemsService.map((res) => {
-      this.technologyItemsImage = res.image;
+      this.technologyItemsImage = res.images as [];
     });
   }
 }

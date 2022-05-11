@@ -1,82 +1,97 @@
 {
     "title": 
-    [
         {
           "title": "Technology",
           "description": "We implement software development projects in a wide range of cutting-edge technologies. Our team of specialists are qualified in various technologies. We would love to discuss and recommend the best solution for your business' needs."
         }
-    ],
+    ,
     "service": 
     [
         {
           "title": "Operating Systems",
           "class": "ms-grid-6",
-          "image":  [
+          "images":  [
                         {
-                          "img":"/assets/service-1.png"
+                          "id":"linux",
+                          "url":"/assets/service-1.png"
                         },
                         {
-                          "img":"/assets/service-1-1.png"
+                          "id":"windows",
+                          "url":"/assets/service-1-1.png"
                         },
                         {
-                          "img":"/assets/service-1-2.png"
+                          "id":"android",
+                          "url":"/assets/service-1-2.png"
                         },
                         {
-                          "img":"/assets/service-1-3.png"
+                          "id":"ios",
+                          "url":"/assets/service-1-3.png"
                         }
                     ]         
         },
         {
           "title": "Databases",
           "class": "ms-grid-10",
-          "image": [
+          "images": [
                       {
-                        "img":"/assets/service-2.png"
+                        "id":"mysql",
+                        "url":"/assets/service-2.png"
                       },
                       {
-                        "img":"/assets/service-2-1.png"
+                        "id":"mongodb",
+                        "url":"/assets/service-2-1.png"
                       },
                       {
-                        "img":"/assets/service-2-2.png"
+                        "id":"sqlserver",
+                        "url":"/assets/service-2-2.png"
                       },
                       {
-                        "img":""
+                        "id":"",
+                        "url":""
                       }
                    ]         
         },
         {
           "title": "Frameworks",
           "class": "grid-12",
-          "image": [
+          "images": [
                       {
-                        "img":"/assets/service-3.png"
+                        "id":"angular",
+                        "url":"/assets/service-3.png"
                       },
                       {
-                        "img":"/assets/service-3-1.png"
+                        "id":"node",
+                        "url":"/assets/service-3-1.png"
                       },
                       {
-                        "img":"/assets/service-3-2.png"
+                        "id":"typescript",
+                        "url":"/assets/service-3-2.png"
                       },
                       {
-                        "img":"/assets/service-3-3.png"
+                        "id":"javascript",
+                        "url":"/assets/service-3-3.png"
                       }
                    ]          
         },
         {
           "title": "Services and Platforms",
           "class": "grid-14",
-          "image": [
+          "images": [
                       {
-                        "img":"/assets/service-4.png"
+                        "id":"aws",
+                        "url":"/assets/service-4.png"
                       },
                       {
-                        "img":"/assets/service-4-1.png"
+                        "id":"github",
+                        "url":"/assets/service-4-1.png"
                       },
                       {
-                        "img":""
+                        "id":"",
+                        "url":""
                       },
                       {
-                        "img":""
+                        "id":"",
+                        "url":""
                       }
                    ]          
         }
