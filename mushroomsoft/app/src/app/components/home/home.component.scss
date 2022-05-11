@@ -62,8 +62,6 @@ img {
     padding-left: 0px;
 }
 
-
-
 .ms-banner {
     display: flex;
     height: 90vh;
@@ -103,6 +101,99 @@ img {
 
 .ms-w-container:after {
     clear: both
+}
+
+.ms-w-container .ms-row {
+    margin-left: -10px;
+    margin-right: -10px
+}
+
+.ms-row:before,
+.ms-row:after {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2
+}
+
+.ms-row:after {
+    clear: both
+}
+
+.ms-row .ms-row {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.ms-col {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.ms-col .ms-col {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.ms-col-6 {
+    width: 50%
+}
+
+.image-location {
+    margin-left: auto;
+    width: 50%;
+}
+
+.ms-heading-32 {
+    color: #f15d2c;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.ms-paragraph-19 {
+    opacity: 0.6;
+    color: #256891;
+    line-height: 18px;
+}
+
+.text-block-2 {
+    opacity: 0.6;
+    color: #256891;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.ms-inline-block {
+    max-width: 100%;
+    display: inline-block
+}
+
+.image-logo-footer {
+    margin-left: auto;
+    padding-right: 40px;
+    width: 177px;
+}
+
+.image-social {
+    margin-left: auto;
+    padding-left: 40px;
+    width: 150px;
+}
+
+.ms-footer-wrap {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
 }
 
 .ms-section {
@@ -160,7 +251,6 @@ img {
 }
 
 .ms-layout-grid {
-    display: -ms-grid;
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -253,11 +343,22 @@ img {
     padding-right: 0px;
 }
 
+.ms-technologu-image {
+    margin-left: auto;
+}
+
+.ms-grid-10 {
+    margin-top: 60px;
+    grid-column-gap: 72px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .ms-services {
     display: grid;
     grid-template-columns: auto auto auto;
     margin-left: 20rem;
     margin-right: 20rem;
+    margin-bottom: 5rem;
 }
 
 .ms-container-2 {
@@ -288,6 +389,13 @@ img {
     grid-column-end: span 1;
 }
 
+.ms-heading-9 {
+    color: #f15d2a;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
 .ms-paragraph-9 {
     margin-bottom: auto;
     opacity: 0.6;
@@ -299,6 +407,88 @@ img {
 .ms-services-grid{
     margin-right: 2rem;
     margin-top: 3rem;
+}
+
+.ms-separator {
+    margin-bottom: 124px;
+}
+
+.ms-technologies {
+    margin-top: -98px;
+    margin-bottom: 3px;
+    padding-bottom: 70px;
+}
+
+.ms-container-3 {
+    margin-bottom: auto;
+    padding-bottom: 0px;
+}
+
+.ms-grid-7 {
+    margin-bottom: 10px;
+}
+
+.ms-heading-25 {
+    color: #f15d2c;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#tecnology.ms-tecnology-title {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+}
+
+#ms-tecnology-description {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+}
+
+.ms-paragraph-18 {
+    opacity: 0.6;
+    color: #256891;
+    text-align: center;
+}
+
+.ms-grid-6 {
+    grid-column-gap: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#typeTechnology {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 4;
+    grid-column-end: span 4;
+}
+
+.ms-heading-26 {
+    color: #f15d2c;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.ms-grid-12 {
+    margin-top: 60px;
+    grid-column-gap: 71px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ms-grid-14 {
+    margin-top: 60px;
+    grid-column-gap: 69px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ms-footer {
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width: 991px) {
@@ -357,7 +547,7 @@ img {
     .ms-div-block {
         margin-bottom: -29px;
     }
- 
+  
     .ms-container-2 {
         margin-bottom: 60px;
         padding-bottom: 0px;
@@ -382,6 +572,7 @@ img {
         transition: opacity 200ms ease;
         object-fit: fill;
     }
+
 }
 
 @media screen and (max-width: 767px) {

@@ -58,14 +58,95 @@
     </div>
   </div>
   <div class="ms-services">      
-      <div class="ms-services-grid" *ngFor="let item of commitmentItems">
-          <img
-          src="{{item.image}}"
-          class="imagen-commitment"
-        />
-          <h1 class="ms-heading-8">{{item.title}}</h1>
-          <p class="ms-paragraph-9" >
-            {{item.description}}
-          </p>
-        </div>
+    <div class="ms-services-grid" *ngFor="let item of commitmentItems">
+        <img
+        src="{{item.image}}"
+        class="imagen-commitment"
+      />
+        <h1 class="ms-heading-8">{{item.title}}</h1>
+        <p class="ms-paragraph-9" >
+          {{item.description}}
+        </p>
+      </div>
   </div>
+  <div class="ms-separator">
+    <div class="ms-w-container">
+      <div class="ms-divider"></div>
+    </div>
+  </div>
+  <div class="ms-technologies">
+    <div class="ms-container-3 ms-w-container">
+      <div class="ms-layout-grid ms-grid-7" *ngFor="let item of technologyItems">
+        <h1
+          id="tecnology"
+          class="ms-heading-25 ms-tecnology-title"
+        >
+          {{item.title}}
+        </h1>
+        <p
+          id="ms-tecnology-description"
+          class="ms-paragraph-18"
+        >
+          <br />{{item.description}} <br />
+        </p>
+      </div>
+      <div *ngFor="let item of technologyItemsService" >
+        <div class="ms-layout-grid {{item.class}}">
+          <h1
+            id="typeTechnology"
+            class="ms-heading-26"
+          >
+            {{item.title}}
+          </h1>
+          <div *ngFor="let items of technologyItemsImage ; let index = index">
+          <img 
+            [src]="item.image[index].img"          
+            class="ms-technologu-image"
+          />      
+       </div>
+      </div>
+     </div>
+    </div>
+  </div>
+  <div class="ms-w-container">
+    <div class="ms-divider"></div>
+  </div>
+  <div class="ms-footer">
+    <div class="ms-container">
+      <div class="ms-row">
+        <div class="ms-col ms-col-6">
+          <img
+            src="{{imageLocation}}"
+            class="image-location"
+          />
+        </div>
+        <div class="ms-col ms-col-6">
+          <h1 id="location" class="ms-heading-32">{{titleLocation}}</h1>
+          <p class="ms-paragraph-19">
+           {{descriptionLocation}} 
+          </p>
+          <p>
+            <strong>{{titleAddress}}</strong>
+            <br />‍<br />{{streetAddress}}
+            <br />{{locationAddress}}
+            <br />{{floorAddress}}
+            <br />{{phoneAddress}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ms-section">
+    <div class="ms-container">
+      <footer class="ms-footer-wrap">
+        <a href="#" class="ms-inline-block">
+          <img
+            src="{{socialImage}}"
+            class="{{socialClassImage}}"/>
+         </a>
+           <img
+          src="{{logoFooterImage}}"
+          class="{{logoClassImage}}"/>
+      </footer>
+    </div>
+  </div>
+
