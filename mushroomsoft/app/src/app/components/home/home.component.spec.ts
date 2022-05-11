@@ -8,9 +8,10 @@ describe('HomeComponent', () => {
     expect(component.sectionOne.length).toBe(1);
     expect(component.sectionTwo.length).toBe(1);
     expect(component.sectionThree.length).toBe(1);
-    expect(component.commitmentTitle.length).toBe(1);
-    expect(component.commitmentImage.length).toBe(1);
-    expect(component.commitmentClass.length).toBe(1);
-    expect(component.commitmentDescription.length).toBe(1);
+    expect(component.commitmentItems.length).toBe(3);
+    expect(component.technologyItems.length).toBe(1);
+    expect(component.technologyItemsService.length).toBe(4);
+    expect(component.technologyItemsImage.length).toBe(0);
+    component.ngOnInit();
   });
 });
