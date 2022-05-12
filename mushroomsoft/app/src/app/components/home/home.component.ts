@@ -9,9 +9,9 @@ import technologyItems from '../../../config/technology.json';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public sectionOne = sectionItems.section.one;
-  public sectionTwo = sectionItems.section.two;
-  public sectionThree = sectionItems.section.three;
+  public sectionTitle = sectionItems.section.title;
+  public sectionDescription = sectionItems.section.description;
+  public sectionItems = sectionItems.sections;
   public commitmentItems = commitmentItems.items;
   public titleTechnology = technologyItems.title.title;
   public descriptionTechnology = technologyItems.title.description;

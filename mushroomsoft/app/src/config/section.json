@@ -1,26 +1,26 @@
 {
-  "section":{
-       "one":[
+  "section":
         {
           "title":"Success is seeing our clients grow and overcome their IT challenges.",
-          "label":"WE PROVIDE THE BEST TECH TALENT AND SOLUTIONS FOR YOUR BUSINESS."
+          "description":"WE PROVIDE THE BEST TECH TALENT AND SOLUTIONS FOR YOUR BUSINESS."
         }
-      ],
-       "two":[
+      ,
+       "sections":[
          {
+          "id":"ms-section-two",
+          "class":"ms-layout-grid ms-about-grid",
           "title":"Who we are",
-          "label":"We are MushroomSoft IT, an Ecuadorian software company that leverages new technologies and high-performance developer teams to deliver exceptional quality products.We create solutions that address tomorrow's challenges through innovation and technology.",
+          "description":"We are MushroomSoft IT, an Ecuadorian software company that leverages new technologies and high-performance developer teams to deliver exceptional quality products.We create solutions that address tomorrow's challenges through innovation and technology.",
           "img":"/assets/img-8.png",
-          "class":"ms-section-image-rigth"
-         }
-      ],
-      "three":[
-        {
+          "classImage":"ms-section-image-rigth"
+         },
+         {
+          "id":"ms-section-three",
+          "class":"ms-layout-grid ms-about-grid ms-about-2",
           "title":"What we do",
-          "label":"We build teams of developers that are qualified to fulfill customer requirements and bring their ideas to life. Our developers are proactive; they are always looking for the best solution, prioritizing quality and performance. We have experience with different software platforms and solutions, specializing in NodeJS, Javascript and UI Technologies.",
+          "description":"We build teams of developers that are qualified to fulfill customer requirements and bring their ideas to life. Our developers are proactive; they are always looking for the best solution, prioritizing quality and performance. We have experience with different software platforms and solutions, specializing in NodeJS, Javascript and UI Technologies.",
           "img":"/assets/img-7.png",
-          "class":"ms-section-image-left"
+          "classImage":"ms-section-image-left"
         }
       ]
-  }
 }
