@@ -10,13 +10,14 @@ import locationItems from '../../../config/location.json';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public sectionOne = sectionItems.section.one;
-  public sectionTwo = sectionItems.section.two;
-  public sectionThree = sectionItems.section.three;
+  public sectionTitle = sectionItems.section.title;
+  public sectionDescription = sectionItems.section.description;
+  public sectionItems = sectionItems.sections;
   public commitmentItems = commitmentItems.items;
-  public technologyItems = technologyItems.title;
+  public titleTechnology = technologyItems.title.title;
+  public descriptionTechnology = technologyItems.title.description;
   public technologyItemsService = technologyItems.service;
-  public technologyItemsImage: any = [];
+  public technologyItemsImage = [];
   public titleLocation = locationItems.title.title;
   public descriptionLocation = locationItems.title.description;
   public imageLocation = locationItems.title.img;
@@ -32,7 +33,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.technologyItemsService.map((res) => {
-      this.technologyItemsImage = res.image;
+      this.technologyItemsImage = res.images as [];
     });
   }
 }

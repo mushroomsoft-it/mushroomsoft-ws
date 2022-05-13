@@ -56,12 +56,6 @@ img {
     display: inline-block
 }
 
-img {
-    display: block;
-    margin-left: 190px;
-    padding-left: 0px;
-}
-
 .ms-banner {
     display: flex;
     height: 90vh;
@@ -242,6 +236,7 @@ img {
     padding-right: 30px;
     padding-bottom: 5px;
     padding-left: 30px;
+    margin-bottom: 30px;
     background-color: #eee;
 }
 
@@ -334,16 +329,16 @@ img {
     height: 40%;
 }
 
-.ms-section-image-7 {
+.ms-section-image-left{
     margin-left: auto;
 }
 
-.ms-section-image-8 {
+.ms-section-image-rigth {
     margin-right: 190px;
     padding-right: 0px;
 }
 
-.ms-technologu-image {
+.ms-technology-image {
     margin-left: auto;
 }
 
@@ -356,9 +351,8 @@ img {
 .ms-services {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-left: 20rem;
-    margin-right: 20rem;
     margin-bottom: 5rem;
+    padding: 5rem;
 }
 
 .ms-container-2 {
@@ -618,5 +612,32 @@ img {
 
     .ms-centered-container {
         text-align: left;
+    }
+    .ms-services {
+        display: block;
+    }
+    .ms-layout-grid {
+        display: block;
+    }
+
+    .ms-section-image-left{
+        margin-left: auto;
+    }
+    
+    .ms-section-image-rigth {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .ms-technology-image {
+        width: 50%;
+        margin-left: 6rem;
+    }
+
+    .ms-col {
+        padding-left: 6rem;
+    }
+    .ms-col-6 {
+        width: 100%
     }
 }

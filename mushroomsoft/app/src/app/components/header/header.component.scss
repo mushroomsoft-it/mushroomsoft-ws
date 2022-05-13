@@ -69,7 +69,6 @@
     min-width: 200px
 }
 
-
 .ms-nav-overlay {
     position: absolute;
     overflow: hidden;
@@ -350,8 +349,35 @@
         flex: 0 0 auto;
     }
 
-    .ms-menu-button.ms--open {
-        flex: 0 0 auto;
+    .ms-menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .ms-menu-input{
+        display: none;
+    }
+
+    .ms-nav-link {
+        text-decoration: underline;
+        width: 100%;
+    }
+
+    .ms-nav__menu{
+     position: fixed;
+     top:80px;
+     bottom: 0;
+     background: #f15d2c;
+     width: 100%;
+     left: 0;
+     display: grid;
+     align-items: center;
+     clip-path: circle(0 at center);
+     transition:  clip-path 1s ease-in-out;
+    }
+
+    .ms-menu-input:checked + .ms-nav__menu{
+        clip-path: circle(100% at center);
     }
 
 }

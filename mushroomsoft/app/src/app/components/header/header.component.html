@@ -21,10 +21,20 @@
                         </div>
                     </a>
                 </nav>
-                <nav  class="ms-menu-button ms-nav-button" style="-webkit-user-select: text" aria-label="ms-menu" role="ms-button" tabindex="0" aria-controls="ms-nav-overlay-0" aria-haspopup="ms-menu" aria-expanded="false">
-                    <img src="assets/menu-icon.png" alt="" class="ms-menu-icon">
+                <nav class="ms-menu-button ms-nav-button" >
+                    <label for="menu">
+                        <img src="assets/menu-icon.png"  class="ms-menu-icon">
+                    </label>
+                  <input type="checkbox" id="menu" class="ms-menu-input">
+
+                  <div class="ms-nav__menu" >
+                    <div *ngFor="let data of menuItems">
+                        <a href="{{data.url}}" class="{{data.class}}">
+                            <strong>{{data.title}}</strong>
+                        </a>
+                    </div>
+                  </div>
                 </nav>
         </nav>
     </nav>
-    <div class="ms-nav-overlay" data-wf-ignore="" id="ms-nav-overlay-0"></div>
 </div>
