@@ -37,3 +37,13 @@ body {
     background-color: #256891;
     font-weight: 400;
 }
+
+@media screen and (max-width: 479px) {
+    .text-block-3 {
+        margin-left: 7.5rem;
+    }
+
+    .ms-button {
+        margin: 0;
+    }
+}
