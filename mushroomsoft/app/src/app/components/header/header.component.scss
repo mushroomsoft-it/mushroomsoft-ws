@@ -363,7 +363,7 @@
         width: 100%;
     }
 
-    .ms-nav__menu{
+    .ms-nav-menu-phone{
         position: fixed;
         top:80px;
         bottom: 0;
@@ -377,7 +377,7 @@
         transition:  clip-path 1s ease-in-out;
     }
 
-    .ms-menu-input:checked + .ms-nav__menu{
+    .ms-menu-input:checked + .ms-nav-menu-phone{
         clip-path:  polygon(0 100%, 100% 100%, 100% 0, 0 0)
     }
 
