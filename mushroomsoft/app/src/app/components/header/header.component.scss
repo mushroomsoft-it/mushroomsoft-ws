@@ -359,25 +359,26 @@
     }
 
     .ms-nav-link {
-        text-decoration: underline;
+        text-decoration: none;
         width: 100%;
     }
 
-    .ms-nav__menu{
-     position: fixed;
-     top:80px;
-     bottom: 0;
-     background: #f15d2c;
-     width: 100%;
-     left: 0;
-     display: grid;
-     align-items: center;
-     clip-path: circle(0 at center);
-     transition:  clip-path 1s ease-in-out;
+    .ms-nav-menu-phone{
+        position: fixed;
+        top:80px;
+        bottom: 0;
+        background: #ffffff;
+        width: 100%;
+        height: 40%;
+        left: 0;
+        display: grid;
+        align-items: center;
+        clip-path:   polygon(0 0, 100% 0, 100% 0, 0 0);;
+        transition:  clip-path 1s ease-in-out;
     }
 
-    .ms-menu-input:checked + .ms-nav__menu{
-        clip-path: circle(100% at center);
+    .ms-menu-input:checked + .ms-nav-menu-phone{
+        clip-path:  polygon(0 100%, 100% 100%, 100% 0, 0 0)
     }
 
 }
