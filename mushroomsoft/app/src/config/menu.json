@@ -1,29 +1,29 @@
 {
-    "menu": [
-        {
-          "title": "WHO WE ARE",
-          "class": "ms-navigation-item ms-nav-link",
-          "url": "Whoweare"
-        },
-        {
-          "title": "SERVICES",
-          "class": "ms-navigation-item ms-nav-link",
-          "url": "services"
-        },
-        {
-          "title": "COMMITMENT",
-          "class": "ms-navigation-item ms-nav-link",
-          "url": "focus"
-        },
-        {
-          "title": "TECHNOLOGY",
-          "class": "ms-navigation-item ms-nav-link",
-          "url": "tecnology"
-        },
-        {
-          "title": "LOCATION",
-          "class": "ms-navigation-item ms-nav-link",
-          "url": "location"
-        }
-      ]
+  "menu": [
+      {
+        "title": "WHO WE ARE",
+        "class": "msNavigationItem msNavLink",
+        "url": "Whoweare"
+      },
+      {
+        "title": "SERVICES",
+        "class": "msNavigationItem msNavLink",
+        "url": "services"
+      },
+      {
+        "title": "COMMITMENT",
+        "class": "msNavigationItem msNavLink",
+        "url": "focus"
+      },
+      {
+        "title": "TECHNOLOGY",
+        "class": "msNavigationItem msNavLink",
+        "url": "tecnology"
+      },
+      {
+        "title": "LOCATION",
+        "class": "msNavigationItem msNavLink",
+        "url": "location"
+      }
+    ]
 }

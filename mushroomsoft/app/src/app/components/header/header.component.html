@@ -1,38 +1,48 @@
-<div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="ms-navigation ms-nav">
-    <nav class="ms-navigation-wrap">
-            <a href="{{logo.url}}" class="ms-logo-link ms-nav-brand ms--current">
-                <img src="{{logo.image}}" width="{{logo.width}}" class="ms-logo-image">
+<div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="msNavigation msNav">
+    <nav class="msNavigationWrap">
+            <a href="{{logo.url}}" class="msLogoLink msNavBrand msCurrent">
+                <img src="{{logo.image}}" width="{{logo.width}}" class="msLogoImage">
             </a>
-         <nav class="ms-menu">
-                <nav role="ms-navigation" class="ms-navigation-items ms-nav-menu">
+         <nav class="msMenu">
+                <nav role="msNavigation" class="msNavigationItems msNavMenu">
                     <div *ngFor="let data of menuItems">
                         <a href="{{data}}" class="{{data.class}}">
                             <strong>{{data.title}}</strong>
                         </a>
                     </div>
-                    <a href="" class="ms-button ms-contact-us ms-inline-block">
-                        <div class="text-block-3">
+                    <a href="" class="msButton msContactUs msInlineBlock">
+                        <div class="textBlockThree">
                             <strong>CONTACT US</strong>
                         </div>
                     </a>
-                    <a href="" class="ms-button ms-contact-us ms-inline-block">
-                        <div class="text-block-3">
+                    <a href="" class="msButton msContactUs msInlineBlock">
+                        <div class="textBlockThree">
                             <strong>WORK WITH US</strong>
                         </div>
                     </a>
                 </nav>
-                <nav class="ms-menu-button ms-nav-button" >
+                <nav class="msMenuButton msNavButton" >
                     <label for="menu">
-                        <img src="assets/menu-icon.png"  class="ms-menu-icon">
+                        <img src="assets/menu-icon.png"  class="msMenuIcon">
                     </label>
-                  <input type="checkbox" id="menu" class="ms-menu-input">
+                  <input type="checkbox" id="menu" class="msMenuInput">
 
-                  <div class="ms-nav__menu" >
+                  <div class="msNavMenuPhone" >
                     <div *ngFor="let data of menuItems">
-                        <a href="{{data.url}}" class="{{data.class}}">
+                        <a href="#{{data.url}}" class="{{data.class}}">
                             <strong>{{data.title}}</strong>
                         </a>
                     </div>
+                    <a href="" class="msButton msContactUs msInlineBlock">
+                        <div class="textBlockThree">
+                            <strong>CONTACT US</strong>
+                        </div>
+                    </a>
+                    <a href="" class="msButton msContactUs msInlineBlock">
+                        <div class="textBlockThree">
+                            <strong>WORK WITH US</strong>
+                        </div>
+                    </a>
                   </div>
                 </nav>
         </nav>

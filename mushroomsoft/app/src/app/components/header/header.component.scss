@@ -1,22 +1,22 @@
-.ms-inline-block {
+.msInlineBlock {
     max-width: 100%;
     display: inline-block
 }
 
 @media screen and (max-width:767px) {
-    .ms-nav-brand {
+    .msNavBrand {
         padding-left: 10px
     }
 }
 
-.ms-nav {
+.msNav {
     position: relative;
     background: #dddddd;
     z-index: 1000
 }
 
-.ms-nav:before,
-.ms-nav:after {
+.msNav:before,
+.msNav:after {
     content: " ";
     display: table;
     grid-column-start: 1;
@@ -25,18 +25,18 @@
     grid-row-end: 2
 }
 
-.ms-nav:after {
+.msNav:after {
     clear: both
 }
 
-.ms-nav-brand {
+.msNavBrand {
     position: relative;
     float: left;
     text-decoration: none;
     color: #333333
 }
 
-.ms-nav-link {
+.msNavLink {
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -48,11 +48,11 @@
     margin-right: auto
 }
 
-.ms-nav-link.ms--current {
+.msNavLink.msCurrent {
     color: #0082f3
 }
 
-.ms-nav-menu {
+.msNavMenu {
     position: relative;
     float: right
 }
@@ -69,7 +69,7 @@
     min-width: 200px
 }
 
-.ms-nav-overlay {
+.msNavOverlay {
     position: absolute;
     overflow: hidden;
     display: none;
@@ -79,33 +79,33 @@
     width: 100%
 }
 
-.ms-nav-overlay [data-nav-menu-open] {
+.msNavOverlay [data-nav-menu-open] {
     top: 0
 }
 
-.ms-nav[data-animation="over-left"] .ms-nav-overlay {
+.msNav[data-animation="over-left"] .msNavOverlay {
     width: auto
 }
 
-.ms-nav[data-animation="over-left"] .ms-nav-overlay,
-.ms-nav[data-animation="over-left"] [data-nav-menu-open] {
+.msNav[data-animation="over-left"] .msNavOverlay,
+.msNav[data-animation="over-left"] [data-nav-menu-open] {
     right: auto;
     z-index: 1;
     top: 0
 }
 
-.ms-nav[data-animation="over-right"] .ms-nav-overlay {
+.msNav[data-animation="over-right"] .msNavOverlay {
     width: auto
 }
 
-.ms-nav[data-animation="over-right"] .ms-nav-overlay,
-.ms-nav[data-animation="over-right"] [data-nav-menu-open] {
+.msNav[data-animation="over-right"] .msNavOverlay,
+.msNav[data-animation="over-right"] [data-nav-menu-open] {
     left: auto;
     z-index: 1;
     top: 0
 }
 
-.ms-nav-button {
+.msNavButton {
     position: relative;
     float: right;
     padding: 18px;
@@ -116,52 +116,52 @@
 }
 
 @media screen and (max-width:991px) {
-    .ms-nav[data-collapse="medium"] .ms-nav-menu {
+    .msNav[data-collapse="medium"] .msNavMenu {
         display: none
     }
 
-    .ms-nav[data-collapse="medium"] .ms-nav-button {
+    .msNav[data-collapse="medium"] .msNavButton {
         display: block
     }
 }
 
 @media screen and (max-width:767px) {
-    .ms-nav[data-collapse="small"] .ms-nav-menu {
+    .msNav[data-collapse="small"] .msNavMenu {
         display: none
     }
 
-    .ms-nav[data-collapse="small"] .ms-nav-button {
+    .msNav[data-collapse="small"] .msNavButton {
         display: block
     }
 
-    .ms-nav-brand {
+    .msNavBrand {
         padding-left: 10px
     }
 }
 
 @media screen and (max-width:479px) {
-    .ms-nav[data-collapse="tiny"] .ms-nav-menu {
+    .msNav[data-collapse="tiny"] .msNavMenu {
         display: none
     }
 
-    .ms-nav[data-collapse="tiny"] .ms-nav-button {
+    .msNav[data-collapse="tiny"] .msNavButton {
         display: block
     }
 }
 
-.ms-logo-link {
+.msLogoLink {
     z-index: 1;
 }
 
-.ms-logo-link:hover {
+.msLogoLink:hover {
     opacity: 0.8;
 }
 
-.ms-logo-link:active {
+.msLogoLink:active {
     opacity: 0.7;
 }
 
-.ms-menu {
+.msMenu {
     position: absolute;
     left: 0%;
     top: 0%;
@@ -173,7 +173,7 @@
     align-items: center;
 }
 
-.ms-navigation-wrap {
+.msNavigationWrap {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -181,7 +181,7 @@
     flex: 1;
 }
 
-.ms-navigation {
+.msNavigation {
     position: fixed;
     left: 0%;
     top: 0%;
@@ -200,7 +200,7 @@
     object-fit: fill;
 }
 
-.ms-navigation-item {
+.msNavigationItem {
     padding-top: 9px;
     padding-bottom: 9px;
     opacity: 0.6;
@@ -211,97 +211,97 @@
     text-transform: uppercase;
 }
 
-.ms-navigation-item:hover {
+.msNavigationItem:hover {
     opacity: 0.9;
 }
 
-.ms-navigation-item:active {
+.msNavigationItem:active {
     opacity: 0.8;
 }
 
-.ms-navigation-item.ms--current {
+.msNavigationItem.msCurrent {
     opacity: 1;
     color: #1a1b1f;
     font-weight: 600;
 }
 
-.ms-navigation-item.ms--current:hover {
+.msNavigationItem.msCurrent:hover {
     opacity: 0.8;
     color: #32343a;
 }
 
-.ms-navigation-item.ms--current:active {
+.msNavigationItem.msCurrent:active {
     opacity: 0.7;
     color: #32343a;
 }
 
-.ms-logo-image {
+.msLogoImage {
     display: block;
     margin-left: auto;
 }
 
-.ms-navigation-items {
+.msNavigationItems {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 0 0 auto;
 }
 
-.text-block-3 {
+.textBlockThree {
     font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
-    .ms-button {
+    .msButton {
         justify-content: center;
     }
 
-    .ms-button.ms-contact-us {
+    .msButton.msContactUs {
         display: block;
         align-self: auto;
         order: 0;
         flex: 0 auto;
     }
 
-    .ms-logo-link.ms--current {
+    .msLogoLink.msCurrent {
         flex: 0 auto;
     }
 
-    .ms-menu-icon {
+    .msMenuIcon {
         display: block;
     }
 
-    .ms-menu {
+    .msMenu {
         position: static;
         margin-left: 30px;
     }
 
-    .ms-navigation-wrap {
+    .msNavigationWrap {
         align-items: center;
         background-color: #fff;
     }
 
-    .ms-navigation {
+    .msNavigation {
         display: flex;
         padding: 25px 30px;
         align-items: flex-start;
     }
 
-    .ms-navigation-item {
+    .msNavigationItem {
         padding: 15px 30px;
         transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
         text-align: center;
     }
 
-    .ms-navigation-item:hover {
+    .msNavigationItem:hover {
         background-color: #f7f8f9;
     }
 
-    .ms-navigation-item:active {
+    .msNavigationItem:active {
         background-color: #eef0f3;
     }
 
-    .ms-menu-button {
+    .msMenuButton {
         position: relative;
         left: auto;
         top: 0%;
@@ -314,70 +314,70 @@
         object-fit: fill;
     }
 
-    .ms-menu-button.ms--open {
+    .msMenuButton.msOpen {
         position: relative;
         z-index: auto;
         background-color: transparent;
     }
 
-    .ms-navigation-items {
+    .msNavigationItems {
         background-color: #fff;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .ms-logo-link {
+    .msLogoLink {
         padding-left: 0px;
     }
 
-    .ms-navigation {
+    .msNavigation {
         padding: 20px 30px;
     }
 }
 
 @media screen and (max-width: 479px) {
-    .ms-menu {
+    .msMenu {
         margin-left: 15px;
     }
 
-    .ms-navigation {
+    .msNavigation {
         padding-right: 20px;
         padding-left: 20px;
     }
 
-    .ms-menu-button {
+    .msMenuButton {
         flex: 0 0 auto;
     }
 
-    .ms-menu-icon{
+    .msMenuIcon{
         display: block;
         cursor: pointer;
     }
 
-    .ms-menu-input{
+    .msMenuInput{
         display: none;
     }
 
-    .ms-nav-link {
-        text-decoration: underline;
+    .msNavLink {
         width: 100%;
     }
-
-    .ms-nav__menu{
+    
+    .msNavMenuPhone{
      position: fixed;
      top:80px;
      bottom: 0;
-     background: #f15d2c;
+     background: #ffffff;
      width: 100%;
+     height: 40%;
      left: 0;
      display: grid;
      align-items: center;
-     clip-path: circle(0 at center);
+     clip-path:   polygon(0 0, 100% 0, 100% 0, 0 0);;
      transition:  clip-path 1s ease-in-out;
     }
 
-    .ms-menu-input:checked + .ms-nav__menu{
-        clip-path: circle(100% at center);
+    .msMenuInput:checked + .msNavMenuPhone{
+        clip-path:  polygon(0 100%, 100% 100%, 100% 0, 0 0)
     }
-
+    
 }

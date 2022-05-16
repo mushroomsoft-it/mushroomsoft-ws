@@ -1,23 +1,23 @@
 {
-    "title": 
-        {
-          "title": "Location",
-          "description": " Quito, also known as the 'Light of America', is the city where wehave planted our roots. It is the sanctuary where our talent develops and where we design technological solutions for your business.",
-          "img":"/assets/location.png"
-        },
-    "location":
-        {
-          "title": "Address",
-          "address": "Av. Río Amazonas y Roca",
-          "location": "Edificio Río Amazonas",
-          "floor" : "3er. Piso, Of.319",
-          "phone": "(+593) 2 2551 030"
-        },
-    "footer":
-        {
-            "social":"/assets/social.png",
-            "classSocial":"image-social",
-            "logo": "/assets/logo-footer.png",
-            "classLogo":"image-logo-footer"
-        }
+  "title": 
+      {
+        "title": "Location",
+        "description": " Quito, also known as the 'Light of America', is the city where wehave planted our roots. It is the sanctuary where our talent develops and where we design technological solutions for your business.",
+        "img":"/assets/location.png"
+      },
+  "location":
+      {
+        "title": "Address",
+        "address": "Av. Río Amazonas y Roca",
+        "location": "Edificio Río Amazonas",
+        "floor" : "3er. Piso, Of.319",
+        "phone": "(+593) 2 2551 030"
+      },
+  "footer":
+      {
+          "social":"/assets/social.png",
+          "classSocial":"imageSocial",
+          "logo": "/assets/logo-footer.png",
+          "classLogo":"imageLogoFooter"
+      }
 }

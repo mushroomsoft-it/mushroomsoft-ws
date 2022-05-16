@@ -1,26 +1,26 @@
 <app-header></app-header>
-<header id="hero-overlay" class="ms-banner">
-  <div class="ms-centered-container ms-w-container">
+<header class="msBanner">
+  <div class="msCenteredContainer msContainerW">
     <h1>
       {{ sectionTitle }}
     </h1>
   </div>
 </header>
-<div class="ms-section ms-store-home-wrap">
-  <div class="ms-container">
-    <div class="ms-motto-wrap">
-      <div class="ms-heading-jumbo-small">
+<div class="msSection msStoreHomeWrap">
+  <div class="msContainer">
+    <div class="msMottoWrap">
+      <div class="msHeadingJumboSmall">
           {{ sectionDescription }}<br />
       </div>
     </div>
-      <div class="ms-divider"></div>
-      <div class="home-content-wrap">
+      <div class="msDivider"></div>
+      <div class="msHomeContentWrap">
         <div *ngFor="let items of sectionItems">
           <div class="{{items.class}}">
             <div id="{{items.id}}">
-              <div class="ms-home-section-wrap">
-                <h2 id="Whoweare" class="ms-section-heading">{{items.title}}</h2>
-                <p class="ms-paragraph-light">
+              <div class="msHomeSectionWrap">
+                <h2 class="msSectionHeading">{{items.title}}</h2>
+                <p class="msParagraphLight">
                     {{items.description}}
                 </p>
               </div>
@@ -32,108 +32,107 @@
           </div>
         </div>
       </div>  
-      </div>
+    </div>
+</div>
+<div class="msSeparator">
+  <div class="msContainerW">
+    <div class="msDivider"></div>
   </div>
-  <div class="ms-separator">
-    <div class="ms-w-container">
-      <div class="ms-divider"></div>
+</div>
+<div class="msServices">      
+  <div *ngFor="let item of commitmentItems">
+  <div class="msServicesGrid" >
+      <img
+      src="{{item.image}}"
+      class="imagenCommitment"
+    />
+      <h1 class="msHeadingEigth">{{item.title}}</h1>
+      <p class="msParagraphNine" >
+        {{item.description}}
+      </p>
     </div>
   </div>
-  <div class="ms-services">      
-    <div *ngFor="let item of commitmentItems">
-    <div class="ms-services-grid" >
-        <img
-        src="{{item.image}}"
-        class="imagen-commitment"
-      />
-        <h1 class="ms-heading-8">{{item.title}}</h1>
-        <p class="ms-paragraph-9" >
-          {{item.description}}
-        </p>
-      </div>
-    </div>
+</div>
+<div class="msSeparator">
+  <div class="msContainerW">
+    <div class="msDivider"></div>
   </div>
-  <div class="ms-separator">
-    <div class="ms-w-container">
-      <div class="ms-divider"></div>
+</div>
+<div class="msTechnologies">
+  <div class="msContainerThree msContainerW">
+    <div class="msLayoutGrid msGridSeven">
+      <h1
+        id="tecnology"
+        class="msHeadingT msTecnologyTitle"
+      >
+        {{titleTechnology}}
+      </h1>
+      <p
+        id="msTecnologyTitle"
+        class="msParagraphT"
+      >
+        <br />{{descriptionTechnology}} <br />
+      </p>
     </div>
-  </div>
-  <div class="ms-technologies">
-    <div class="ms-container-3 ms-w-container">
-      <div class="ms-layout-grid ms-grid-7">
+    <div *ngFor="let item of technologyItemsService" >
+      <div class="msLayoutGrid {{item.class}}">
         <h1
-          id="tecnology"
-          class="ms-heading-25 ms-tecnology-title"
+          id="typeTechnology"
+          class="msHeadingS"
         >
-          {{titleTechnology}}
+          {{item.title}}
         </h1>
-        <p
-          id="ms-tecnology-description"
-          class="ms-paragraph-18"
-        >
-          <br />{{descriptionTechnology}} <br />
+        <div *ngFor="let items of technologyItemsImage ; let index = index">
+        <img 
+          [id]="item.images[index].id"
+          [name]="item.images[index].id"
+          [src]="item.images[index].url"          
+          class="msTechnologyImage"
+          [alt]="item.images[index].id"
+        />      
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="msContainerW">
+  <div class="msDivider"></div>
+</div>
+<div class="msFooter">
+  <div class="msContainer">
+    <div class="msRow">
+      <div class="msCol msColSix">
+        <img
+          src="{{imageLocation}}"
+          class="imageLocation"
+        />
+      </div>
+      <div class="msCol msColSix">
+        <h1 id="location" class="msHeadingTwo">{{titleLocation}}</h1>
+        <p class="msParagraphOne">
+          {{descriptionLocation}} 
         </p>
+        <p>
+          <strong>{{titleAddress}}</strong>
+          <br />‍<br />{{streetAddress}}
+          <br />{{locationAddress}}
+          <br />{{floorAddress}}
+          <br />{{phoneAddress}}</p>
       </div>
-      <div *ngFor="let item of technologyItemsService" >
-        <div class="ms-layout-grid {{item.class}}">
-          <h1
-            id="typeTechnology"
-            class="ms-heading-26"
-          >
-            {{item.title}}
-          </h1>
-          <div class="tito" *ngFor="let items of technologyItemsImage ; let index = index">
-          <img 
-            [id]="item.images[index].id"
-            [name]="item.images[index].id"
-            [src]="item.images[index].url"          
-            class="ms-technology-image"
-            [alt]="item.images[index].id"
-          />      
-       </div>
-      </div>
-     </div>
     </div>
   </div>
-  
-  <div class="ms-w-container">
-    <div class="ms-divider"></div>
-  </div>
-  <div class="ms-footer">
-    <div class="ms-container">
-      <div class="ms-row">
-        <div class="ms-col ms-col-6">
+</div>
+<div class="msSection">
+  <div class="msContainer">
+    <footer class="msFooterWrap">
+      <a href="#" class="msInlineBlock">
+        <img
+          src="{{socialImage}}"
+          class="{{socialClassImage}}"/>
+        </a>
           <img
-            src="{{imageLocation}}"
-            class="image-location"
-          />
-        </div>
-        <div class="ms-col ms-col-6">
-          <h1 id="location" class="ms-heading-32">{{titleLocation}}</h1>
-          <p class="ms-paragraph-19">
-           {{descriptionLocation}} 
-          </p>
-          <p>
-            <strong>{{titleAddress}}</strong>
-            <br />‍<br />{{streetAddress}}
-            <br />{{locationAddress}}
-            <br />{{floorAddress}}
-            <br />{{phoneAddress}}</p>
-        </div>
-      </div>
-    </div>
+        src="{{logoFooterImage}}"
+        class="{{logoClassImage}}"/>
+    </footer>
   </div>
-  <div class="ms-section">
-    <div class="ms-container">
-      <footer class="ms-footer-wrap">
-        <a href="#" class="ms-inline-block">
-          <img
-            src="{{socialImage}}"
-            class="{{socialClassImage}}"/>
-         </a>
-           <img
-          src="{{logoFooterImage}}"
-          class="{{logoClassImage}}"/>
-      </footer>
-    </div>
-  </div>
+</div>
