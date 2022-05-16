@@ -56,12 +56,6 @@ img {
     display: inline-block
 }
 
-img {
-    display: block;
-    margin-left: 190px;
-    padding-left: 0px;
-}
-
 .ms-banner {
     display: flex;
     height: 90vh;
@@ -101,6 +95,99 @@ img {
 
 .ms-w-container:after {
     clear: both
+}
+
+.ms-w-container .ms-row {
+    margin-left: -10px;
+    margin-right: -10px
+}
+
+.ms-row:before,
+.ms-row:after {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2
+}
+
+.ms-row:after {
+    clear: both
+}
+
+.ms-row .ms-row {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.ms-col {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.ms-col .ms-col {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.ms-col-6 {
+    width: 50%
+}
+
+.image-location {
+    margin-left: auto;
+    width: 50%;
+}
+
+.ms-heading-32 {
+    color: #f15d2c;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.ms-paragraph-19 {
+    opacity: 0.6;
+    color: #256891;
+    line-height: 18px;
+}
+
+.text-block-2 {
+    opacity: 0.6;
+    color: #256891;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.ms-inline-block {
+    max-width: 100%;
+    display: inline-block
+}
+
+.image-logo-footer {
+    margin-left: auto;
+    padding-right: 40px;
+    width: 177px;
+}
+
+.image-social {
+    margin-left: auto;
+    padding-left: 40px;
+    width: 150px;
+}
+
+.ms-footer-wrap {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
 }
 
 .ms-section {
@@ -242,7 +329,7 @@ img {
     height: 40%;
 }
 
-.ms-section-image-left {
+.ms-section-image-left{
     margin-left: auto;
 }
 
@@ -264,9 +351,8 @@ img {
 .ms-services {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-left: 20rem;
-    margin-right: 20rem;
     margin-bottom: 5rem;
+    padding: 5rem;
 }
 
 .ms-container-2 {
@@ -392,6 +478,11 @@ img {
     margin-top: 60px;
     grid-column-gap: 69px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ms-footer {
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width: 991px) {
@@ -521,5 +612,32 @@ img {
 
     .ms-centered-container {
         text-align: left;
+    }
+    .ms-services {
+        display: block;
+    }
+    .ms-layout-grid {
+        display: block;
+    }
+
+    .ms-section-image-left{
+        margin-left: auto;
+    }
+    
+    .ms-section-image-rigth {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .ms-technology-image {
+        width: 50%;
+        margin-left: 6rem;
+    }
+
+    .ms-col {
+        padding-left: 6rem;
+    }
+    .ms-col-6 {
+        width: 100%
     }
 }
