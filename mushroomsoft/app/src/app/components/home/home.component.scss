@@ -56,7 +56,7 @@ img {
     display: inline-block
 }
 
-.msBanner {
+.ms-banner {
     display: flex;
     height: 90vh;
     max-height: 780px;
@@ -72,19 +72,19 @@ img {
     white-space: normal;
 }
 
-.msCenteredContainer {
+.ms-centered-container {
     flex: 1;
     text-align: center;
 }
 
-.msContainerW {
+.ms-w-container {
     margin-left: auto;
     margin-right: auto;
     max-width: 940px
 }
 
-.msContainerW:before,
-.msContainerW:after {
+.ms-w-container:before,
+.ms-w-container:after {
     content: " ";
     display: table;
     grid-column-start: 1;
@@ -93,17 +93,17 @@ img {
     grid-row-end: 2
 }
 
-.msContainerW:after {
+.ms-w-container:after {
     clear: both
 }
 
-.msContainerW .msRow {
+.ms-w-container .ms-row {
     margin-left: -10px;
     margin-right: -10px
 }
 
-.msRow:before,
-.msRow:after {
+.ms-row:before,
+.ms-row:after {
     content: " ";
     display: table;
     grid-column-start: 1;
@@ -112,16 +112,16 @@ img {
     grid-row-end: 2
 }
 
-.msRow:after {
+.ms-row:after {
     clear: both
 }
 
-.msRow .msRow {
+.ms-row .ms-row {
     margin-left: 0;
     margin-right: 0
 }
 
-.msCol {
+.ms-col {
     position: relative;
     float: left;
     width: 100%;
@@ -130,33 +130,33 @@ img {
     padding-right: 10px
 }
 
-.msCol .msCol {
+.ms-col .ms-col {
     padding-left: 0;
     padding-right: 0
 }
 
-.msColSix {
+.ms-col-6 {
     width: 50%
 }
 
-.imageLocation {
+.image-location {
     margin-left: auto;
     width: 50%;
 }
 
-.msHeadingTwo {
+.ms-heading-32 {
     color: #f15d2c;
     font-size: 45px;
     font-weight: 900;
 }
 
-.msParagraphOne {
+.ms-paragraph-19 {
     opacity: 0.6;
     color: #256891;
     line-height: 18px;
 }
 
-.textBlockTwo {
+.text-block-2 {
     opacity: 0.6;
     color: #256891;
     font-size: 12px;
@@ -164,24 +164,24 @@ img {
     text-align: left;
 }
 
-.msInlineBlock {
+.ms-inline-block {
     max-width: 100%;
     display: inline-block
 }
 
-.imageLogoFooter {
+.image-logo-footer {
     margin-left: auto;
     padding-right: 40px;
     width: 177px;
 }
 
-.imageSocial {
+.image-social {
     margin-left: auto;
     padding-left: 40px;
     width: 150px;
 }
 
-.msFooterWrap {
+.ms-footer-wrap {
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -190,19 +190,19 @@ img {
     background-color: #e8e8e8;
 }
 
-.msSection {
+.ms-section {
     margin-right: 30px;
     margin-left: 30px;
     background-color: #e6e6e6;
 }
 
-.msSection.msStoreHomeWrap {
+.ms-section.ms-store-home-wrap {
     margin-bottom: 100px;
     padding-bottom: 0px;
     color: #fff;
 }
 
-.msContainer {
+.ms-container {
     width: 100%;
     max-width: 100%;
     margin-right: auto;
@@ -211,7 +211,7 @@ img {
     object-fit: contain;
 }
 
-.msMottoWrap {
+.ms-motto-wrap {
     width: 80%;
     margin-right: auto;
     margin-bottom: 85px;
@@ -219,7 +219,7 @@ img {
     text-align: center;
 }
 
-.msHeadingJumboSmall {
+.ms-heading-jumbo-small {
     margin-top: 10px;
     margin-bottom: -8px;
     padding-top: 43px;
@@ -231,7 +231,7 @@ img {
     text-transform: none;
 }
 
-.msDivider {
+.ms-divider {
     height: 5px;
     padding-right: 30px;
     padding-bottom: 5px;
@@ -240,12 +240,12 @@ img {
     background-color: #eee;
 }
 
-.msHomeContentWrap {
+.ms-home-content-wrap {
     margin-top: 80px;
     margin-bottom: 120px;
 }
 
-.msLayoutGrid {
+.ms-layout-grid {
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -254,7 +254,7 @@ img {
     grid-column-gap: 16px;
 }
 
-.msAboutGrid {
+.ms-about-grid {
     margin-bottom: 80px;
     align-items: center;
     grid-column-gap: 80px;
@@ -264,42 +264,42 @@ img {
     grid-template-rows: auto;
 }
 
-.msLayoutGrid.msAboutTwo {
+.ms-about-grid.ms-about-2 {
     margin-bottom: 100px;
     grid-template-areas: ". .";
     grid-template-columns: 2fr 1fr;
 }
 
-.msHomeSectionWrap {
+.ms-home-section-wrap {
     margin-bottom: 30px;
 }
 
-#msSectionThree {
+#ms-section-three {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-#msSectionTwo {
+#ms-section-two {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-.msHomeSectionWrap {
+.ms-home-section-wrap {
     margin-bottom: 30px;
 }
 
-.msSectionHeading {
+.ms-section-heading {
     margin-top: 10px;
     margin-bottom: 20px;
     color: #f15d2c;
     font-weight: 900;
 }
 
-.msParagraphLight {
+.ms-paragraph-light {
     opacity: 0.6;
     font-family: Montserrat, sans-serif;
     color: #256891;
@@ -307,14 +307,14 @@ img {
     font-weight: 400;
 }
 
-#msImageSectionThree {
+#ms-image-section-three {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-#msImageSectionTwo {
+#ms-image-section-two {
     grid-column-start: span 1;
     grid-column-end: span 1;
     grid-row-start: span 1;
@@ -323,32 +323,32 @@ img {
     align-self: stretch;
 }
 
-.imagenCommitment {
+.imagen-commitment {
     margin-bottom: auto;
     margin-left: auto;
     height: 40%;
 }
 
-.msSectionImageLeft{
+.ms-section-image-left{
     margin-left: auto;
 }
 
-.msSectionImageRigth {
+.ms-section-image-rigth {
     margin-right: 190px;
     padding-right: 0px;
 }
 
-.msTechnologyImage {
+.ms-technology-image {
     margin-left: auto;
 }
 
-.msGridTen {
+.ms-grid-10 {
     margin-top: 60px;
     grid-column-gap: 72px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.msServices {
+.ms-services {
     display: grid;
     grid-template-columns: auto auto auto;
     margin-bottom: 5rem;
@@ -369,14 +369,14 @@ img {
     background-color: transparent;
 }
 
-.msHeadingEigth {
+.ms-heading-8 {
     color: #f15d2a;
     font-size: 40px;
     font-weight: 900;
     text-align: center;
 }
 
-#msTitleTwo {
+#ms-title-Two {
     grid-row-start: span 1;
     grid-row-end: span 1;
     grid-column-start: span 1;
@@ -390,7 +390,7 @@ img {
     text-align: center;
 }
 
-.msParagraphNine {
+.ms-paragraph-9 {
     margin-bottom: auto;
     opacity: 0.6;
     color: #256891;
@@ -398,58 +398,58 @@ img {
     text-align: justify;
 }
 
-.msServicesGrid{
+.ms-services-grid{
     margin-right: 2rem;
     margin-top: 3rem;
 }
 
-.msSeparator {
+.ms-separator {
     margin-bottom: 124px;
 }
 
-.msTechnologies {
+.ms-technologies {
     margin-top: -98px;
     margin-bottom: 3px;
     padding-bottom: 70px;
 }
 
-.msContainerThree {
+.ms-container-3 {
     margin-bottom: auto;
     padding-bottom: 0px;
 }
 
-.msGridSeven {
+.ms-grid-7 {
     margin-bottom: 10px;
 }
 
-.msHeadingT {
+.ms-heading-25 {
     color: #f15d2c;
     font-size: 45px;
     font-weight: 900;
     text-align: center;
 }
 
-#tecnology.msTecnologyTitle {
+#tecnology.ms-tecnology-title {
     grid-row-start: span 1;
     grid-row-end: span 1;
     grid-column-start: span 2;
     grid-column-end: span 2;
 }
 
-#msTecnologyTitle {
+#ms-tecnology-description {
     grid-row-start: span 1;
     grid-row-end: span 1;
     grid-column-start: span 2;
     grid-column-end: span 2;
 }
 
-.msParagraphT {
+.ms-paragraph-18 {
     opacity: 0.6;
     color: #256891;
     text-align: center;
 }
 
-.msGridS {
+.ms-grid-6 {
     grid-column-gap: 70px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -461,69 +461,69 @@ img {
     grid-column-end: span 4;
 }
 
-.msHeadingS {
+.ms-heading-26 {
     color: #f15d2c;
     font-size: 25px;
     font-weight: 900;
     text-align: center;
 }
 
-.msGridT {
+.ms-grid-12 {
     margin-top: 60px;
     grid-column-gap: 71px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.msGridF {
+.ms-grid-14 {
     margin-top: 60px;
     grid-column-gap: 69px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.msFooter {
+.ms-footer {
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
 @media screen and (max-width: 991px) {
-    #msSectionTwo {
+    #ms-section-two {
         grid-column-start: 1;
         grid-row-start: 2;
         grid-column-end: 2;
         grid-row-end: 3;
     }
 
-    #msSectionThree {
+    #ms-section-three {
         grid-column-start: 1;
         grid-row-start: 2;
         grid-column-end: 2;
         grid-row-end: 3;
     }
 
-    #msImageSectionTwo {
+    #ms-image-section-two {
         grid-column-start: 1;
         grid-row-start: 1;
         grid-column-end: 2;
         grid-row-end: 2;
     }
     
-    #msImageSectionThree {
+    #ms-image-section-three {
         grid-column-start: 1;
         grid-row-start: 1;
         grid-column-end: 2;
         grid-row-end: 2;
     }
 
-    .msContainer {
+    .ms-container {
         max-width: 728px
     }
 
-    .msBanner {
+    .ms-banner {
         margin-top: 120px;
         background-image: url("/assets/banner.png");
     }
 
-    .msAboutGrid {
+    .ms-about-grid {
         grid-row-gap: 50px;
         grid-template-areas: "."
             ".";
@@ -532,22 +532,22 @@ img {
         text-align: center;
     }
 
-    .msAboutGrid.msAboutTwo {
+    .ms-about-grid.ms-about-2 {
         grid-template-areas: "."
             ".";
         grid-template-columns: 1fr;
     }
 
-    .msDivBlock {
+    .ms-div-block {
         margin-bottom: -29px;
     }
   
-    .msContainerTwo {
+    .ms-container-2 {
         margin-bottom: 60px;
         padding-bottom: 0px;
     }
 
-    .msGridThree {
+    .ms-grid-3 {
         margin: 40px 0px 60px;
         justify-content: stretch;
         justify-items: stretch;
@@ -558,11 +558,11 @@ img {
         grid-template-columns: minmax(0px, 0.75fr) minmax(0px, 0.75fr) minmax(0px, 0.75fr);
     }
 
-    #msDescriptionOne {
+    #ms-description-one {
         align-self: auto;
     }
 
-    .msParagraphNine {
+    .ms-paragraph-9 {
         transition: opacity 200ms ease;
         object-fit: fill;
     }
@@ -570,31 +570,31 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-    .msBanner {
+    .ms-banner {
         padding: 40px 20px;
     }
 
-    .msContainer {
+    .ms-container {
         margin-left: 0;
         margin-right: 0
     }
 
-    .msSection {
+    .ms-section {
         margin-right: 15px;
         margin-left: 15px;
     }
 
-    .msSection.msStoreHomeWrap {
+    .ms-section.ms-store-home-wrap {
         margin-right: 15px;
         margin-left: 15px;
     }
 
-    .msSection.ccHomeWrap {
+    .ms-section.cc-home-wrap {
         margin-right: 15px;
         margin-left: 15px;
     }
 
-    .msHeadingJumboSmall {
+    .ms-heading-jumbo-small {
         font-size: 30px;
         line-height: 52px;
     }
@@ -606,38 +606,38 @@ img {
         line-height: 52px;
     }
 
-    .msContainer {
+    .ms-container {
         max-width: none
     }
 
-    .msCenteredContainer {
+    .ms-centered-container {
         text-align: left;
     }
-    .msServices {
+    .ms-services {
         display: block;
     }
-    .msLayoutGrid {
+    .ms-layout-grid {
         display: block;
     }
 
-    .msSectionImageLeft{
+    .ms-section-image-left{
         margin-left: auto;
     }
     
-    .msSectionImageRigth {
+    .ms-section-image-rigth {
         margin-right: 0px;
         padding-right: 0px;
     }
 
-    .msTechnologyImage {
+    .ms-technology-image {
         width: 50%;
         margin-left: 6rem;
     }
 
-    .msCol {
+    .ms-col {
         padding-left: 6rem;
     }
-    .msColSix {
+    .ms-col-6 {
         width: 100%
     }
 }

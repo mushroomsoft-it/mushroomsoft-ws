@@ -1,28 +1,29 @@
+   
 {
   "menu": [
       {
         "title": "WHO WE ARE",
-        "class": "msNavigationItem msNavLink",
+        "class": "ms-navigation-item ms-nav-link",
         "url": "Whoweare"
       },
       {
         "title": "SERVICES",
-        "class": "msNavigationItem msNavLink",
+        "class": "ms-navigation-item ms-nav-link",
         "url": "services"
       },
       {
         "title": "COMMITMENT",
-        "class": "msNavigationItem msNavLink",
+        "class": "ms-navigation-item ms-nav-link",
         "url": "focus"
       },
       {
         "title": "TECHNOLOGY",
-        "class": "msNavigationItem msNavLink",
+        "class": "ms-navigation-item ms-nav-link",
         "url": "tecnology"
       },
       {
         "title": "LOCATION",
-        "class": "msNavigationItem msNavLink",
+        "class": "ms-navigation-item ms-nav-link",
         "url": "location"
       }
     ]

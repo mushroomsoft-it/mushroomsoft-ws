@@ -16,8 +16,8 @@
   "footer":
       {
           "social":"/assets/social.png",
-          "classSocial":"imageSocial",
+          "classSocial":"image-social",
           "logo": "/assets/logo-footer.png",
-          "classLogo":"imageLogoFooter"
+          "classLogo":"image-logo-footer"
       }
 }

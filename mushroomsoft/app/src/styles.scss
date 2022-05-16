@@ -9,7 +9,7 @@ body {
     color: #333
 }
 
-.msButton {
+.ms-button {
     padding: 12px 25px;
     margin: 0.5rem;
     border-radius: 0px;
@@ -22,29 +22,28 @@ body {
     text-transform: uppercase;
 }
 
-.msButton:hover {
+.ms-button:hover {
     background-color: #32343a;
     color: #fff;
 }
 
-.msButton:active {
+.ms-button:active {
     background-color: #43464d;
 }
 
-.msButton.msContactUs {
+.ms-button.ms-contact-us {
     position: relative;
     z-index: 5;
     background-color: #256891;
     font-weight: 400;
-    
 }
 
 @media screen and (max-width: 479px) {
-    .textBlockThree {
+    .text-block-3 {
         margin-left: 7.5rem;
     }
 
-    .msButton {
+    .ms-button {
         margin: 0;
     }
 }
