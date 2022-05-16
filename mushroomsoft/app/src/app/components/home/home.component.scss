@@ -62,8 +62,6 @@ img {
     padding-left: 0px;
 }
 
-
-
 .ms-banner {
     display: flex;
     height: 90vh;
@@ -151,6 +149,7 @@ img {
     padding-right: 30px;
     padding-bottom: 5px;
     padding-left: 30px;
+    margin-bottom: 30px;
     background-color: #eee;
 }
 
@@ -160,7 +159,6 @@ img {
 }
 
 .ms-layout-grid {
-    display: -ms-grid;
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -244,13 +242,23 @@ img {
     height: 40%;
 }
 
-.ms-section-image-7 {
+.ms-section-image-left {
     margin-left: auto;
 }
 
-.ms-section-image-8 {
+.ms-section-image-rigth {
     margin-right: 190px;
     padding-right: 0px;
+}
+
+.ms-technology-image {
+    margin-left: auto;
+}
+
+.ms-grid-10 {
+    margin-top: 60px;
+    grid-column-gap: 72px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .ms-services {
@@ -258,6 +266,7 @@ img {
     grid-template-columns: auto auto auto;
     margin-left: 20rem;
     margin-right: 20rem;
+    margin-bottom: 5rem;
 }
 
 .ms-container-2 {
@@ -288,6 +297,13 @@ img {
     grid-column-end: span 1;
 }
 
+.ms-heading-9 {
+    color: #f15d2a;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
 .ms-paragraph-9 {
     margin-bottom: auto;
     opacity: 0.6;
@@ -299,6 +315,83 @@ img {
 .ms-services-grid{
     margin-right: 2rem;
     margin-top: 3rem;
+}
+
+.ms-separator {
+    margin-bottom: 124px;
+}
+
+.ms-technologies {
+    margin-top: -98px;
+    margin-bottom: 3px;
+    padding-bottom: 70px;
+}
+
+.ms-container-3 {
+    margin-bottom: auto;
+    padding-bottom: 0px;
+}
+
+.ms-grid-7 {
+    margin-bottom: 10px;
+}
+
+.ms-heading-25 {
+    color: #f15d2c;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#tecnology.ms-tecnology-title {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+}
+
+#ms-tecnology-description {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+}
+
+.ms-paragraph-18 {
+    opacity: 0.6;
+    color: #256891;
+    text-align: center;
+}
+
+.ms-grid-6 {
+    grid-column-gap: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#typeTechnology {
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 4;
+    grid-column-end: span 4;
+}
+
+.ms-heading-26 {
+    color: #f15d2c;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.ms-grid-12 {
+    margin-top: 60px;
+    grid-column-gap: 71px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ms-grid-14 {
+    margin-top: 60px;
+    grid-column-gap: 69px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media screen and (max-width: 991px) {
@@ -357,7 +450,7 @@ img {
     .ms-div-block {
         margin-bottom: -29px;
     }
- 
+  
     .ms-container-2 {
         margin-bottom: 60px;
         padding-bottom: 0px;
@@ -382,6 +475,7 @@ img {
         transition: opacity 200ms ease;
         object-fit: fill;
     }
+
 }
 
 @media screen and (max-width: 767px) {
