@@ -4,6 +4,6 @@ describe('HeaderComponent', () => {
     const component = new HeaderComponent();
     expect(component).toBeDefined();
     expect(component).toBeInstanceOf(HeaderComponent);
-    expect(component.menuItems.length).toBe(5);
+    expect(component.menuItems.length).toBe(4);
   });
 });
