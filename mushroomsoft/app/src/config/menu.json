@@ -6,11 +6,6 @@
         "url": "Whoweare"
       },
       {
-        "title": "SERVICES",
-        "class": "msNavigationItem msNavLink",
-        "url": "services"
-      },
-      {
         "title": "COMMITMENT",
         "class": "msNavigationItem msNavLink",
         "url": "focus"
