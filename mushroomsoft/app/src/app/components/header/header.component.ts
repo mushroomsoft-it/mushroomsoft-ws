@@ -8,6 +8,16 @@ import {logoMushroomSoft} from '../../constants';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  element: any;
+  constructor() {}
   public menuItems = menuItems.menu;
   public logo = logoMushroomSoft;
+
+  checked() {
+    this.element = true;
+  }
+
+  notChecked() {
+    this.element = false;
+  }
 }

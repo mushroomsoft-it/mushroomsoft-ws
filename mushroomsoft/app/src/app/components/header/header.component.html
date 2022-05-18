@@ -23,22 +23,22 @@
                 </nav>
                 <nav class="ms-menu-button ms-nav-button" >
                     <label for="menu">
-                        <img src="assets/menu-icon.png"  class="ms-menu-icon">
+                        <img src="assets/menu-icon.png" (click)="checked()"   class="ms-menu-icon">
                     </label>
-                  <input type="checkbox" id="menu" class="ms-menu-input">
+                  <input type="checkbox" id="menu" [checked]=element class="ms-menu-input">
 
                   <div class="ms-nav-menu-phone" > 
                         <div *ngFor="let data of menuItems">
-                            <a onclick="notChecked()" href="#{{data.url}}" class="{{data.class}}">
+                            <a (click)="notChecked()"  href="#{{data.url}}" class="{{data.class}}">
                                 <strong>{{data.title}}</strong>
                             </a>
                         </div>
-                        <a onclick="notChecked()" class="ms-button ms-contact-us ms-inline-block">
+                        <a (click)="notChecked()" class="ms-button ms-contact-us ms-inline-block">
                             <div class="text-block-3">
                                 <strong>CONTACT US</strong>
                             </div>
                         </a>
-                        <a onclick="notChecked()" class="ms-button ms-contact-us ms-inline-block">
+                        <a (click)="notChecked()" class="ms-button ms-contact-us ms-inline-block">
                             <div class="text-block-3">
                                 <strong>WORK WITH US</strong>
                             </div>
