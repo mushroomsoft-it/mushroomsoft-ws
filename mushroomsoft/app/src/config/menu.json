@@ -3,12 +3,7 @@
         {
           "title": "WHO WE ARE",
           "class": "ms-navigation-item ms-nav-link",
-          "url": "Whoweare"
-        },
-        {
-          "title": "SERVICES",
-          "class": "ms-navigation-item ms-nav-link",
-          "url": "services"
+          "url": "whoWeare"
         },
         {
           "title": "COMMITMENT",

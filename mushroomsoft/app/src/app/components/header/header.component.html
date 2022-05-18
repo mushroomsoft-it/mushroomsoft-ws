@@ -6,7 +6,7 @@
          <nav class="ms-menu">
                 <nav role="ms-navigation" class="ms-navigation-items ms-nav-menu">
                     <div *ngFor="let data of menuItems">
-                        <a href="{{data}}" class="{{data.class}}">
+                        <a href="#{{data}}" class="{{data.class}}">
                             <strong>{{data.title}}</strong>
                         </a>
                     </div>
@@ -23,26 +23,26 @@
                 </nav>
                 <nav class="ms-menu-button ms-nav-button" >
                     <label for="menu">
-                        <img src="assets/menu-icon.png"  class="ms-menu-icon">
+                        <img src="assets/menu-icon.png" (click)="checked()"   class="ms-menu-icon">
                     </label>
-                  <input type="checkbox" id="menu" class="ms-menu-input">
+                  <input type="checkbox" id="menu" [checked]=element class="ms-menu-input">
 
-                  <div class="ms-nav-menu-phone" >
-                    <div *ngFor="let data of menuItems">
-                        <a href="{{data.url}}" class="{{data.class}}">
-                            <strong>{{data.title}}</strong>
+                  <div class="ms-nav-menu-phone" > 
+                        <div *ngFor="let data of menuItems">
+                            <a (click)="notChecked()"  href="#{{data.url}}" class="{{data.class}}">
+                                <strong>{{data.title}}</strong>
+                            </a>
+                        </div>
+                        <a (click)="notChecked()" class="ms-button ms-contact-us ms-inline-block">
+                            <div class="text-block-3">
+                                <strong>CONTACT US</strong>
+                            </div>
                         </a>
-                    </div>
-                    <a href="" class="ms-button ms-contact-us ms-inline-block">
-                        <div class="text-block-3">
-                            <strong>CONTACT US</strong>
-                        </div>
-                    </a>
-                    <a href="" class="ms-button ms-contact-us ms-inline-block">
-                        <div class="text-block-3">
-                            <strong>WORK WITH US</strong>
-                        </div>
-                    </a>
+                        <a (click)="notChecked()" class="ms-button ms-contact-us ms-inline-block">
+                            <div class="text-block-3">
+                                <strong>WORK WITH US</strong>
+                            </div>
+                        </a>
                   </div>
                 </nav>
         </nav>
