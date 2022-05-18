@@ -8,6 +8,15 @@ import {logoMushroomSoft} from '../../constants';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  public element: boolean = false;
   public menuItems = menuItems.menu;
   public logo = logoMushroomSoft;
+
+  checked() {
+    this.element = true;
+  }
+
+  notChecked() {
+    this.element = !this.element as boolean;
+  }
 }

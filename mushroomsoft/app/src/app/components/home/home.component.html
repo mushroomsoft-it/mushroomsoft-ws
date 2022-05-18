@@ -14,12 +14,12 @@
       </div>
     </div>
       <div class="ms-divider"></div>
-      <div id="Whoweare" class="home-content-wrap">
+      <div id="whoWeare" class="home-content-wrap">
         <div *ngFor="let items of sectionItems">
           <div class="ms-layout-grid {{items.class}}">
             <div id="ms-section-{{items.id}}">
               <div class="ms-home-section-wrap">
-                <h2 id="Whoweare" class="ms-section-heading">{{items.title}}</h2>
+                <h2 id="whoWeare" class="ms-section-heading">{{items.title}}</h2>
                 <p class="ms-paragraph-light">
                     {{items.description}}
                 </p>
@@ -82,7 +82,7 @@
           >
             {{item.title}}
           </h1>
-          <div class="tito" *ngFor="let items of technologyItemsImage ; let index = index">
+          <div *ngFor="let items of technologyItemsImage ; let index = index">
           <img 
             [id]="item.images[index].id"
             [name]="item.images[index].id"
