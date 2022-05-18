@@ -82,7 +82,7 @@
           >
             {{item.title}}
           </h1>
-          <div class="tito" *ngFor="let items of technologyItemsImage ; let index = index">
+          <div *ngFor="let items of technologyItemsImage ; let index = index">
           <img 
             [id]="item.images[index].id"
             [name]="item.images[index].id"
