@@ -5,5 +5,7 @@ describe('HeaderComponent', () => {
     expect(component).toBeDefined();
     expect(component).toBeInstanceOf(HeaderComponent);
     expect(component.menuItems.length).toBe(4);
+    expect(component.checked());
+    expect(component.notChecked());
   });
 });
