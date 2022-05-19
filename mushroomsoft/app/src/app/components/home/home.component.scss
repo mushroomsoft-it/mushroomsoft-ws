@@ -355,6 +355,13 @@ img {
     padding: 5rem;
 }
 
+.ms-service {
+    margin-top: 30px;
+    margin-bottom: auto;
+    padding-bottom: 0px;
+}
+
+
 .ms-container-2 {
     padding-bottom: 60px;
 }
@@ -367,6 +374,13 @@ img {
     grid-template-columns: 0.75fr 0.75fr 0.75fr;
     grid-template-rows: auto auto auto;
     background-color: transparent;
+}
+
+.ms-grid-5 {
+    margin-right: 100px;
+    margin-left: 100px;
+    grid-column-gap: 64px;
+    grid-template-rows: auto auto auto;
 }
 
 .ms-heading-8 {
@@ -418,8 +432,28 @@ img {
     padding-bottom: 0px;
 }
 
+.ms-container-4 {
+    position: static;
+}
+
 .ms-grid-7 {
     margin-bottom: 10px;
+}
+
+.ms-grid-4 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    grid-column-gap: 49px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+
+.ms-heading-21 {
+    color: #f15d2c;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
 }
 
 .ms-heading-25 {
@@ -441,6 +475,24 @@ img {
     grid-row-end: span 1;
     grid-column-start: span 2;
     grid-column-end: span 2;
+}
+
+.image-12 {
+    margin-left: 0px;
+}
+
+.ms-heading-17 {
+    color: #f15d2c;
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 900;
+}
+
+.ms-paragraph-11 {
+    opacity: 0.6;
+    color: #256891;
+    line-height: 22px;
+    text-align: left;
 }
 
 .ms-paragraph-18 {
