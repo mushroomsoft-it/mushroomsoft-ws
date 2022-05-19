@@ -37,6 +37,7 @@
   <div class="ms-service">
     <div class="ms-container-4 ms-w-container">
       <div><h1 id="services" class="{{serviceClass}}">{{serviceTitle}}</h1></div>
+      <div class="ms-item-service">
         <div class="ms-layout-grid ms-grid-4">
           <div *ngFor="let items of serviceItems">
           <img src="{{items.img}}"/>
@@ -45,7 +46,9 @@
             {{items.description}}<br />
           </p>
         </div>
+        </div>
       </div>
+      
     </div>
   </div>
   <div class="ms-separator">

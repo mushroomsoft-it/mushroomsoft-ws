@@ -4,5 +4,5 @@ export const logoMushroomSoft = {
   url: '/'
 };
 export const menuIcon = {
-  image: 'assets/headers/menu-icon.png',
+  image: 'assets/headers/menu-icon.png'
 };
