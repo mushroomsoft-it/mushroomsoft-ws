@@ -3,6 +3,7 @@ import sectionItems from '../../../config/section.json';
 import commitmentItems from '../../../config/commitment.json';
 import technologyItems from '../../../config/technology.json';
 import locationItems from '../../../config/location.json';
+import serviceItems from '../../../config/service.json';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +14,9 @@ export class HomeComponent implements OnInit {
   public sectionTitle = sectionItems.section.title;
   public sectionDescription = sectionItems.section.description;
   public sectionItems = sectionItems.sections;
+  public serviceTitle = serviceItems.service.title;
+  public serviceClass = serviceItems.service.class;
+  public serviceItems = serviceItems.services;
   public commitmentItems = commitmentItems.items;
   public titleTechnology = technologyItems.title.title;
   public descriptionTechnology = technologyItems.title.description;

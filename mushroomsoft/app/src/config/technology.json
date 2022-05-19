@@ -13,19 +13,19 @@
         "images":  [
                       {
                         "id":"linux",
-                        "url":"/assets/service-1.png"
+                        "url":"/assets/technologys/service-1.png"
                       },
                       {
                         "id":"windows",
-                        "url":"/assets/service-1-1.png"
+                        "url":"/assets/technologys/service-1-1.png"
                       },
                       {
                         "id":"android",
-                        "url":"/assets/service-1-2.png"
+                        "url":"/assets/technologys/service-1-2.png"
                       },
                       {
                         "id":"ios",
-                        "url":"/assets/service-1-3.png"
+                        "url":"/assets/technologys/service-1-3.png"
                       }
                   ]         
       },
@@ -35,15 +35,15 @@
         "images": [
                     {
                       "id":"mysql",
-                      "url":"/assets/service-2.png"
+                      "url":"/assets/technologys/service-2.png"
                     },
                     {
                       "id":"mongodb",
-                      "url":"/assets/service-2-1.png"
+                      "url":"/assets/technologys/service-2-1.png"
                     },
                     {
                       "id":"sqlserver",
-                      "url":"/assets/service-2-2.png"
+                      "url":"/assets/technologys/service-2-2.png"
                     },
                     {
                       "id":"",
@@ -57,19 +57,19 @@
         "images": [
                     {
                       "id":"angular",
-                      "url":"/assets/service-3.png"
+                      "url":"/assets/technologys/service-3.png"
                     },
                     {
                       "id":"node",
-                      "url":"/assets/service-3-1.png"
+                      "url":"/assets/technologys/service-3-1.png"
                     },
                     {
                       "id":"typescript",
-                      "url":"/assets/service-3-2.png"
+                      "url":"/assets/technologys/service-3-2.png"
                     },
                     {
                       "id":"javascript",
-                      "url":"/assets/service-3-3.png"
+                      "url":"/assets/technologys/service-3-3.png"
                     }
                  ]          
       },
@@ -79,11 +79,11 @@
         "images": [
                     {
                       "id":"aws",
-                      "url":"/assets/service-4.png"
+                      "url":"/assets/technologys/service-4.png"
                     },
                     {
                       "id":"github",
-                      "url":"/assets/service-4-1.png"
+                      "url":"/assets/technologys/service-4-1.png"
                     },
                     {
                       "id":"",
