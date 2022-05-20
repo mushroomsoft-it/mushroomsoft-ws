@@ -695,7 +695,7 @@ img {
 
     .ms-banner {
         margin-left: 1px;
-        margin-right: 24px;
+        margin-right: 3px;
     }
 
     .ms-section {
@@ -707,6 +707,39 @@ img {
         margin-left: 280px ;
         margin-right: 200px ;
     
+    }
+
+    .ms-services {
+        margin-left: -27px;
+
+    }
+
+    .ms-technologies {
+        margin-left: 24px;
+        margin-right: 26px;
+
+    }
+
+    .ms-footer {
+        margin-left: -28px;
+        margin-right: 28px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .ms-banner {
+        margin-left: 5px;
+        margin-right: 12px;
+    }
+
+    .ms-section {
+        margin-left: 40px !important;
+        margin-right: 38px !important;
+    }
+
+    .ms-item-service{
+        margin-left: 157px;
+        margin-right: 100px;
     }
 
     .ms-services {
@@ -774,7 +807,7 @@ img {
 @media screen and (max-width: 425px) {
     .ms-banner {
         margin-left: 5px;
-        margin-right: 12px;
+        margin-right: -2px;
     }
 
     .ms-section {
@@ -806,8 +839,8 @@ img {
 
 @media screen and (max-width: 375px) {
     .ms-banner {
-        margin-left: 4px;
-        margin-right: 7px;
+        margin-right: -100px;
+        margin-left: 1px;
     }
 
     .ms-section {
@@ -839,7 +872,35 @@ img {
 
 @media screen and (max-width: 320px) {
     .ms-banner {
-        margin-right: -85px;
+        margin-right: -100px;
+        margin-left: 1px;
+    }
+
+    .ms-section {
+        margin-right: -35px !important;
+    }
+
+    .ms-service {
+        margin-right: -70px;
+    }
+
+    .ms-item-service{
+        margin-left: 95px ;
+        margin-right: 0; 
+    }
+
+    .ms-services {
+        margin-right: -100px;
+    }
+
+    .ms-technologies {
+        margin-right: -45px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .ms-banner {
+        margin-right: -100px;
         margin-left: 1px;
     }
 
@@ -848,8 +909,12 @@ img {
     }
 
     .ms-item-service{
-        margin-left: 95px ;
+        margin-left: 70px ;
         margin-right: 0; 
+    }
+
+    .ms-service {
+        margin-right: -70px;
     }
 
     .ms-services {
