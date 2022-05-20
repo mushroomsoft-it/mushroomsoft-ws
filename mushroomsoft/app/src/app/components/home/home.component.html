@@ -34,6 +34,23 @@
       </div>  
       </div>
   </div>
+  <div class="ms-service">
+    <div class="ms-container-4 ms-w-container">
+      <div><h1 id="services" class="{{serviceClass}}">{{serviceTitle}}</h1></div>
+      <div class="ms-item-service">
+        <div class="ms-layout-grid ms-grid-4">
+          <div *ngFor="let items of serviceItems">
+          <img src="{{items.img}}"/>
+          <h1 class="ms-heading-17">{{items.title}}</h1>
+          <p class="ms-paragraph-11">
+            {{items.description}}<br />
+          </p>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
   <div class="ms-separator">
     <div class="ms-w-container">
       <div class="ms-divider"></div>

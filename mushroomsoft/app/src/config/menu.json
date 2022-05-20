@@ -6,6 +6,11 @@
           "url": "whoWeare"
         },
         {
+          "title": "SERVICES",
+          "class": "ms-navigation-item ms-nav-link",
+          "url": "services"
+        },
+        {
           "title": "COMMITMENT",
           "class": "ms-navigation-item ms-nav-link",
           "url": "focus"

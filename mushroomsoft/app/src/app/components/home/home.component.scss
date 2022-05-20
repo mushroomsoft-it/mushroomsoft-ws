@@ -65,7 +65,7 @@ img {
     padding-bottom: 100px;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/banner.png");
+    background-image: url("/assets/banner/banner.png");
     background-position: 0px 0px, 0px 0px, 50% 50%;
     background-size: cover, auto, auto;
     color: #fff;
@@ -355,6 +355,13 @@ img {
     padding: 5rem;
 }
 
+.ms-service {
+    margin-top: 30px;
+    margin-bottom: auto;
+    padding-bottom: 0px;
+}
+
+
 .ms-container-2 {
     padding-bottom: 60px;
 }
@@ -367,6 +374,13 @@ img {
     grid-template-columns: 0.75fr 0.75fr 0.75fr;
     grid-template-rows: auto auto auto;
     background-color: transparent;
+}
+
+.ms-grid-5 {
+    margin-right: 100px;
+    margin-left: 100px;
+    grid-column-gap: 64px;
+    grid-template-rows: auto auto auto;
 }
 
 .ms-heading-8 {
@@ -418,8 +432,28 @@ img {
     padding-bottom: 0px;
 }
 
+.ms-container-4 {
+    position: static;
+}
+
 .ms-grid-7 {
     margin-bottom: 10px;
+}
+
+.ms-grid-4 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    grid-column-gap: 49px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+
+.ms-heading-21 {
+    color: #f15d2c;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
 }
 
 .ms-heading-25 {
@@ -441,6 +475,20 @@ img {
     grid-row-end: span 1;
     grid-column-start: span 2;
     grid-column-end: span 2;
+}
+
+.ms-heading-17 {
+    color: #f15d2c;
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 900;
+}
+
+.ms-paragraph-11 {
+    opacity: 0.6;
+    color: #256891;
+    line-height: 22px;
+    text-align: left;
 }
 
 .ms-paragraph-18 {
@@ -520,7 +568,7 @@ img {
 
     .ms-banner {
         margin-top: 120px;
-        background-image: url("/assets/banner.png");
+        background-image: url("/assets/banner/banner.png");
     }
 
     .ms-about-grid {
@@ -655,6 +703,12 @@ img {
         margin-right: 38px !important;
     }
 
+    .ms-item-service{
+        margin-left: 280px ;
+        margin-right: 200px ;
+    
+    }
+
     .ms-services {
         margin-left: -27px;
 
@@ -728,6 +782,11 @@ img {
         margin-right: 38px !important;
     }
 
+    .ms-item-service{
+        margin-left: 100px ;
+        margin-right: 50px; 
+    }
+
     .ms-services {
         margin-left: -27px;
 
@@ -756,6 +815,11 @@ img {
         margin-right: 38px !important;
     }
 
+    .ms-item-service{
+        margin-left: 85px ;
+        margin-right: 0; 
+    }
+
     .ms-services {
         margin-left: -27px;
 
@@ -781,6 +845,11 @@ img {
 
     .ms-section {
         margin-right: -35px !important;
+    }
+
+    .ms-item-service{
+        margin-left: 95px ;
+        margin-right: 0; 
     }
 
     .ms-services {

@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import menuItems from '../../../config/menu.json';
-import {logoMushroomSoft} from '../../constants';
+import {logoMushroomSoft, menuIcon} from '../../constants';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +11,7 @@ export class HeaderComponent {
   public element: boolean = false;
   public menuItems = menuItems.menu;
   public logo = logoMushroomSoft;
+  public menuIcon = menuIcon;
 
   checked() {
     this.element = true;
