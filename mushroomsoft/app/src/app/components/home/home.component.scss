@@ -650,16 +650,6 @@ img {
         margin-left: 15px;
     }
 
-    .ms-section.ms-store-home-wrap {
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
-    .ms-section.cc-home-wrap {
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
     .ms-heading-jumbo-small {
         font-size: 30px;
         line-height: 52px;
@@ -735,8 +725,8 @@ img {
     }
 
     .ms-section {
-        margin-left: 40px !important;
-        margin-right: 38px !important;
+        margin-left: 40px;
+        margin-right: 38px;
     }
 
     .ms-item-service{
@@ -769,8 +759,8 @@ img {
     }
 
     .ms-section {
-        margin-left: 40px !important;
-        margin-right: 38px !important;
+        margin-left: 40px;
+        margin-right: 38px;
     }
 
     .ms-item-service{
@@ -845,11 +835,11 @@ img {
 
     .ms-banner {
         height: 75vh;
-        width: 28rem;
+        width: 31rem;
         padding: 0;
         margin: 0;
         img{
-            width: 30rem;
+            width: 31rem;
             height: 40rem;
            }
     }
@@ -863,8 +853,8 @@ img {
     }
 
     .ms-section {
-        margin-left: 60px !important;
-        margin-right: 38px !important;
+        margin-left: 60px;
+        margin-right: -5px;
     }
 
     .ms-item-service{
@@ -910,8 +900,8 @@ img {
     }
 
     .ms-section {
-        margin-left: 40px !important;
-        margin-right: -40px !important;
+        margin-left: 40px ;
+        margin-right: -40px ;
     }
 
     .ms-item-service{
@@ -956,7 +946,8 @@ img {
         font-size: 35px;
     }
     .ms-section {
-        margin-right: -35px !important;
+        margin-right: -60px;
+        margin-left: 40px;
     }
 
     .ms-service {
