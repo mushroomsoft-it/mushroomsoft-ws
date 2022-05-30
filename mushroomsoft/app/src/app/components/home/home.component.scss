@@ -57,19 +57,19 @@ img {
 }
 
 .ms-banner {
-    display: flex;
-    height: 90vh;
-    max-height: 780px;
-    margin-top: 127px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/assets/banner/banner.png");
+
     background-position: 0px 0px, 0px 0px, 50% 50%;
     background-size: cover, auto, auto;
+}
+.title-banner{
+    position: absolute;
+    top: 25rem;
+    right: 4rem;
+    margin-left: 22rem;
+    margin-right: 17rem;
     color: #fff;
-    white-space: normal;
+    font-size: 48px;
+    line-height: 67px;
 }
 
 .ms-centered-container {
@@ -193,7 +193,7 @@ img {
 .ms-section {
     margin-right: 30px;
     margin-left: 30px;
-    background-color: #e6e6e6;
+    background-color: #fff;
 }
 
 .ms-section.ms-store-home-wrap {
@@ -533,7 +533,26 @@ img {
     margin-bottom: 60px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px)  and (min-width: 991px) {
+
+    .ms-banner {
+        height: 75vh;
+        width: 64rem;
+        padding: 0;
+        margin: 0;
+        img{
+            width: 64rem;
+            height: 40rem;
+           }
+    }
+
+    .title-banner{   
+        top: 23rem;
+        margin-left: 4rem;
+        margin-right: 3rem;
+        font-size: 38px;
+    }
+
     #ms-section-right {
         grid-column-start: 1;
         grid-row-start: 2;
@@ -568,7 +587,6 @@ img {
 
     .ms-banner {
         margin-top: 120px;
-        background-image: url("/assets/banner/banner.png");
     }
 
     .ms-about-grid {
@@ -650,6 +668,24 @@ img {
 
 @media screen and (max-width: 768px) {
 
+    .ms-banner {
+        height: 75vh;
+        width: 48rem;
+        padding: 0;
+        margin: 0;
+        img{
+            width: 48rem;
+            height: 40rem;
+           }
+    }
+
+    .title-banner{   
+        top: 15rem;
+        margin-left: 1rem;
+        margin-right: 9rem;
+        font-size: 38px;
+    }
+
     h1 {
         font-size: 36px;
         line-height: 52px;
@@ -726,7 +762,7 @@ img {
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 540px) and (min-width: 480px) {
     .ms-banner {
         margin-left: 5px;
         margin-right: 12px;
@@ -759,7 +795,8 @@ img {
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479px) and (min-width: 424px) {
+
     h1 {
         font-size: 36px;
         line-height: 52px;
@@ -804,14 +841,29 @@ img {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) and (min-width: 374px)  {
+
     .ms-banner {
-        margin-left: 5px;
-        margin-right: -2px;
+        height: 75vh;
+        width: 28rem;
+        padding: 0;
+        margin: 0;
+        img{
+            width: 30rem;
+            height: 40rem;
+           }
+    }
+
+    .title-banner{   
+        top: 15rem;
+        right: -13rem;
+        margin-left: 1rem;
+        margin-right: 9rem;
+        font-size: 35px;
     }
 
     .ms-section {
-        margin-left: 40px !important;
+        margin-left: 60px !important;
         margin-right: 38px !important;
     }
 
@@ -837,45 +889,72 @@ img {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) and (min-width: 319px)  {
     .ms-banner {
-        margin-right: -100px;
-        margin-left: 1px;
+        height: 75vh;
+        width: 28rem;
+        padding: 0;
+        margin: 0;
+        img{
+            width: 30rem;
+            height: 40rem;
+           }
+    }
+
+    .title-banner{   
+        top: 15rem;
+        right: -13rem;
+        margin-left: 1rem;
+        margin-right: 9rem;
+        font-size: 35px;
     }
 
     .ms-section {
         margin-left: 40px !important;
-        margin-right: 38px !important;
+        margin-right: -40px !important;
     }
 
     .ms-item-service{
-        margin-left: 85px ;
+        margin-left: 125px;
         margin-right: 0; 
     }
 
     .ms-services {
-        margin-left: -27px;
-
+        margin-left: 50px;
+        margin-right: -80px;
     }
 
     .ms-technologies {
-        margin-left: 24px;
-        margin-right: 26px;
+        margin-left: 85px;
+        margin-right: -30px;
 
     }
-
+    
     .ms-footer {
-        margin-left: -28px;
-        margin-right: 28px;
+        margin-left: 50px;
+        margin-right: -70px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (min-width: 280px) {
     .ms-banner {
-        margin-right: -100px;
-        margin-left: 1px;
+        height: 75vh;
+        width: 26rem;
+        padding: 0;
+        margin: 0;
+        img{
+            width: 26rem;
+            height: 40rem;
+           }
     }
-
+    
+    .title-banner{   
+        top: 15rem;
+        right: -13rem;
+        margin-left: 1rem;
+        margin-right: 9rem;
+        font-size: 35px;
+    }
     .ms-section {
         margin-right: -35px !important;
     }
@@ -887,34 +966,6 @@ img {
     .ms-item-service{
         margin-left: 95px ;
         margin-right: 0; 
-    }
-
-    .ms-services {
-        margin-right: -100px;
-    }
-
-    .ms-technologies {
-        margin-right: -45px;
-    }
-}
-
-@media screen and (max-width: 280px) {
-    .ms-banner {
-        margin-right: -100px;
-        margin-left: 1px;
-    }
-
-    .ms-section {
-        margin-right: -35px !important;
-    }
-
-    .ms-item-service{
-        margin-left: 70px ;
-        margin-right: 0; 
-    }
-
-    .ms-service {
-        margin-right: -70px;
     }
 
     .ms-services {
