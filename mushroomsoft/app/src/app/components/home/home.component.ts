@@ -13,6 +13,7 @@ import serviceItems from '../../../config/service.json';
 export class HomeComponent implements OnInit {
   public sectionTitle = sectionItems.section.title;
   public sectionDescription = sectionItems.section.description;
+  public sectionImage = sectionItems.section.img;
   public sectionItems = sectionItems.sections;
   public serviceTitle = serviceItems.service.title;
   public serviceClass = serviceItems.service.class;
