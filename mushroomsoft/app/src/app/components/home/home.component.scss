@@ -63,7 +63,7 @@ img {
 }
 .title-banner{
     position: absolute;
-    top: 25rem;
+    top: 29rem;
     right: 4rem;
     margin-left: 22rem;
     margin-right: 17rem;
@@ -417,9 +417,6 @@ img {
     margin-top: 3rem;
 }
 
-.ms-separator {
-    margin-bottom: 124px;
-}
 
 .ms-technologies {
     margin-top: -98px;
@@ -533,10 +530,10 @@ img {
     margin-bottom: 60px;
 }
 
-@media screen and (max-width: 1024px)  and (min-width: 991px) {
+@media screen and (max-width: 1024px)  and (min-width: 820px) {
 
     .ms-banner {
-        height: 75vh;
+        height: 45vh;
         width: 64rem;
         padding: 0;
         margin: 0;
@@ -551,6 +548,34 @@ img {
         margin-left: 4rem;
         margin-right: 3rem;
         font-size: 38px;
+    }
+
+    .ms-section{
+        padding-top: 25rem;
+    }
+
+    .ms-service {
+        width: 63rem;
+    }
+
+    .ms-item-service{
+        margin-left: 4rem;
+    }
+
+    .ms-services {
+        margin-left: -27px;
+
+    }
+
+    .ms-technologies {
+        margin-left: 24px;
+        margin-right: 26px;
+
+    }
+
+    .ms-footer {
+        margin-left: -28px;
+        margin-right: 28px;
     }
 
     #ms-section-right {
@@ -585,9 +610,6 @@ img {
         max-width: 728px
     }
 
-    .ms-banner {
-        margin-top: 120px;
-    }
 
     .ms-about-grid {
         grid-row-gap: 50px;
@@ -633,6 +655,12 @@ img {
         object-fit: fill;
     }
 
+}
+
+@media screen and (max-width: 912px) {
+    .ms-technologies {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -754,29 +782,36 @@ img {
 
 @media screen and (max-width: 540px) and (min-width: 480px) {
     .ms-banner {
-        margin-left: 5px;
-        margin-right: 12px;
+        width: 42.5rem;
     }
 
     .ms-section {
-        margin-left: 40px;
-        margin-right: 38px;
+        width: 37rem;
+        padding-top: 10rem;
+    }
+
+    .ms-service {
+        width: 40rem;
     }
 
     .ms-item-service{
-        margin-left: 157px;
+        margin-left: 200px;
         margin-right: 100px;
     }
 
-    .ms-services {
-        margin-left: -27px;
+    .ms-separator{
+        margin-left: 9rem;
+        }
+    .ms-divider{
+        width: 23rem;
+    }
 
+    .ms-services {
+        width: 43rem;
     }
 
     .ms-technologies {
-        margin-left: 24px;
-        margin-right: 26px;
-
+        width: 38rem;
     }
 
     .ms-footer {
@@ -853,40 +888,47 @@ img {
     }
 
     .ms-section {
-        margin-left: 60px;
-        margin-right: -5px;
+        width: 27rem;
+    }
+
+    .ms-separator{
+        margin-left: 4rem;
+        }
+    .ms-divider{
+        width: 23rem;
+    }
+
+    .ms-service{
+        width: 30rem;
     }
 
     .ms-item-service{
-        margin-left: 100px ;
-        margin-right: 50px; 
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
 
     .ms-services {
-        margin-left: -27px;
-
+        width: 32rem;
     }
 
     .ms-technologies {
-        margin-left: 24px;
-        margin-right: 26px;
-
+        margin-top: 1rem;
+        width: 27rem;
     }
 
     .ms-footer {
-        margin-left: -28px;
-        margin-right: 28px;
+        width: 30rem;
     }
 }
 
 @media screen and (max-width: 375px) and (min-width: 319px)  {
     .ms-banner {
-        height: 75vh;
-        width: 28rem;
+        height: 80vh;
+        width: 35rem;
         padding: 0;
         margin: 0;
         img{
-            width: 30rem;
+            width: 35rem;
             height: 40rem;
            }
     }
@@ -899,14 +941,20 @@ img {
         font-size: 35px;
     }
 
-    .ms-section {
-        margin-left: 40px ;
-        margin-right: -40px ;
+    .ms-container{
+        margin-top: 7rem;
     }
 
+    .ms-section {
+        width: 27rem;
+    }
+
+    .ms-service{
+        width: 30rem;
+        }
+
     .ms-item-service{
-        margin-left: 125px;
-        margin-right: 0; 
+        margin-left: 9rem;
     }
 
     .ms-services {
@@ -919,16 +967,26 @@ img {
         margin-right: -30px;
 
     }
-    
+
+    .ms-divider{
+        width: 20rem;
+    }
+    .ms-separator{
+        margin-left: 4rem;
+    }
+
+    .ms-w-container{
+        margin-left: 1rem;
+    }
     .ms-footer {
         margin-left: 50px;
         margin-right: -70px;
     }
 }
 
-@media screen and (max-width: 320px) and (min-width: 280px) {
+@media screen and (max-width: 320px) and (min-width: 279px) {
     .ms-banner {
-        height: 75vh;
+        height: 40vh;
         width: 26rem;
         padding: 0;
         margin: 0;
@@ -948,6 +1006,33 @@ img {
     .ms-section {
         margin-right: -60px;
         margin-left: 40px;
+    }
+
+    .ms-container{
+        margin-top: 8rem;;
+    }
+
+    .ms-service {
+        margin-right: -70px;
+    }
+
+    .ms-item-service{
+        margin-left: 95px ;
+        margin-right: 0; 
+    }
+
+    .ms-services {
+        margin-right: -100px;
+    }
+
+    .ms-technologies {
+        margin-right: -45px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .ms-section {
+        margin-top: 25rem;;
     }
 
     .ms-service {
