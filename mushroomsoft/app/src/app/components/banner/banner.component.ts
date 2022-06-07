@@ -9,5 +9,5 @@ import sectionItems from '../../../config/section.json';
 export class BannerComponent  {
   public sectionItems = sectionItems.sections;
   public sectionTitle = sectionItems.section.title;
-
+  public sectionImage = sectionItems.section.img;
 }
