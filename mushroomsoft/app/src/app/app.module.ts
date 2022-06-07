@@ -13,9 +13,10 @@ import {ContactComponent} from './components/contact/contact.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { SectionComponent } from './components/section/section.component';
 import { ServiceComponent } from './components/service/service.component';
+import { ArticleComponent } from './components/article/article.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, ContactComponent, BannerComponent, SectionComponent, ServiceComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, ContactComponent, BannerComponent, SectionComponent, ServiceComponent, ArticleComponent],
 
   imports: [CommonModule, BrowserModule, AppRoutingModule, ReactiveFormsModule, FormlyModule.forRoot(), FormlyBootstrapModule],
   providers: [],
