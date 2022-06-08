@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SectionComponent } from './section.component';
+import {SectionComponent} from './section.component';
 
 describe('SectionComponent', () => {
   it('should initialization of the component', () => {

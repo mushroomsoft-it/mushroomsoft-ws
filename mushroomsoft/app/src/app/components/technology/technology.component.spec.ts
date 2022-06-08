@@ -1,4 +1,4 @@
-import { TechnologyComponent } from './technology.component';
+import {TechnologyComponent} from './technology.component';
 
 describe('TechnologyComponent', () => {
   it('should initialization of the component', () => {

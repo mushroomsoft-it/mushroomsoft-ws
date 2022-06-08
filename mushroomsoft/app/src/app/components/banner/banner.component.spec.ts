@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { BannerComponent } from './banner.component';
+import {BannerComponent} from './banner.component';
 
 describe('BannerComponent', () => {
   it('should initialization of the component', () => {

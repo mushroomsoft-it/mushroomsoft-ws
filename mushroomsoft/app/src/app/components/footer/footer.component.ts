@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import locationItems from '../../../config/location.json';
 
 @Component({
@@ -7,7 +7,6 @@ import locationItems from '../../../config/location.json';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-
   public titleLocation = locationItems.title.title;
   public descriptionLocation = locationItems.title.description;
   public imageLocation = locationItems.title.img;
@@ -20,5 +19,4 @@ export class FooterComponent {
   public socialClassImage = locationItems.footer.classSocial;
   public logoFooterImage = locationItems.footer.logo;
   public logoClassImage = locationItems.footer.classLogo;
-
 }

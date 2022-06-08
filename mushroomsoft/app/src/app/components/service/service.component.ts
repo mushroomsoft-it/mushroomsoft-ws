@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import serviceItems from '../../../config/service.json';
 
 @Component({
@@ -7,7 +7,6 @@ import serviceItems from '../../../config/service.json';
   styleUrls: ['./service.component.scss']
 })
 export class ServiceComponent {
-
   public serviceTitle = serviceItems.service.title;
   public serviceClass = serviceItems.service.class;
   public serviceItems = serviceItems.services;

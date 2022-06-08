@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import commitmentItems from '../../../config/commitment.json';
 
 @Component({
@@ -6,6 +6,6 @@ import commitmentItems from '../../../config/commitment.json';
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.scss']
 })
-export class ArticleComponent  {
+export class ArticleComponent {
   public commitmentItems = commitmentItems.items;
 }

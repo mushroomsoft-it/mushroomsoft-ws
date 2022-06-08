@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import technologyItems from '../../../config/technology.json';
 
 @Component({
@@ -7,7 +7,6 @@ import technologyItems from '../../../config/technology.json';
   styleUrls: ['./technology.component.scss']
 })
 export class TechnologyComponent implements OnInit {
-
   public titleTechnology = technologyItems.title.title;
   public descriptionTechnology = technologyItems.title.description;
   public technologyItemsService = technologyItems.service;
@@ -18,5 +17,4 @@ export class TechnologyComponent implements OnInit {
       this.technologyItemsImage = res.images as [];
     });
   }
-
 }
