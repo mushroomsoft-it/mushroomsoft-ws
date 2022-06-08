@@ -127,6 +127,16 @@ img {
     align-self: stretch;
 }
 
+@media screen and (max-width: 1280px) and (min-width: 1025px)  {
+  .ms-section {
+     width: 107rem;
+  }
+
+  .ms-divider{
+      width: 23rem;
+  }
+}
+
 @media screen and (max-width: 1024px)  and (min-width: 913px) {
     #ms-section-left {
         grid-column-start: 1;
@@ -174,10 +184,14 @@ img {
         grid-column-end: 2;
         grid-row-end: 2;
     }
+
 }
 
 @media screen and (max-width: 912px) {
-   
+    .ms-section {
+       width: 76rem;
+    }
+
     .ms-divider{
         width: 23rem;
     }
@@ -185,15 +199,11 @@ img {
 
 @media screen and (max-width: 820px)  {
     .ms-section {
- 
-    } 
+       width: 59rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
-    .ms-section {
-   
-    }
-
     .ms-container {
         margin-left: 0;
         margin-right: 0
@@ -202,17 +212,18 @@ img {
 
 @media screen and (max-width: 768px) {
     .ms-section {
-        
+      width: 44rem;
     }
+
     .ms-layout-grid {
         display: block;
     }
 }
 
 @media screen and (max-width: 540px) {
-    .ms-section {
-  
-    }
+  .ms-section {
+    width: 76rem;
+ }
 
     .ms-divider{
         width: 23rem;
@@ -220,10 +231,6 @@ img {
 }
 
 @media screen and (max-width: 539px) and (min-width: 480px) {
-    .ms-section {
-      
-    }
-
     .ms-divider{
         width: 23rem;
     }
@@ -237,7 +244,7 @@ img {
 
 @media screen and (max-width: 425px) {
     .ms-section {
-    
+       width: 23rem;
     }
 
     .ms-divider{
@@ -245,20 +252,23 @@ img {
     }
 }
 
+@media screen and (max-width: 414px) {
+  .ms-section {
+    width: 27rem;
+  }
+
+  .ms-divider{
+      width: 23rem;
+  }
+}
+
 @media screen and (max-width: 412px) {
-    .ms-section {
-
-    }
-
     .ms-divider{
         width: 23rem;
     }
 }
 
 @media screen and (max-width: 411px) and (min-width: 394px)  {
-    .ms-section {
-        
-    }
     .ms-divider{
         width: 23rem;
     }
@@ -266,29 +276,27 @@ img {
 }
 
 @media screen and (max-width: 393px) and (min-width: 390px) {
-    .ms-section {
-  
-    }
     .ms-divider{
         width: 23rem;
     }
 }
 
 @media screen and (max-width: 375px) and (min-width: 319px)  {
-   
+    .ms-section {
+      width: 20rem;
+    }
+
     .ms-divider{
         width: 20rem;
     }
 }
 
 @media screen and (max-width: 320px) and (min-width: 279px) {
+    .ms-section {
+      width: 16rem;
+    }
+
     .ms-divider{
         width: 16rem;
-    }
-}
-
-@media screen and (max-width: 280px){
-    .ms-section {
-        width: 50rem;
     }
 }

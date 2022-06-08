@@ -10,7 +10,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(37, 104, 144, 0.85);
-  display: block; 
+  display: block;
   opacity: 1;
 }
 
@@ -39,10 +39,11 @@
 .ws-form{
   margin:30px 30px 30px
 }
-  
+
 .submit-button{
   margin-top:20px;
 }
+
 @media screen and (max-width: 1024px) {
   .ws-block {
     margin-top: 110px;
@@ -70,7 +71,6 @@
     margin-top: 150px;
   }
 }
-
 
 @media screen and (max-width: 320px) and (min-width: 280px) {
   .ws-block {
