@@ -15,9 +15,10 @@ import { SectionComponent } from './components/section/section.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ArticleComponent } from './components/article/article.component';
 import { TechnologyComponent } from './components/technology/technology.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, ContactComponent, BannerComponent, SectionComponent, ServiceComponent, ArticleComponent, TechnologyComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, ContactComponent, BannerComponent, SectionComponent, ServiceComponent, ArticleComponent, TechnologyComponent, FooterComponent],
 
   imports: [CommonModule, BrowserModule, AppRoutingModule, ReactiveFormsModule, FormlyModule.forRoot(), FormlyBootstrapModule],
   providers: [],
