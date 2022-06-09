@@ -47,7 +47,7 @@ img {
 
 .ms-heading-8 {
   color: #f15d2a;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 900;
   text-align: center;
 }
@@ -91,10 +91,6 @@ img {
     padding-left: 10rem;
   }
 
-  .ms-heading-8 {
-    font-size: 25px;
-  }
-
 }
 
 @media screen and (max-width: 912px) {
@@ -104,10 +100,6 @@ img {
   }
   .ms-layout-grid{
     display: block;
-  }
-
-  .ms-heading-8 {
-    font-size: 25px;
   }
 
   .ms-divider{
@@ -124,10 +116,6 @@ img {
     display: block;
   }
 
-  .ms-heading-8 {
-    font-size: 25px;
-  }
-
   .ms-divider{
     width: 13rem;
  }
@@ -140,10 +128,6 @@ img {
   }
   .ms-layout-grid{
     display: block;
-  }
-
-  .ms-heading-8 {
-    font-size: 25px;
   }
 
   .ms-divider{
@@ -160,10 +144,6 @@ img {
     display: block;
   }
 
-  .ms-heading-8 {
-    font-size: 25px;
-  }
-
   .ms-divider{
     width: 13rem;
  }
@@ -178,13 +158,9 @@ img {
     display: block;
   }
 
-  .ms-heading-8 {
-    font-size: 25px;
-  }
-
   .ms-divider{
     width: 13rem;
-}
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -192,17 +168,14 @@ img {
     width: 30rem;
     padding: 1rem;
   }
+
   .ms-layout-grid{
     display: block;
   }
 
-  .ms-heading-8 {
-    font-size: 25px;
-  }
-
   .ms-divider{
     width: 13rem;
-}
+  }
 }
 
 @media screen and (max-width: 375px) and (min-width: 319px)  {
@@ -210,17 +183,14 @@ img {
     width: 23rem;
     padding: 1rem;
   }
+
   .ms-layout-grid{
     display: block;
   }
 
-  .ms-heading-8 {
-    font-size: 25px;
-  }
-
   .ms-divider{
     width: 13rem;
-}
+  }
 }
 @media screen and (max-width: 320px) and (min-width: 279px) {
   .ms-technologies {
@@ -229,10 +199,6 @@ img {
   }
   .ms-layout-grid{
     display: block;
-  }
-
-  .ms-heading-8 {
-    font-size: 25px;
   }
 
   .ms-divider{
