@@ -1,27 +1,26 @@
-
 .ms-footer {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
 .ms-container {
-    width: 100%;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #fff;
-    object-fit: contain;
+  width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  object-fit: contain;
 }
 
 .ms-w-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 940px
+  max-width: 940px;
 }
 
 .ms-w-container .ms-row {
   margin-left: -10px;
-  margin-right: -10px
+  margin-right: -10px;
 }
 
 .ms-row:before,
@@ -31,16 +30,16 @@
   grid-column-start: 1;
   grid-row-start: 1;
   grid-column-end: 2;
-  grid-row-end: 2
+  grid-row-end: 2;
 }
 
 .ms-row:after {
-  clear: both
+  clear: both;
 }
 
 .ms-row .ms-row {
   margin-left: 0;
-  margin-right: 0
+  margin-right: 0;
 }
 
 .ms-col {
@@ -49,11 +48,11 @@
   width: 100%;
   min-height: 1px;
   padding-left: 10px;
-  padding-right: 10px
+  padding-right: 10px;
 }
 
 .ms-col-6 {
-  width: 50%
+  width: 50%;
 }
 
 .image-location {
