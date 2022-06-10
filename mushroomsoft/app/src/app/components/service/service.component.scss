@@ -40,16 +40,6 @@
   text-align: left;
 }
 
-.ms-divider {
-  height: 5px;
-  padding-right: 30px;
-  padding-bottom: 5px;
-  padding-left: 30px;
-  margin-bottom: 30px;
-  background-color: #eee;
-}
-
-
 @media screen and (max-width: 1280px) and (min-width: 1025px)  {
   .ms-service {
     width: 111rem;
@@ -69,10 +59,6 @@
 @media screen and (max-width: 912px) {
   .ms-service {
     width: 79rem;
-  }
-
-  .ms-divider{
-    width: 23rem;
   }
 }
 
@@ -105,15 +91,10 @@
     margin-left: 23rem;
     margin-right: 17rem;
   }
-  .ms-divider{
-    width: 23rem;
-  }
 }
 
 @media screen and (max-width: 539px) and (min-width: 480px) {
-  .ms-divider{
-    width: 23rem;
-  }
+
 }
 
 @media screen and (max-width: 479px) and (min-width: 426px) {
@@ -130,28 +111,18 @@
   .ms-item-service{
     margin-left: 6rem;
   }
-
-  .ms-divider{
-    width: 23rem;
-  }
 }
 
 @media screen and (max-width: 412px) {
-  .ms-divider{
-    width: 23rem;
-  }
+
 }
 
 @media screen and (max-width: 411px) and (min-width: 394px)  {
-    .ms-divider{
-        width: 23rem;
-    }
+
 }
 
 @media screen and (max-width: 393px) and (min-width: 390px) {
-  .ms-divider{
-    width: 23rem;
-  }
+
 }
 
 @media screen and (max-width: 375px) and (min-width: 319px)  {
@@ -161,10 +132,6 @@
 
   .ms-item-service{
     margin-left: 4rem;
-  }
-
-  .ms-divider{
-    width: 14rem;
   }
 }
 

@@ -69,15 +69,6 @@ img {
   margin-left: auto;
 }
 
-.ms-divider {
-  height: 5px;
-  padding-right: 30px;
-  padding-bottom: 5px;
-  padding-left: 30px;
-  margin-bottom: 30px;
-  background-color: #eee;
-}
-
 @media screen and (max-width: 1280px) and (min-width: 1025px)  {
   .ms-technologies {
     width: 100rem;
@@ -90,7 +81,6 @@ img {
     width: 55rem;
     padding-left: 10rem;
   }
-
 }
 
 @media screen and (max-width: 912px) {
@@ -100,10 +90,6 @@ img {
   }
   .ms-layout-grid{
     display: block;
-  }
-
-  .ms-divider{
-    width: 13rem;
   }
 }
 
@@ -115,10 +101,6 @@ img {
   .ms-layout-grid{
     display: block;
   }
-
-  .ms-divider{
-    width: 13rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -129,10 +111,6 @@ img {
   .ms-layout-grid{
     display: block;
   }
-
-  .ms-divider{
-    width: 13rem;
-}
 }
 
 @media screen and (max-width: 540px) {
@@ -142,10 +120,6 @@ img {
   }
   .ms-layout-grid{
     display: block;
-  }
-
-  .ms-divider{
-    width: 13rem;
   }
 }
 
@@ -157,10 +131,6 @@ img {
   .ms-layout-grid{
     display: block;
   }
-
-  .ms-divider{
-    width: 13rem;
-  }
 }
 
 @media screen and (max-width: 414px) {
@@ -170,10 +140,6 @@ img {
   }
   .ms-layout-grid{
     display: block;
-  }
-
-  .ms-divider{
-    width: 13rem;
   }
 }
 
@@ -185,10 +151,6 @@ img {
   .ms-layout-grid{
     display: block;
   }
-
-  .ms-divider{
-    width: 13rem;
-  }
 }
 @media screen and (max-width: 320px) and (min-width: 279px) {
   .ms-technologies {
@@ -197,9 +159,5 @@ img {
   }
   .ms-layout-grid{
     display: block;
-  }
-
-  .ms-divider{
-    width: 13rem;
   }
 }
