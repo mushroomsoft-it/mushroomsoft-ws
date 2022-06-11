@@ -1,5 +1,5 @@
 {
-    "title": 
+    "title":
         {
           "title": "Location",
           "description": " Quito, also known as the 'Light of America', is the city where wehave planted our roots. It is the sanctuary where our talent develops and where we design technological solutions for your business.",
@@ -15,7 +15,8 @@
         },
     "footer":
         {
-            "social":"assets/footers/social.png",
+            "github":"assets/footers/github.png",
+            "linkedin":"assets/footers/linkedin.png",
             "classSocial":"image-social",
             "logo": "assets/footers/logo-footer.png",
             "classLogo":"image-logo-footer"

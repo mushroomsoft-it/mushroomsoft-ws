@@ -15,7 +15,8 @@ export class FooterComponent {
   public locationAddress = locationItems.location.location;
   public floorAddress = locationItems.location.floor;
   public phoneAddress = locationItems.location.phone;
-  public socialImage = locationItems.footer.social;
+  public socialGithub = locationItems.footer.github;
+  public socialLinkedin = locationItems.footer.linkedin;
   public socialClassImage = locationItems.footer.classSocial;
   public logoFooterImage = locationItems.footer.logo;
   public logoClassImage = locationItems.footer.classLogo;
