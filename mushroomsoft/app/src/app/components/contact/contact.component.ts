@@ -13,7 +13,7 @@ export class ContactComponent {
     private libService: MianLibService,
     ){}
   form = new FormGroup({});
-  model = {};
+  model: {} = {};
   options: FormlyFormOptions = {};
   fields: FormlyFieldConfig[] = this.libService.getContact();
 
