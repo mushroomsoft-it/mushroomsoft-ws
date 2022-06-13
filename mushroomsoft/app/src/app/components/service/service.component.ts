@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { MianLibService } from 'lib';
+import { MianLibService } from 'mushroomsoft-lib';
 
 @Component({
   selector: 'app-service',

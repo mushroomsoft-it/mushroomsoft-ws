@@ -12,7 +12,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "lib": [
+      "mushroomsoft-lib": [
         "dist/lib/lib",
         "dist/lib"
       ]

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {logoMushroomSoft, menuIcon} from '../../constants';
-import { MianLibService } from 'lib';
+import { MianLibService } from 'mushroomsoft-lib';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
