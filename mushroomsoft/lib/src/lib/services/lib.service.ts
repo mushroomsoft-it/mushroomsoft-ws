@@ -5,6 +5,7 @@ import articleItems from '../shared/config/commitment.json';
 import serviceItems from '../shared/config/service.json';
 import technologyItems from '../shared/config/technology.json';
 import locationItems from '../shared/config/location.json';
+import contactItems from '../shared/config/contact.json';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,8 @@ export class MianLibService {
   public serviceItems : any ;
   public technologyItems : any ;
   public locationItems : any ;
+  public contactItems : any ;
+
 
   getMenu() {
     this.menuItems = menuItems.menu;
@@ -51,5 +54,10 @@ export class MianLibService {
   getLocation() {
     this.locationItems = locationItems;
     return this.locationItems;
+  }
+
+  getContact() {
+    this.contactItems = contactItems;
+    return this.contactItems;
   }
 }
