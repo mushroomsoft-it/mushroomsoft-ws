@@ -1,12 +1,25 @@
-import {TechnologyComponent} from './technology.component';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MianLibService } from 'mushroomsoft-lib';
+import { TechnologyComponent } from './technology.component';
 
 describe('TechnologyComponent', () => {
-  it('should initialization of the component', () => {
-    const component = new TechnologyComponent();
-    expect(component).toBeDefined();
-    expect(component).toBeInstanceOf(TechnologyComponent);
-    expect(component.technologyItemsService.length).toBe(4);
-    expect(component.technologyItemsImage.length).toBe(0);
-    component.ngOnInit();
-  });
+    let service: MianLibService;
+    let component: TechnologyComponent;
+    let fixture: ComponentFixture<TechnologyComponent>;
+
+    beforeEach(() => {
+      TestBed.configureTestingModule({});
+      service = TestBed.inject(MianLibService);
+    });
+
+    beforeEach(() => {
+      fixture = TestBed.createComponent(TechnologyComponent);
+      component = fixture.componentInstance;
+      fixture.detectChanges();
+    });
+    it('should initialization of the component', () => {
+      expect(service).toBeTruthy();
+      expect(component).toBeTruthy();
+    });
+
 });

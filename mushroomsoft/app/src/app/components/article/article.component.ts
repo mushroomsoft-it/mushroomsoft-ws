@@ -10,11 +10,11 @@ export class ArticleComponent implements OnInit {
   public commitmentItems : any;
 
   constructor(
-    private libService: MianLibService,
+    private libService : MianLibService,
   ) {}
 
   ngOnInit(): void {
     console.log(this.libService.getArticle());
-    this.commitmentItems= this.libService.getArticle();
+    this.commitmentItems = this.libService.getArticle();
   }
 }
