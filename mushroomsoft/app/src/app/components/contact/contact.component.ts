@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormGroup} from '@angular/forms';
 import {FormlyFormOptions, FormlyFieldConfig} from '@ngx-formly/core';
 import { MianLibService } from 'mushroomsoft-lib';
@@ -8,15 +8,18 @@ import { MianLibService } from 'mushroomsoft-lib';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
-  constructor(
-    private libService: MianLibService,
-    ){}
+export class ContactComponent implements OnInit {
   form = new FormGroup({});
   model: {} = {};
   options: FormlyFormOptions = {};
-  fields: FormlyFieldConfig[] = this.libService.getContact();
+  fields: FormlyFieldConfig[] = [];
+  constructor(
+    private libService: MianLibService,
+  ){}
 
+  ngOnInit(): void {
+    this.fields = this.libService.getContact();
+  }
   submit() {
     alert(JSON.stringify(this.model));
   }
