@@ -1,5 +1,5 @@
 import {TestBed} from '@angular/core/testing';
-import {MianLibService} from 'mushroomsoft-lib';
+import {MianLibService} from '@mushroomsoft-lib';
 import {ContactComponent} from './contact.component';
 describe('ContactComponent', () => {
   const mockContact = [

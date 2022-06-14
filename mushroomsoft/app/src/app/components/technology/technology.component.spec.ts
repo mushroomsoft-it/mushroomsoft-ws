@@ -1,5 +1,5 @@
 import {TestBed} from '@angular/core/testing';
-import {MianLibService} from 'mushroomsoft-lib';
+import {MianLibService} from '@mushroomsoft-lib';
 import {TechnologyComponent} from './technology.component';
 describe('TechnologyComponent', () => {
   const mockTechnology = {

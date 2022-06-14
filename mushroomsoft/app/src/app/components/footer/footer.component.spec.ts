@@ -1,5 +1,5 @@
 import {TestBed} from '@angular/core/testing';
-import {MianLibService} from 'mushroomsoft-lib';
+import {MianLibService} from '@mushroomsoft-lib';
 import {FooterComponent} from './footer.component';
 describe('FooterComponent', () => {
   const mockLocation = {
