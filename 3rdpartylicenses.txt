@@ -45,6 +45,8 @@ MIT
 @ngx-formly/core
 MIT
 
+lib
+
 primeicons
 MIT
 MIT License
