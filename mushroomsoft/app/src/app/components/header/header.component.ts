@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {logoMushroomSoft, menuIcon} from '../../constants';
-import { MianLibService } from 'mushroomsoft-lib';
+import {MianLibService} from 'mushroomsoft-lib';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,16 +8,13 @@ import { MianLibService } from 'mushroomsoft-lib';
 })
 export class HeaderComponent implements OnInit {
   public element: boolean = false;
-  public menuItems : any ;
+  public menuItems: any;
   public logo = logoMushroomSoft;
   public menuIcon = menuIcon;
 
-  constructor(
-    private libService: MianLibService,
-  ) {}
+  constructor(private libService: MianLibService) {}
 
   ngOnInit(): void {
-    console.log(this.libService.getMenu());
     this.menuItems = this.libService.getMenu();
   }
 

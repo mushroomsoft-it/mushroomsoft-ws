@@ -10,15 +10,14 @@ import contactItems from '../shared/config/contact.json';
 @Injectable({
   providedIn: 'root'
 })
-
 export class MianLibService {
-  public menuItems : {} = {};
-  public sectionItems : {} = {};
-  public articleItems : {} = {};
-  public serviceItems : {} = {};
-  public technologyItems : {} = {};
-  public locationItems : {} = {};
-  public contactItems : [] = [];
+  public menuItems: {} = {};
+  public sectionItems: {} = {};
+  public articleItems: {} = {};
+  public serviceItems: {} = {};
+  public technologyItems: {} = {};
+  public locationItems: {} = {};
+  public contactItems: [] = [];
 
   /**
    * @description get menu of the file Json

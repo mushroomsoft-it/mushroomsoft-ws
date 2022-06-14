@@ -1,43 +1,41 @@
 import {TestBed} from '@angular/core/testing';
-import { MianLibService } from 'mushroomsoft-lib';
-import { HeaderComponent } from './header.component';
+import {MianLibService} from 'mushroomsoft-lib';
+import {HeaderComponent} from './header.component';
 describe('HeaderComponent', () => {
-
   const mockMenu = {
-    menu:
-      [
-        {
-          title: "WHO WE ARE",
-          class: "ms-navigation-item ms-nav-link",
-          url: "whoWeare"
-        },
-        {
-          title: "SERVICES",
-          class: "ms-navigation-item ms-nav-link",
-          url: "services"
-        },
-        {
-          title: "COMMITMENT",
-          class: "ms-navigation-item ms-nav-link",
-          url: "focus"
-        },
-        {
-          title: "TECHNOLOGY",
-          class: "ms-navigation-item ms-nav-link",
-          url: "tecnology"
-        },
-        {
-          title: "LOCATION",
-          class: "ms-navigation-item ms-nav-link",
-          url: "location"
-        }
-      ]
-  }
+    menu: [
+      {
+        title: 'WHO WE ARE',
+        class: 'ms-navigation-item ms-nav-link',
+        url: 'whoWeare'
+      },
+      {
+        title: 'SERVICES',
+        class: 'ms-navigation-item ms-nav-link',
+        url: 'services'
+      },
+      {
+        title: 'COMMITMENT',
+        class: 'ms-navigation-item ms-nav-link',
+        url: 'focus'
+      },
+      {
+        title: 'TECHNOLOGY',
+        class: 'ms-navigation-item ms-nav-link',
+        url: 'tecnology'
+      },
+      {
+        title: 'LOCATION',
+        class: 'ms-navigation-item ms-nav-link',
+        url: 'location'
+      }
+    ]
+  };
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [HeaderComponent],
-      providers:[MianLibService]
+      providers: [MianLibService]
     }).compileComponents();
   });
   it('should initialization of the component', () => {
