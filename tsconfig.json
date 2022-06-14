@@ -12,9 +12,9 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "lib": [
-        "dist/lib/lib",
-        "dist/lib"
+      "@mushroomsoft-lib": [
+        "mushroomsoft/lib/src/public-api.ts"
+
       ]
     },
     "noFallthroughCasesInSwitch": true,

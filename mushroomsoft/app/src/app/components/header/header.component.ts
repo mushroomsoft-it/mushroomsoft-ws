@@ -1,17 +1,22 @@
-import {Component} from '@angular/core';
-import menuItems from '../../../config/menu.json';
+import {Component, OnInit} from '@angular/core';
 import {logoMushroomSoft, menuIcon} from '../../constants';
-
+import {MianLibService} from '@mushroomsoft-lib';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   public element: boolean = false;
-  public menuItems = menuItems.menu;
+  public menuItems: any;
   public logo = logoMushroomSoft;
   public menuIcon = menuIcon;
+
+  constructor(private libService: MianLibService) {}
+
+  ngOnInit(): void {
+    this.menuItems = this.libService.getMenu();
+  }
 
   checked() {
     this.element = true;

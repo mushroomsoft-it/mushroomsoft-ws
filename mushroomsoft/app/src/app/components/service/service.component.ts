@@ -1,13 +1,23 @@
-import {Component} from '@angular/core';
-import serviceItems from '../../../config/service.json';
+import {Component, OnInit} from '@angular/core';
+import {MianLibService} from '@mushroomsoft-lib';
 
 @Component({
   selector: 'app-service',
   templateUrl: './service.component.html',
   styleUrls: ['./service.component.scss']
 })
-export class ServiceComponent {
-  public serviceTitle = serviceItems.service.title;
-  public serviceClass = serviceItems.service.class;
-  public serviceItems = serviceItems.services;
+export class ServiceComponent implements OnInit {
+  public serviceTitle: any;
+  public serviceClass: any;
+  public serviceItems: any;
+  public servicesItems: any;
+
+  constructor(private libService: MianLibService) {}
+
+  ngOnInit(): void {
+    this.serviceItems = this.libService.getService();
+    this.serviceTitle = this.serviceItems.service.title;
+    this.serviceClass = this.serviceItems.service.class;
+    this.servicesItems = this.serviceItems.services;
+  }
 }

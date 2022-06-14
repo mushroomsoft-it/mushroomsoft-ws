@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
-import {MianLibComponent} from './lib.component';
+import {MianLibService} from './services/lib.service';
 
 @NgModule({
-  declarations: [MianLibComponent],
+  declarations: [],
   imports: [],
-  exports: [MianLibComponent]
+  providers: [MianLibService]
 })
 export class MianLibModule {}

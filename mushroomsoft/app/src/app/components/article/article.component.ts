@@ -1,11 +1,17 @@
-import {Component} from '@angular/core';
-import commitmentItems from '../../../config/commitment.json';
+import {Component, OnInit} from '@angular/core';
+import {MianLibService} from '@mushroomsoft-lib';
 
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.scss']
 })
-export class ArticleComponent {
-  public commitmentItems = commitmentItems.items;
+export class ArticleComponent implements OnInit {
+  public commitmentItems: any;
+
+  constructor(private libService: MianLibService) {}
+
+  ngOnInit(): void {
+    this.commitmentItems = this.libService.getArticle();
+  }
 }

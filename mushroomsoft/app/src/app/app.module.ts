@@ -16,6 +16,7 @@ import {ServiceComponent} from './components/service/service.component';
 import {ArticleComponent} from './components/article/article.component';
 import {TechnologyComponent} from './components/technology/technology.component';
 import {FooterComponent} from './components/footer/footer.component';
+import {MianLibModule} from '@mushroomsoft-lib';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,15 @@ import {FooterComponent} from './components/footer/footer.component';
     FooterComponent
   ],
 
-  imports: [CommonModule, BrowserModule, AppRoutingModule, ReactiveFormsModule, FormlyModule.forRoot(), FormlyBootstrapModule],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormlyModule.forRoot(),
+    FormlyBootstrapModule,
+    MianLibModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
