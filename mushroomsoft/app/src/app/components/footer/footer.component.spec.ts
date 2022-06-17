@@ -21,7 +21,7 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('Get the JSON of the footer', () => {
+  it('should get the file footer.json', () => {
     let mockLocation = {
       title: {
         title: 'Location',

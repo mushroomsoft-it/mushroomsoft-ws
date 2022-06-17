@@ -23,7 +23,7 @@ describe('ArticleComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('Get the JSON of the articles', () => {
+  it('should get the file article.json', () => {
     let mockArticles = {
       items: [
         {

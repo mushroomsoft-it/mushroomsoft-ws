@@ -22,7 +22,7 @@ describe('HeaderComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('Get the JSON of the menu', () => {
+  it('should get the file menu.json', () => {
     let mockMenu = {
       menu: [
         {

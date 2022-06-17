@@ -21,7 +21,7 @@ describe('ServiceComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('Get the JSON of the service', () => {
+  it('should get the file service.json', () => {
     let mockService = {
       service: {
         title: 'Services',

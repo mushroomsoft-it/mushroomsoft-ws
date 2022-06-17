@@ -17,7 +17,7 @@ describe('SectionComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-  it('Get the JSON of the section', () => {
+  it('should get the file section.json', () => {
     let mockSection = {
       section: {
         title: 'Success is seeing our clients grow and overcome their IT challenges.',

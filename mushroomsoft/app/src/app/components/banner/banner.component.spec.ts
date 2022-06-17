@@ -21,7 +21,7 @@ describe('BannerComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('Get the JSON of the banner', () => {
+  it('should get the file banner.json', () => {
     let mockBanner = {
       section: {
         title: 'Success is seeing our clients grow and overcome their IT challenges.',

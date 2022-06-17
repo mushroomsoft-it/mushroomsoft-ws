@@ -21,7 +21,7 @@ describe('TechnologyComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('Get the JSON of the technology', () => {
+  it('should get the file technology.json ', () => {
     let mockTechnology = {
       title: {
         title: 'Technology',

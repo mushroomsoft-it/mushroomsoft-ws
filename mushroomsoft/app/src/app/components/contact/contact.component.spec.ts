@@ -21,7 +21,7 @@ describe('ContactComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('Get the JSON of the banner for the formly', () => {
+  it('should get the file contact.json', () => {
     let mockContact = [
       {
         key: 'Name',
