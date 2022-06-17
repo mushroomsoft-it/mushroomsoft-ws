@@ -20,7 +20,7 @@ export class TechnologyComponent implements OnInit {
     this.descriptionTechnology = this.technologyItems.title.description;
     this.technologyItemsService = this.technologyItems.service;
     this.technologyItemsService.map((res: any) => {
-        this.technologyItemsImage = res.images as [];
+      this.technologyItemsImage = res.images as [];
     });
   }
 }
