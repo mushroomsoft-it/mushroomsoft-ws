@@ -7,10 +7,9 @@ describe('FooterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FooterComponent ],
+      declarations: [FooterComponent],
       providers: [MianLibService]
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -23,7 +22,6 @@ describe('FooterComponent', () => {
     expect(component).toBeTruthy();
   });
   it('Get the JSON of the footer', () => {
-
     let mockLocation = {
       title: {
         title: 'Location',

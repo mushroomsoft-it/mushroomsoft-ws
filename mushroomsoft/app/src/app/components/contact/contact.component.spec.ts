@@ -7,10 +7,9 @@ describe('ContactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactComponent ],
+      declarations: [ContactComponent],
       providers: [MianLibService]
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -1,6 +1,6 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {MianLibService} from '@mushroomsoft-lib';
-import { HomeComponent } from '../home/home.component';
+import {HomeComponent} from '../home/home.component';
 import {ArticleComponent} from './article.component';
 describe('ArticleComponent', () => {
   let component: ArticleComponent;
@@ -8,10 +8,9 @@ describe('ArticleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ArticleComponent ],
+      declarations: [ArticleComponent],
       providers: [MianLibService]
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -25,7 +24,6 @@ describe('ArticleComponent', () => {
   });
 
   it('Get the JSON of the articles', () => {
-
     let mockArticles = {
       items: [
         {

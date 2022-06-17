@@ -7,10 +7,9 @@ describe('SectionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SectionComponent ],
+      declarations: [SectionComponent],
       providers: [MianLibService]
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {

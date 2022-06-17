@@ -7,8 +7,8 @@ import {MianLibService} from '@mushroomsoft-lib';
   styleUrls: ['./service.component.scss']
 })
 export class ServiceComponent implements OnInit {
-  public serviceTitle: any;
-  public serviceClass: any;
+  public serviceTitle: string = '';
+  public serviceClass: string = '';
   public serviceItems: any;
   public servicesItems: any;
 

@@ -7,10 +7,9 @@ describe('HeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ],
+      declarations: [HeaderComponent],
       providers: [MianLibService]
-    })
-    .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {

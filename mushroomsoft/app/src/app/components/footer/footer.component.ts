@@ -8,19 +8,19 @@ import {MianLibService} from '@mushroomsoft-lib';
 })
 export class FooterComponent implements OnInit {
   public locationItems: any;
-  public titleLocation: any;
-  public descriptionLocation: any;
-  public imageLocation: any;
-  public titleAddress: any;
-  public streetAddress: any;
-  public locationAddress: any;
-  public floorAddress: any;
-  public phoneAddress: any;
-  public socialGithub: any;
-  public socialLinkedin: any;
-  public socialClassImage: any;
-  public logoFooterImage: any;
-  public logoClassImage: any;
+  public titleLocation: string = '';
+  public descriptionLocation: string = '';
+  public imageLocation: string = '';
+  public titleAddress: string = '';
+  public streetAddress: string = '';
+  public locationAddress: string = '';
+  public floorAddress: string = '';
+  public phoneAddress: string = '';
+  public socialGithub: string = '';
+  public socialLinkedin: string = '';
+  public socialClassImage: string = '';
+  public logoFooterImage: string = '';
+  public logoClassImage: string = '';
 
   constructor(private libService: MianLibService) {}
 

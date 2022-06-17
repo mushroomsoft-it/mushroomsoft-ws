@@ -7,8 +7,8 @@ import {MianLibService} from '@mushroomsoft-lib';
   styleUrls: ['./technology.component.scss']
 })
 export class TechnologyComponent implements OnInit {
-  public titleTechnology: any;
-  public descriptionTechnology: any;
+  public titleTechnology: string = '';
+  public descriptionTechnology: string = '';
   public technologyItemsService: any;
   public technologyItemsImage = [];
   public technologyItems: any;
