@@ -6,11 +6,20 @@ import serviceItems from '../shared/config/service.json';
 import technologyItems from '../shared/config/technology.json';
 import locationItems from '../shared/config/location.json';
 import contactItems from '../shared/config/contact.json';
+import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import { API_STRAPI } from '../shared/constants/constants';
 
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json'
+  })
+};
 @Injectable({
   providedIn: 'root'
 })
+
 export class MianLibService {
+  private apiStrapi: string;
   public menuItems: {} = {};
   public sectionItems: {} = {};
   public articleItems: {} = {};
@@ -18,6 +27,16 @@ export class MianLibService {
   public technologyItems: {} = {};
   public locationItems: {} = {};
   public contactItems: [] = [];
+
+  constructor(private http: HttpClient){
+    this.apiStrapi = API_STRAPI;
+  }
+
+
+  getTest() {
+    const url = this.apiStrapi;
+    return this.http.get(url);
+  }
 
   /**
    * @description get menu of the file Json
