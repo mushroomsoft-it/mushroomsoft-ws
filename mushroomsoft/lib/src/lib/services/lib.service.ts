@@ -6,14 +6,9 @@ import serviceItems from '../shared/config/service.json';
 import technologyItems from '../shared/config/technology.json';
 import locationItems from '../shared/config/location.json';
 import contactItems from '../shared/config/contact.json';
-import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import { API_STRAPI } from '../shared/constants/constants';
 
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-Type': 'application/json'
-  })
-};
 @Injectable({
   providedIn: 'root'
 })
@@ -22,7 +17,6 @@ export class MianLibService {
   private apiStrapi: string;
   public menuItems: {} = {};
   public sectionItems: {} = {};
-  public articleItems: {} = {};
   public serviceItems: {} = {};
   public technologyItems: {} = {};
   public locationItems: {} = {};
@@ -30,12 +24,6 @@ export class MianLibService {
 
   constructor(private http: HttpClient){
     this.apiStrapi = API_STRAPI;
-  }
-
-
-  getTest() {
-    const url = this.apiStrapi;
-    return this.http.get(url);
   }
 
   /**
@@ -73,9 +61,9 @@ export class MianLibService {
    * @return articleItems
    */
 
-  getArticle() {
-    this.articleItems = articleItems.items;
-    return this.articleItems;
+  getForm(type:string) {
+    const url = this.apiStrapi;
+    return this.http.get(url + type);
   }
 
   /**
