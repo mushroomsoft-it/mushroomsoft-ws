@@ -5,6 +5,6 @@ import {HttpClient,HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [],
   imports: [HttpClientModule],
-  providers: [MianLibService]
+  providers: [MianLibService,HttpClientModule]
 })
 export class MianLibModule {}

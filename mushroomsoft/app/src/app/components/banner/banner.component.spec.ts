@@ -1,15 +1,26 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import {ComponentFixture, getTestBed, TestBed} from '@angular/core/testing';
 import {MianLibService} from '@mushroomsoft-lib';
 import {BannerComponent} from './banner.component';
+import {of} from 'rxjs';
+
 describe('BannerComponent', () => {
   let component: BannerComponent;
   let fixture: ComponentFixture<BannerComponent>;
+  let service: MianLibService;
+  let httpClient: HttpClient;
+  let injector;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [BannerComponent],
-      providers: [MianLibService]
+      providers: [MianLibService],
+      imports:[HttpClientTestingModule]
     }).compileComponents();
+    service = TestBed.inject(MianLibService);
+    injector = getTestBed();
+    httpClient = injector.get(HttpClient);
   });
 
   beforeEach(() => {
@@ -49,6 +60,9 @@ describe('BannerComponent', () => {
     };
 
     component.ngOnInit();
+    spyOn(httpClient, 'get').and.returnValue(of([]));
+    service.getForm('section');
+    expect(httpClient.get).toHaveBeenCalled();
     expect(component.sectionItems).toEqual(mockBanner);
   });
 });

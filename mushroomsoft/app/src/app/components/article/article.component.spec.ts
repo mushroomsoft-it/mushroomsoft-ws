@@ -1,16 +1,25 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import {ComponentFixture, getTestBed, TestBed} from '@angular/core/testing';
 import {MianLibService} from '@mushroomsoft-lib';
-import {HomeComponent} from '../home/home.component';
+import {of} from 'rxjs';
 import {ArticleComponent} from './article.component';
 describe('ArticleComponent', () => {
   let component: ArticleComponent;
   let fixture: ComponentFixture<ArticleComponent>;
+  let service: MianLibService;
+  let httpClient: HttpClient;
+  let injector;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ArticleComponent],
-      providers: [MianLibService]
+      providers: [MianLibService],
+      imports:[HttpClientTestingModule]
     }).compileComponents();
+    service = TestBed.inject(MianLibService);
+    injector = getTestBed();
+    httpClient = injector.get(HttpClient);
   });
 
   beforeEach(() => {
@@ -48,6 +57,9 @@ describe('ArticleComponent', () => {
     };
 
     component.ngOnInit();
+    spyOn(httpClient, 'get').and.returnValue(of([]));
+    service.getForm('article');
+    expect(httpClient.get).toHaveBeenCalled();
     expect(component.commitmentItems).toEqual(mockArticles.items);
   });
 });

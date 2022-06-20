@@ -7,7 +7,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {FormlyBootstrapModule} from '@ngx-formly/bootstrap';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './components/header/header.component';
-
+import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {HomeComponent} from './components/home/home.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {BannerComponent} from './components/banner/banner.component';
@@ -39,9 +39,10 @@ import {MianLibModule} from '@mushroomsoft-lib';
     ReactiveFormsModule,
     FormlyModule.forRoot(),
     FormlyBootstrapModule,
-    MianLibModule
+    MianLibModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

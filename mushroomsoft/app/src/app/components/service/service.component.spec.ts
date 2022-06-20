@@ -1,15 +1,26 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {ComponentFixture, getTestBed, TestBed} from '@angular/core/testing';
 import {MianLibService} from '@mushroomsoft-lib';
 import {ServiceComponent} from './service.component';
+import {of} from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+
 describe('ServiceComponent', () => {
   let component: ServiceComponent;
   let fixture: ComponentFixture<ServiceComponent>;
+  let service: MianLibService;
+  let httpClient: HttpClient;
+  let injector;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ServiceComponent],
-      providers: [MianLibService]
+      providers: [MianLibService],
+      imports:[HttpClientTestingModule]
     }).compileComponents();
+    service = TestBed.inject(MianLibService);
+    injector = getTestBed();
+    httpClient = injector.get(HttpClient);
   });
 
   beforeEach(() => {
@@ -60,6 +71,9 @@ describe('ServiceComponent', () => {
       ]
     };
     component.ngOnInit();
+    spyOn(httpClient, 'get').and.returnValue(of([]));
+    service.getForm('service');
+    expect(httpClient.get).toHaveBeenCalled();
     expect(component.servicesItems).toEqual(mockService.services);
   });
 });
