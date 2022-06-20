@@ -15,12 +15,14 @@ export class TechnologyComponent implements OnInit {
   constructor(private libService: MianLibService) {}
 
   ngOnInit() {
-    this.technologyItems = this.libService.getTechnology();
-    this.titleTechnology = this.technologyItems.title.title;
-    this.descriptionTechnology = this.technologyItems.title.description;
-    this.technologyItemsService = this.technologyItems.service;
-    this.technologyItemsService.map((res: any) => {
-      this.technologyItemsImage = res.images as [];
+    this.libService.getForm('technology').subscribe((data : any ) => {
+      this.technologyItems = data.data[0].attributes.structure
+      this.titleTechnology = this.technologyItems.title.title;
+      this.descriptionTechnology = this.technologyItems.title.description;
+      this.technologyItemsService = this.technologyItems.service;
+      this.technologyItemsService.map((res: any) => {
+        this.technologyItemsImage = res.images as [];
+      });
     });
   }
 }

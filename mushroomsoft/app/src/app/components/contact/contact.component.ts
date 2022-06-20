@@ -16,8 +16,11 @@ export class ContactComponent implements OnInit {
   constructor(private libService: MianLibService) {}
 
   ngOnInit(): void {
-    this.fields = this.libService.getContact();
+    this.libService.getForm('contact').subscribe((data : any ) => {
+      this.fields = data.data[0].attributes.structure
+    });
   }
+
   submit() {
     alert(JSON.stringify(this.model));
   }

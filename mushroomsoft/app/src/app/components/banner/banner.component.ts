@@ -15,7 +15,6 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {
     this.libService.getForm('section').subscribe((data : any ) => {
       this.sectionItems = data.data[0].attributes.structure
-      console.log(this.sectionItems);
       this.sectionTitle = this.sectionItems.section.title;
       this.sectionImage = this.sectionItems.section.img;
   });

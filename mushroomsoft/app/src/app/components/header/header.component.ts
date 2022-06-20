@@ -15,7 +15,9 @@ export class HeaderComponent implements OnInit {
   constructor(private libService: MianLibService) {}
 
   ngOnInit(): void {
-    this.menuItems = this.libService.getMenu();
+    this.libService.getForm('menu').subscribe((data : any ) => {
+      this.menuItems = data.data[0].attributes.structure.menu
+    });
   }
 
   checked() {

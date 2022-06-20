@@ -14,7 +14,6 @@ export class ArticleComponent implements OnInit {
   ngOnInit(): void {
     this.libService.getForm('article').subscribe((data : any ) => {
       this.commitmentItems = data.data[0].attributes.structure.items
-      console.log(this.commitmentItems);
     });
   }
 }
