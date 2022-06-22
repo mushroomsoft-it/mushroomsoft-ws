@@ -12,11 +12,12 @@ export class BannerComponent implements OnInit {
 
   constructor(private libService: MianLibService) {}
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.libService.getForm('section').subscribe((data : any ) => {
       this.sectionItems = data.data[0].attributes.structure
       this.sectionTitle = this.sectionItems.section.title;
       this.sectionImage = this.sectionItems.section.img;
   });
+
   }
 }

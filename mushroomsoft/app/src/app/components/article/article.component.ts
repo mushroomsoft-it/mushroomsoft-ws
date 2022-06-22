@@ -11,8 +11,8 @@ export class ArticleComponent implements OnInit {
 
   constructor(private libService: MianLibService) {}
 
-  ngOnInit(): void {
-    this.libService.getForm('article').subscribe((data : any ) => {
+  ngOnInit(){
+    this.libService.getForm('article').subscribe((data : any) => {
       this.commitmentItems = data.data[0].attributes.structure.items
     });
   }

@@ -24,9 +24,9 @@ export class FooterComponent implements OnInit {
 
   constructor(private libService: MianLibService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.libService.getForm('footer').subscribe((data : any ) => {
-      this.locationItems = data.data[0].attributes.structure
+      this.locationItems = data.data[0].attributes.structure;
       this.titleLocation = this.locationItems.title.title;
       this.descriptionLocation = this.locationItems.title.description;
       this.imageLocation = this.locationItems.title.img;

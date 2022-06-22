@@ -16,10 +16,11 @@ export class ServiceComponent implements OnInit {
 
   ngOnInit() {
     this.libService.getForm('service').subscribe((data : any ) => {
-      this.serviceItems = data.data[0].attributes.structure
+      this.serviceItems = data.data[0].attributes.structure;
       this.serviceTitle = this.serviceItems.service.title;
       this.serviceClass = this.serviceItems.service.class;
       this.servicesItems = this.serviceItems.services;
     });
+
   }
 }

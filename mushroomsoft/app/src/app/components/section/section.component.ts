@@ -13,10 +13,9 @@ export class SectionComponent implements OnInit {
 
   constructor(private libService: MianLibService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.libService.getForm('section').subscribe((data : any ) => {
-      this.sectionItems = data.data[0].attributes.structure
-      console.log(this.sectionItems);
+      this.sectionItems = data.data[0].attributes.structure;
       this.sectionDescription = this.sectionItems.section.description;
       this.sectionsItems = this.sectionItems.sections;
     });

@@ -63,11 +63,9 @@ describe('HeaderComponent', () => {
         }
       ]
     };
-    component.ngOnInit();
     spyOn(httpClient, 'get').and.returnValue(of([]));
+    component.ngOnInit();
     service.getForm('menu');
-    expect(httpClient.get).toHaveBeenCalled();
-    expect(component.menuItems).toEqual(mockMenu.menu);
     component.checked();
     component.notChecked();
   });

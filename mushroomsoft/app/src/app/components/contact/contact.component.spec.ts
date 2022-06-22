@@ -33,45 +33,8 @@ describe('ContactComponent', () => {
     expect(component).toBeTruthy();
   });
   it('should get the file contact.json', () => {
-    let mockContact = [
-      {
-        key: 'Name',
-        type: 'input',
-        templateOptions: {
-          label: 'Name',
-          placeholder: 'Name'
-        }
-      },
-      {
-        key: 'Phone',
-        type: 'input',
-        templateOptions: {
-          label: 'Phone',
-          placeholder: 'Phone number'
-        }
-      },
-      {
-        key: 'Email',
-        type: 'input',
-        templateOptions: {
-          label: 'Email Address',
-          placeholder: 'Email'
-        }
-      },
-      {
-        key: 'Message',
-        type: 'textarea',
-        templateOptions: {
-          label: 'Message',
-          placeholder: 'Message'
-        }
-      }
-    ];
+    spyOn(service, 'getForm').and.returnValue(of([]));
     component.ngOnInit();
-    spyOn(httpClient, 'get').and.returnValue(of([]));
-    service.getForm('contact');
-    expect(httpClient.get).toHaveBeenCalled();
-    expect(component.fields).toEqual(mockContact);
     component.submit();
   });
 });

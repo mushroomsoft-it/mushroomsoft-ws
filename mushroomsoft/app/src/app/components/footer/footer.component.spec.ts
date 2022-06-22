@@ -33,33 +33,6 @@ describe('FooterComponent', () => {
     expect(component).toBeTruthy();
   });
   it('should get the file footer.json', () => {
-    let mockLocation = {
-      title: {
-        title: 'Location',
-        description:
-          " Quito, also known as the 'Light of America', is the city where wehave planted our roots. It is the sanctuary where our talent develops and where we design technological solutions for your business.",
-        img: 'assets/footers/location.png'
-      },
-      location: {
-        title: 'Address',
-        address: 'Av. Río Amazonas y Roca',
-        location: 'Edificio Río Amazonas',
-        floor: '3er. Piso, Of.319',
-        phone: '(+593) 2 2551 030'
-      },
-      footer: {
-        github: 'assets/footers/github.png',
-        linkedin: 'assets/footers/linkedin.png',
-        classSocial: 'image-social',
-        logo: 'assets/footers/logo-footer.png',
-        classLogo: 'image-logo-footer'
-      }
-    };
-
-    component.ngOnInit();
-    spyOn(httpClient, 'get').and.returnValue(of([]));
-    service.getForm('footer');
-    expect(httpClient.get).toHaveBeenCalled();
-    expect(component.locationItems).toEqual(mockLocation);
+    spyOn(service, 'getForm').and.returnValue(of());
   });
 });
