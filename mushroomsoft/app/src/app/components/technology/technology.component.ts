@@ -9,12 +9,16 @@ import {MianLibService} from '@mushroomsoft-lib';
 export class TechnologyComponent implements OnInit {
   public titleTechnology: string = '';
   public descriptionTechnology: string = '';
-  public technologyItemsService: any;
+  public technologyItemsService: any = '';
   public technologyItemsImage = [];
-  public technologyItems: any;
+  public technologyItems: any = '';
   constructor(private libService: MianLibService) {}
 
   ngOnInit() {
+    this.getForm();
+  }
+
+  getForm():void {
     this.libService.getForm('technology').subscribe((data : any ) => {
       this.technologyItems = data.data[0].attributes.structure
       this.titleTechnology = this.technologyItems.title.title;

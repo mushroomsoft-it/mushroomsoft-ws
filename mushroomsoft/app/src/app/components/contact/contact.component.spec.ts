@@ -33,8 +33,12 @@ describe('ContactComponent', () => {
     expect(component).toBeTruthy();
   });
   it('should get the file contact.json', () => {
-    spyOn(service, 'getForm').and.returnValue(of([]));
-    component.ngOnInit();
+    const response: [] = [] ;
+
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getForm();
+    fixture.detectChanges();
+    expect(component.fields).toEqual(response);
     component.submit();
   });
 });

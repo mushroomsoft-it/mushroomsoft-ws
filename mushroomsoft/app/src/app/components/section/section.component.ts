@@ -7,13 +7,17 @@ import {MianLibService} from '@mushroomsoft-lib';
   styleUrls: ['./section.component.scss']
 })
 export class SectionComponent implements OnInit {
-  public sectionDescription: any;
-  public sectionItems: any;
-  public sectionsItems: any;
+  public sectionDescription: any = '';
+  public sectionItems: any = '';
+  public sectionsItems: any = '';
 
   constructor(private libService: MianLibService) {}
 
   ngOnInit() {
+    this.getForm();
+  }
+
+  getForm():void {
     this.libService.getForm('section').subscribe((data : any ) => {
       this.sectionItems = data.data[0].attributes.structure;
       this.sectionDescription = this.sectionItems.section.description;

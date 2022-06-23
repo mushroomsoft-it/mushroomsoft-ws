@@ -34,38 +34,12 @@ describe('HeaderComponent', () => {
   });
 
   it('should get the file menu.json', () => {
-    let mockMenu = {
-      menu: [
-        {
-          title: 'WHO WE ARE',
-          class: 'ms-navigation-item ms-nav-link',
-          url: 'whoWeare'
-        },
-        {
-          title: 'SERVICES',
-          class: 'ms-navigation-item ms-nav-link',
-          url: 'services'
-        },
-        {
-          title: 'COMMITMENT',
-          class: 'ms-navigation-item ms-nav-link',
-          url: 'focus'
-        },
-        {
-          title: 'TECHNOLOGY',
-          class: 'ms-navigation-item ms-nav-link',
-          url: 'tecnology'
-        },
-        {
-          title: 'LOCATION',
-          class: 'ms-navigation-item ms-nav-link',
-          url: 'location'
-        }
-      ]
-    };
-    spyOn(httpClient, 'get').and.returnValue(of([]));
-    component.ngOnInit();
-    service.getForm('menu');
+    const response: any = '' ;
+
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getForm();
+    fixture.detectChanges();
+    expect(component.menuItems).toEqual(response);
     component.checked();
     component.notChecked();
   });

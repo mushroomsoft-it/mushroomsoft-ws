@@ -7,7 +7,7 @@ import {MianLibService} from '@mushroomsoft-lib';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  public locationItems: any;
+  public locationItems: any = '';
   public titleLocation: string = '';
   public descriptionLocation: string = '';
   public imageLocation: string = '';
@@ -25,6 +25,10 @@ export class FooterComponent implements OnInit {
   constructor(private libService: MianLibService) {}
 
   ngOnInit() {
+    this.getForm();
+  }
+
+  getForm():void {
     this.libService.getForm('footer').subscribe((data : any ) => {
       this.locationItems = data.data[0].attributes.structure;
       this.titleLocation = this.locationItems.title.title;

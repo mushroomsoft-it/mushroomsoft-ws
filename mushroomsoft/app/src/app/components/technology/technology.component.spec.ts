@@ -33,6 +33,11 @@ describe('TechnologyComponent', () => {
     expect(component).toBeTruthy();
   });
   it('should get the file technology.json', () => {
-    spyOn(service, 'getForm').and.returnValue(of());
+    const response: any = '' ;
+
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getForm();
+    fixture.detectChanges();
+    expect(component.technologyItems).toEqual(response);
   });
 });

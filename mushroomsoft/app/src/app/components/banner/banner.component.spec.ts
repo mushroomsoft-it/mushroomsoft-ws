@@ -33,10 +33,11 @@ describe('BannerComponent', () => {
     expect(component).toBeTruthy();
   });
   it('should get the file banner.json', () => {
-    spyOn(service, 'getForm').and.returnValue(of());
-    component.ngOnInit();
-      service.getForm('section').subscribe(value => {
-        expect(component.sectionItems).toBe('observable value');
-      });
-  });
+    const response: any = '';
+
+      spyOn(service, 'getForm').and.returnValue(of(response))
+      component.getForm();
+      fixture.detectChanges();
+      expect(component.sectionItems).toEqual(response);
+    });
 });

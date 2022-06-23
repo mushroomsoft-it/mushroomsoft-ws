@@ -8,13 +8,17 @@ import {MianLibService} from '@mushroomsoft-lib';
 })
 export class HeaderComponent implements OnInit {
   public element: boolean = false;
-  public menuItems: any;
+  public menuItems: any = '';
   public logo = logoMushroomSoft;
   public menuIcon = menuIcon;
 
   constructor(private libService: MianLibService) {}
 
   ngOnInit() {
+    this.getForm();
+  }
+
+  getForm():void {
     this.libService.getForm('menu').subscribe((data : any ) => {
       this.menuItems = data.data[0].attributes.structure.menu
     });

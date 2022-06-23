@@ -33,6 +33,11 @@ describe('ServiceComponent', () => {
     expect(component).toBeTruthy();
   });
   it('should get the file service.json', () => {
-    spyOn(service, 'getForm').and.returnValue(of());
+    const response: any = '' ;
+
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getForm();
+    fixture.detectChanges();
+    expect(component.serviceItems).toEqual(response);
   });
 });

@@ -29,7 +29,11 @@ describe('SectionComponent', () => {
     fixture.detectChanges();
   });
   it('should get the file section.json', () => {
-    component.ngOnInit();
-    spyOn(service, 'getForm').and.returnValue(of());
+    const response: any = '' ;
+
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getForm();
+    fixture.detectChanges();
+    expect(component.sectionItems).toEqual(response);
   });
 });
