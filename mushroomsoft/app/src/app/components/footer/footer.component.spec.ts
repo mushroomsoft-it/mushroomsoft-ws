@@ -32,12 +32,12 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('should get the file footer.json', () => {
+  it('should of getForm ', () => {
     const response: any = '' ;
-
     spyOn(service, 'getForm').and.returnValue(of(response))
-    component.getForm();
+    component.getForm('footer');
     fixture.detectChanges();
     expect(component.locationItems).toEqual(response);
   });
+
 });

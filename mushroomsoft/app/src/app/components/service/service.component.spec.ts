@@ -32,12 +32,35 @@ describe('ServiceComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('should get the file service.json', () => {
+  it('should of getForm', () => {
     const response: any = '' ;
-
     spyOn(service, 'getForm').and.returnValue(of(response))
-    component.getForm();
+    component.getForm('service');
     fixture.detectChanges();
     expect(component.serviceItems).toEqual(response);
+  });
+
+  it('should of getServices', () => {
+    const response: any = '' ;
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getServices('service');
+    fixture.detectChanges();
+    expect(component.servicesItems).toEqual(response);
+  });
+
+  it('should of getTitle', () => {
+    const response: any = '' ;
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getTitle('service');
+    fixture.detectChanges();
+    expect(component.serviceTitle).toEqual(response);
+  });
+
+  it('should of getClass', () => {
+    const response: any = '' ;
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getClass('service');
+    fixture.detectChanges();
+    expect(component.serviceClass).toEqual(response);
   });
 });

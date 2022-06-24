@@ -15,15 +15,35 @@ export class ServiceComponent implements OnInit {
   constructor(private libService: MianLibService) {}
 
   ngOnInit() {
-    this.getForm();
+    this.getForm('service');
+    this.getServices('service');
+    this.getTitle('service');
+    this.getClass('service');
+
   }
 
-  getForm():void {
-    this.libService.getForm('service').subscribe((data : any ) => {
+  getForm(type:string):void {
+    this.libService.getForm(type).subscribe((data : any ) => {
       this.serviceItems = data.data[0].attributes.structure;
-      this.serviceTitle = this.serviceItems.service.title;
-      this.serviceClass = this.serviceItems.service.class;
-      this.servicesItems = this.serviceItems.services;
+    });
+  }
+
+  getServices(type:string){
+    this.libService.getForm(type).subscribe((data : any ) => {
+      this.servicesItems = data.data[0].attributes.structure.services;
+    });
+  }
+
+  getTitle(type:string){
+    this.libService.getForm(type).subscribe((data : any ) => {
+      this.serviceTitle = data.data[0].attributes.structure.service.class;
+    });
+  }
+
+  getClass(type:string){
+    this.libService.getForm(type).subscribe((data : any ) => {
+      this.serviceClass = data.data[0].attributes.structure.service.class;
     });
   }
 }
+

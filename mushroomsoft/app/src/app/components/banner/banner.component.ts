@@ -13,14 +13,26 @@ export class BannerComponent implements OnInit {
   constructor(private libService: MianLibService) {}
 
   ngOnInit(){
-    this.getForm();
+    this.getForm('section');
+    this.getTitle('section');
+    this.getImage('section');
   }
 
-  getForm():void {
-    this.libService.getForm('section').subscribe((data : any ) => {
-      this.sectionItems = data.data[0].attributes.structure;
-      this.sectionTitle = this.sectionItems.section.title;
-      this.sectionImage = this.sectionItems.section.img;
-  });
+  getForm( type: string)  {
+    this.libService.getForm(type).subscribe((data : any ) => {
+        this.sectionItems = data.data[0].attributes.structure;
+    });
+  }
+
+  getTitle( type: string){
+    this.libService.getForm(type).subscribe((data : any ) => {
+        this.sectionTitle = data.data[0].attributes.structure.section.title;
+    });
+  }
+
+  getImage( type: string){
+    this.libService.getForm(type).subscribe((data : any ) => {
+      this.sectionTitle = data.data[0].attributes.structure.section.img;
+    });
   }
 }

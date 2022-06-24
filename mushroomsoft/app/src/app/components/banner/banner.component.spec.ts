@@ -32,12 +32,27 @@ describe('BannerComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('should get the file banner.json', () => {
+  it('should of getForm', () => {
     const response: any = '';
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getForm('section');
+    fixture.detectChanges();
+    expect(component.sectionItems).toEqual(response);
+  });
 
-      spyOn(service, 'getForm').and.returnValue(of(response))
-      component.getForm();
-      fixture.detectChanges();
-      expect(component.sectionItems).toEqual(response);
-    });
+  it('should of getTitle', () => {
+    const response: string = '';
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getTitle('section');
+    fixture.detectChanges();
+    expect(component.sectionTitle).toEqual(response);
+  });
+
+  it('should of getImage', () => {
+    const response: string = '';
+    spyOn(service, 'getForm').and.returnValue(of(response))
+    component.getImage('section');
+    fixture.detectChanges();
+    expect(component.sectionImage).toEqual(response);
+  });
 });

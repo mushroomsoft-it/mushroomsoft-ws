@@ -54,9 +54,8 @@ describe('ArticleComponent', () => {
     }
 
     const response: any = '';
-
     spyOn(service, 'getForm').and.returnValue(of(response))
-    component.getForm();
+    component.getForm('article');
     fixture.detectChanges();
     expect(component.commitmentItems).toEqual(response);
 
