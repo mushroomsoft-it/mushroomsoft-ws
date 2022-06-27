@@ -18,9 +18,9 @@ export class TechnologyComponent implements OnInit {
     this.getForm();
   }
 
-  getForm():void {
-    this.libService.getForm('technology').subscribe((data : any ) => {
-      this.technologyItems = data.data[0].attributes.structure
+  getForm() {
+    this.libService.getForm('technology').subscribe((data: any) => {
+      this.technologyItems = data.data?.[0].attributes.structure;
       this.titleTechnology = this.technologyItems.title.title;
       this.descriptionTechnology = this.technologyItems.title.description;
       this.technologyItemsService = this.technologyItems.service;

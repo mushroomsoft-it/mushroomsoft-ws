@@ -19,31 +19,29 @@ export class ServiceComponent implements OnInit {
     this.getServices('service');
     this.getTitle('service');
     this.getClass('service');
-
   }
 
-  getForm(type:string):void {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.serviceItems = data.data[0].attributes.structure;
+  getForm(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.serviceItems = data.data?.[0].attributes.structure;
     });
   }
 
-  getServices(type:string){
-    this.libService.getForm(type).subscribe((data : any ) => {
+  getServices(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
       this.servicesItems = data.data[0].attributes.structure.services;
     });
   }
 
-  getTitle(type:string){
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.serviceTitle = data.data[0].attributes.structure.service.class;
+  getTitle(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.serviceTitle = data.data[0].attributes.structure.service.title;
     });
   }
 
-  getClass(type:string){
-    this.libService.getForm(type).subscribe((data : any ) => {
+  getClass(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
       this.serviceClass = data.data[0].attributes.structure.service.class;
     });
   }
 }
-

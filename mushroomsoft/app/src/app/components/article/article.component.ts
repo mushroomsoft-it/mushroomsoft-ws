@@ -11,13 +11,13 @@ export class ArticleComponent implements OnInit {
 
   constructor(private libService: MianLibService) {}
 
-  ngOnInit(){
+  ngOnInit() {
     this.getForm('article');
   }
 
-   getForm( type: string) {
-    this.libService.getForm(type).subscribe((data : any) => {
-      this.commitmentItems = data.data[0].attributes.structure.items;
+  getForm(type: string) {
+    this.libService.getForm(type).subscribe((items: any) => {
+      this.commitmentItems = items.data?.[0].attributes.structure.items;
     });
   }
 }

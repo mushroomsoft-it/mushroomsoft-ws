@@ -1,15 +1,14 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import { API_STRAPI } from '../shared/constants/constants';
+import {API_STRAPI} from '../shared/constants/constants';
 
 @Injectable({
   providedIn: 'root'
 })
-
 export class MianLibService {
   private apiStrapi: string;
 
-  constructor(private http: HttpClient){
+  constructor(private http: HttpClient) {
     this.apiStrapi = API_STRAPI;
   }
 
@@ -18,7 +17,7 @@ export class MianLibService {
    * @return articleItems
    */
 
-  getForm(type:string) {
+  getForm(type: string) {
     const url = this.apiStrapi;
     return this.http.get(url + type);
   }

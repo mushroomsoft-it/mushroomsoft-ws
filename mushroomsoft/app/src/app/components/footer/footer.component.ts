@@ -41,88 +41,87 @@ export class FooterComponent implements OnInit {
     this.getClassLogoFooter('footer');
   }
 
-   getForm( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.locationItems = data.data[0].attributes.structure;
+  getForm(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.locationItems = data.data?.[0].attributes.structure;
     });
   }
 
-  getTitleLocation( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.titleLocation = data.data[0].attributes.structure.title.title;
+  getTitleLocation(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.titleLocation = data.data?.[0].attributes.structure.title.title;
     });
   }
 
-  getDescriptionLocation( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.descriptionLocation = data.data[0].attributes.structure.title.description;
+  getDescriptionLocation(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.descriptionLocation = data.data?.[0].attributes.structure.title.description;
     });
   }
 
-  getImageLocation( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.imageLocation = data.data[0].attributes.structure.title.img;
+  getImageLocation(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.imageLocation = data.data?.[0].attributes.structure.title.img;
     });
   }
 
-  getTitleAddress( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.titleAddress = data.data[0].attributes.structure.location.title;
+  getTitleAddress(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.titleAddress = data.data?.[0].attributes.structure.location.title;
     });
   }
 
-  getStreetAddress( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.streetAddress = data.data[0].attributes.structure.location.address;
+  getStreetAddress(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.streetAddress = data.data?.[0].attributes.structure.location.address;
     });
   }
 
-  getLocationAddress( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.locationAddress = data.data[0].attributes.structure.location.location;
+  getLocationAddress(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.locationAddress = data.data?.[0].attributes.structure.location.location;
     });
   }
 
-  getFloorAddress( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.floorAddress = data.data[0].attributes.structure.location.floor;
+  getFloorAddress(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.floorAddress = data.data?.[0].attributes.structure.location.floor;
     });
   }
 
-  getPhoneAddress( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.phoneAddress = data.data[0].attributes.structure.location.phone;
+  getPhoneAddress(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.phoneAddress = data.data?.[0].attributes.structure.location.phone;
     });
   }
 
-  getGithubFooter( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.socialGithub = data.data[0].attributes.structure.footer.github;
+  getGithubFooter(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.socialGithub = data.data?.[0].attributes.structure.footer.github;
     });
   }
 
-  getLinkedinFooter( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.socialLinkedin = data.data[0].attributes.structure.footer.linkedin;
+  getLinkedinFooter(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.socialLinkedin = data.data?.[0].attributes.structure.footer.linkedin;
     });
   }
 
-  getClassImageFooter( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.socialClassImage = data.data[0].attributes.structure.footer.classSocial;
+  getClassImageFooter(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.socialClassImage = data.data?.[0].attributes.structure.footer.classSocial;
     });
   }
 
-  getLogoFooter( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.logoFooterImage = data.data[0].attributes.structure.footer.logo;
+  getLogoFooter(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.logoFooterImage = data.data?.[0].attributes.structure.footer.logo;
     });
   }
 
-  getClassLogoFooter( type : string) {
-    this.libService.getForm(type).subscribe((data : any ) => {
-      this.logoClassImage = data.data[0].attributes.structure.footer.classLogo;
+  getClassLogoFooter(type: string) {
+    this.libService.getForm(type).subscribe((data: any) => {
+      this.logoClassImage = data.data?.[0].attributes.structure.footer.classLogo;
     });
   }
 }
-

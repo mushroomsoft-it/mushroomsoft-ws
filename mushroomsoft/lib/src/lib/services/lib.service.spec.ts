@@ -1,9 +1,9 @@
-import { HttpClient } from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {getTestBed, TestBed} from '@angular/core/testing';
 
 import {MianLibService} from './lib.service';
 import {of} from 'rxjs';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
+import {HttpClientTestingModule} from '@angular/common/http/testing';
 
 describe('MianLibService', () => {
   let service: MianLibService;
@@ -11,7 +11,7 @@ describe('MianLibService', () => {
   let injector;
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports:[HttpClientTestingModule]
+      imports: [HttpClientTestingModule]
     });
     service = TestBed.inject(MianLibService);
     injector = getTestBed();
@@ -27,5 +27,4 @@ describe('MianLibService', () => {
     service.getForm('contact');
     expect(httpClient.get).toHaveBeenCalled();
   });
-
 });

@@ -18,9 +18,9 @@ export class HeaderComponent implements OnInit {
     this.getForm();
   }
 
-  getForm():void {
-    this.libService.getForm('menu').subscribe((data : any ) => {
-      this.menuItems = data.data[0].attributes.structure.menu
+  getForm() {
+    this.libService.getForm('menu').subscribe((data: any) => {
+      this.menuItems = data.data?.[0].attributes.structure.menu;
     });
   }
 
