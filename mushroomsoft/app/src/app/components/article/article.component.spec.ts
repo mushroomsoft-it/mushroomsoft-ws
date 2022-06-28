@@ -78,7 +78,7 @@ describe('ArticleComponent', () => {
         }
       }
     };
-    spyOn(service, 'getForm').and.returnValue(of(JSON.stringify(mockArticle)));
+    spyOn(service, 'getForm').and.returnValue(of(mockArticle));
     component.getForm('article');
     fixture.detectChanges();
     expect(component.commitmentItems).toEqual(mockArticle.data[0].attributes.structure.items);
