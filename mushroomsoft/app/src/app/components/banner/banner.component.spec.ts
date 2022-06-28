@@ -85,7 +85,7 @@ describe('BannerComponent', () => {
     spyOn(service, 'getForm').and.returnValue(of(mockBanner));
     component.getForm('section');
     fixture.detectChanges();
-    expect(component.sectionItems).toEqual(mockBanner);
+    expect(component.sectionItems).toEqual(mockBanner.data[0].attributes.structure);
   });
 
   it('should of getTitle', () => {

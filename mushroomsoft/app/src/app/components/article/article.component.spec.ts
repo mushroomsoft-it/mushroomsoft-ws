@@ -80,6 +80,7 @@ describe('ArticleComponent', () => {
     };
     spyOn(service, 'getForm').and.returnValue(of(JSON.stringify(mockArticle)));
     component.getForm('article');
-    expect(component.commitmentItems).toEqual(JSON.stringify(mockArticle.data[0].attributes.structure.items));
+    fixture.detectChanges();
+    expect(component.commitmentItems).toEqual(mockArticle.data[0].attributes.structure.items);
   });
 });
