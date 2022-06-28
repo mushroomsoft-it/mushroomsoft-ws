@@ -6,15 +6,33 @@ import {MianLibService} from '@mushroomsoft-lib';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
-  public sectionItems: any;
+  public sectionItems: any = '';
   public sectionTitle: string = '';
   public sectionImage: string = '';
 
   constructor(private libService: MianLibService) {}
 
-  ngOnInit(): void {
-    this.sectionItems = this.libService.getBanner();
-    this.sectionTitle = this.sectionItems.section.title;
-    this.sectionImage = this.sectionItems.section.img;
+  ngOnInit() {
+    this.getForm('section');
+    this.getTitle('section');
+    this.getImage('section');
+  }
+
+  getForm(type: string) {
+    this.libService.getForm(type).subscribe((items: any) => {
+      this.sectionItems = items.data?.[0].attributes.structure;
+    });
+  }
+
+  getTitle(type: string) {
+    this.libService.getForm(type).subscribe((items: any) => {
+      this.sectionTitle = items.data?.[0].attributes.structure.section.title;
+    });
+  }
+
+  getImage(type: string) {
+    this.libService.getForm(type).subscribe((items: any) => {
+      this.sectionImage = items.data?.[0].attributes.structure.section.img;
+    });
   }
 }

@@ -1,13 +1,21 @@
-import {TestBed} from '@angular/core/testing';
+import {HttpClient} from '@angular/common/http';
+import {getTestBed, TestBed} from '@angular/core/testing';
 
 import {MianLibService} from './lib.service';
+import {of} from 'rxjs';
+import {HttpClientTestingModule} from '@angular/common/http/testing';
 
 describe('MianLibService', () => {
   let service: MianLibService;
-
+  let httpClient: HttpClient;
+  let injector;
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule]
+    });
     service = TestBed.inject(MianLibService);
+    injector = getTestBed();
+    httpClient = injector.get(HttpClient);
   });
 
   it('should be created', () => {
@@ -15,34 +23,8 @@ describe('MianLibService', () => {
   });
 
   it('should get menu', () => {
-    expect(service.getMenu());
-  });
-
-  it('should get banner', () => {
-    expect(service.getBanner());
-  });
-
-  it('should get section', () => {
-    expect(service.getSection());
-  });
-
-  it('should get article', () => {
-    expect(service.getArticle());
-  });
-
-  it('should get service', () => {
-    expect(service.getService());
-  });
-
-  it('should get technology', () => {
-    expect(service.getTechnology());
-  });
-
-  it('should get location', () => {
-    expect(service.getLocation());
-  });
-
-  it('should get contact', () => {
-    expect(service.getContact());
+    spyOn(httpClient, 'get').and.returnValue(of([]));
+    service.getForm('contact');
+    expect(httpClient.get).toHaveBeenCalled();
   });
 });

@@ -15,9 +15,16 @@ export class ContactComponent implements OnInit {
   fields: FormlyFieldConfig[] = [];
   constructor(private libService: MianLibService) {}
 
-  ngOnInit(): void {
-    this.fields = this.libService.getContact();
+  ngOnInit() {
+    this.getForm();
   }
+
+  getForm() {
+    this.libService.getForm('contact').subscribe((data: any) => {
+      this.fields = data.data?.[0].attributes.structure;
+    });
+  }
+
   submit() {
     alert(JSON.stringify(this.model));
   }

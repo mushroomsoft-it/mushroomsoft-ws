@@ -7,11 +7,17 @@ import {MianLibService} from '@mushroomsoft-lib';
   styleUrls: ['./article.component.scss']
 })
 export class ArticleComponent implements OnInit {
-  public commitmentItems: any;
+  public commitmentItems: any = '';
 
   constructor(private libService: MianLibService) {}
 
-  ngOnInit(): void {
-    this.commitmentItems = this.libService.getArticle();
+  ngOnInit() {
+    this.getForm('article');
+  }
+
+  getForm(type: string) {
+    this.libService.getForm(type).subscribe((items: any) => {
+      this.commitmentItems = items.data?.[0].attributes.structure.items;
+    });
   }
 }
